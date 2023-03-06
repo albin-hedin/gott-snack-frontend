@@ -1,2 +1,1 @@
-# gott-snack-frontend
-Frontend repo for the web app gottsnack
+## Frontend app for Gott snack radio
