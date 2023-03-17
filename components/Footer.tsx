@@ -1,5 +1,3 @@
-import packageData from '../../gott-snack-frontend/package.json'
-
 const Footer = () => {
   return (
     <footer className="paddingX flex pt-12 pb-6 justify-between">
@@ -7,7 +5,7 @@ const Footer = () => {
         &copy; Bing bong AB
       </div>
       <div className=''>
-        v.{packageData.version}
+        v.0.1.0
       </div>
 
       <div className="">
