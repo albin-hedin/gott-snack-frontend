@@ -12,9 +12,8 @@
   font-family: 'Fredoka One';
 }
 
-.crazy-font {
+.roboto-font {
   font-family: 'Roboto Flex';
-  color: rgb(116, 114, 114);
 }
 
 
@@ -27,6 +26,23 @@ body {
 }
 
 a {
+  text-decoration: none !important;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  &.persistent {
+    text-decoration: underline !important;
+  }
+}
+
+.patreon-button {
+  background-color: #141518;
+}
+
+.link {
   text-decoration: none !important;
   cursor: pointer;
 

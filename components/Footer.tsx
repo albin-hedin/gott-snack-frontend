@@ -11,7 +11,7 @@ const Footer = () => {
       </div>
 
       <div className="">
-        <a target="_blank" className="link" href="https://gott-snack.mixlr.com/">
+        <a target="_blank" href="https://gott-snack.mixlr.com/">
           Gott snack på MIXLR
         </a>
       </div>
