@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.start-page-title {
+  font-family: 'Fredoka One';
+}
+
+.roboto-font {
+  font-family: 'Roboto Flex';
+}
+
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: rgb(238, 197, 174);
+  background: radial-gradient(circle, rgba(238, 197, 174, 1) 0%, rgba(233, 218, 148, 1) 100%);
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  &.persistent {
+    text-decoration: underline !important;
+  }
+}
+
+.patreon-button {
+  background-color: #141518;
+}
+
+.link {
+  text-decoration: none !important;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  &.persistent {
+    text-decoration: underline !important;
+  }
+}
+
+.paddingX {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  .wide {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+  }
+
+  @media (min-width: 640px) {}
+
+  @media (min-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .wide {
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .wide {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    .wide {
+      margin-left: -2rem;
+      margin-right: -2rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    .wide {
+      margin-left: -5vw;
+      margin-right: -5vw;
+    }
+  }
+}
