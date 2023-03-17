@@ -5,7 +5,7 @@ const Footer = () => {
   return (<>
     <Divider className='my-5 mx-64' />
     <footer className="paddingX flex pt-12 pb-6 justify-between">
-      <div className='grid grid-cols-1'>
+      <div className='grid grid-cols-1 text-xs md:text-lg'>
         &copy; Bing bong AB
       </div>
       <div className='grid grid-cols-3 gap-2'>
@@ -34,7 +34,7 @@ const Footer = () => {
             height={40} />
         </a>
       </div>
-      <div className='ml-1'>
+      <div className='text-xs md:text-lg'>
         v 0.1.0
       </div>
     </footer></>
