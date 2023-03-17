@@ -5,10 +5,10 @@ const WeeklySchedule = () => {
     <div className='mx-10'>
       <h1 style={{
         color: 'rgb(116, 114, 114)'
-      }} className='lg:text-5xl md:text-3xl sm:text-sm roboto-font text-center mb-5'>
+      }} className='lg:text-3xl md:text-2xl text-2xl roboto-font text-center mb-5'>
         Veckoschema
       </h1>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-3 sm:grid-cols-2'>
         <Image
           src='/sasongsavslut-949x1024.jpg'
           alt=''

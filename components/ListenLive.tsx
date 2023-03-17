@@ -5,7 +5,7 @@ const ListenLive = () => {
     <div className='mx-10 text-center flex flex-col items-center'>
       <h1 style={{
         color: 'rgb(116, 114, 114)'
-      }} className='lg:text-5xl md:text-3xl sm:text-sm roboto-font mb-3'>
+      }} className='lg:text-3xl md:text-2xl text-2xl roboto-font mb-3'>
         Lyssna
       </h1>
       <div className='lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs'>
