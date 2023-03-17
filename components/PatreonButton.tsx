@@ -3,7 +3,7 @@ import Image from 'next/image'
 const PatreonButton = () => {
   return (
     <a href="https://www.patreon.com/gottsnack/" target='_blank'>
-      <div className='patreon-button box-border lg:h-20 lg:w-45 md:h-15 md:w-35 sm:h-10 sm:w-35 rounded-xl link flex'>
+      <div className='patreon-button box-border rounded-xl link flex'>
         <div className='' style={{
         }}>
           <Image
