@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>
-          Gott snack radio
+          Gott snack morgonradio
         </title>
       </Head>
       <div className='flex flex-col min-h-screen'>
