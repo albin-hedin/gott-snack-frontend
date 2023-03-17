@@ -1,4 +1,5 @@
 import Divider from '@/components/Divider'
+import Events from '@/components/Events'
 import ListenLive from '@/components/ListenLive'
 import SupportUs from '@/components/SupportUs'
 import WeeklySchedule from '@/components/WeeklySchedule'
@@ -29,6 +30,7 @@ const Home = () => {
       <Divider className='my-8 mx-64' />
       <WeeklySchedule />
       <Divider className='my-8 mx-64' />
+      <Events />
     </>
   )
 }
