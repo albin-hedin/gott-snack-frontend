@@ -14,8 +14,7 @@ const LinkButton = ({
   return (
     <a href={url} target='_blank'>
       <div className={`${type === 'main' ? 'orange-bg' : 'black-bg'} box-border lg:h-20 lg:w-45 md:h-15 md:w-35 sm:h-10 sm:w-35 rounded-xl link flex`}>
-        <div className='' style={{
-        }}>
+        <div>
           {imagePath && <Image
             className='rounded-xl'
             src={imagePath}

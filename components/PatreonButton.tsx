@@ -4,8 +4,7 @@ const PatreonButton = () => {
   return (
     <a href="https://www.patreon.com/gottsnack/" target='_blank'>
       <div className='patreon-button box-border rounded-xl link flex'>
-        <div className='' style={{
-        }}>
+        <div>
           <Image
             className='rounded-xl'
             src='/patreon.png'
