@@ -1,0 +1,28 @@
+import Link from 'next/link'
+import { slide as Menu } from 'react-burger-menu'
+import { useState } from 'react'
+
+const HamburgerMenu = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const closeMenu = () => {
+    setMenuOpen(false)
+  }
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
+
+  return (
+    <Menu
+      onClose={() => setMenuOpen(false)}
+      onOpen={() => setMenuOpen(true)}
+      isOpen={menuOpen}
+      width={300}>
+      <Link onClick={() => setMenuOpen(false)} id="home" className="menu-item" href="/">Home</Link>
+      <a onClick={() => setMenuOpen(false)} id="contact" className="menu-item" href="/gottsnackteam">Hela gänget</a>
+    </Menu>
+  )
+}
+
+export default HamburgerMenu

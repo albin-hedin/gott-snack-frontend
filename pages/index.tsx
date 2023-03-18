@@ -16,12 +16,9 @@ const Home = () => {
         backgroundRepeat: 'no-repeat',
         backgroundSize: '100%'
       }}>
-        <h1 className='lg:text-5xl md:text-3xl text-sm lg:mt-5 md:mt-3 mt-1 start-page-title'>
-          GRÄNSLÖS MORGONRADIO
+        <h1 className='lg:text-6xl md:text-4xl text-xl lg:mt-5 md:mt-3 mt-2 start-page-title'>
+          Gott snack morgonradio
         </h1>
-        <h2 className='lg:text-3xl md:text-sm text-xs lg:mt-0 md:mt-1  xs:mt-0 font-sans'>
-          Live alla vardagar mellan 8 och 10
-        </h2>
       </div>
       <Divider className='my-8 mx-64' />
       <ListenLive />

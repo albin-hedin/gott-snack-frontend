@@ -1,3 +1,4 @@
+import Favicon from '@/components/Favicon'
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -8,6 +9,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='anonymous' />
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet" />
+        <Favicon />
       </Head>
       <body>
         <Main />
