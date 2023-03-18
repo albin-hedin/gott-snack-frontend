@@ -20,7 +20,7 @@ const HamburgerMenu = () => {
       isOpen={menuOpen}
       width={300}>
       <Link onClick={() => setMenuOpen(false)} id="home" className="menu-item" href="/">Home</Link>
-      <a onClick={() => setMenuOpen(false)} id="contact" className="menu-item" href="/gottsnackteam">Hela gänget</a>
+      <Link onClick={() => setMenuOpen(false)} id="contact" className="menu-item" href="/gottsnackteam">Hela gänget</Link>
     </Menu>
   )
 }
