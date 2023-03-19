@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (<>
-    <Divider className='my-5 mx-64' />
+    <Divider />
     <footer className="paddingX flex pt-12 pb-6 justify-between">
       <div className='grid grid-cols-1 text-xs md:text-sm'>
         &copy; Bing bong AB
@@ -17,7 +17,7 @@ const Footer = () => {
             width={40}
             height={40} />
         </a>
-        <a href='https://www.patreon.com/gottsnack/' target='_blank'title='Gott snack Patreon'>
+        <a href='https://www.patreon.com/gottsnack/' target='_blank' title='Gott snack Patreon'>
           <Image
             className='rounded-xl'
             src='/patreon.png'
