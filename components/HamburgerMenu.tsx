@@ -5,14 +5,6 @@ import { useState } from 'react'
 const HamburgerMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const closeMenu = () => {
-    setMenuOpen(false)
-  }
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
-
   return (
     <Menu
       onClose={() => setMenuOpen(false)}
