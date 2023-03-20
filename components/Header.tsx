@@ -15,7 +15,7 @@ const Header = () => {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}>
-        <h1 className='lg:text-6xl md:text-4xl text-xl lg:mt-5 md:mt-3 mt-2 start-page-title'>
+        <h1 className='lg:text-7xl md:text-5xl text-2xl lg:mt-5 md:mt-3 mt-2 start-page-title'>
           <Link className='hover:!no-underline' href="/">
             <span className='hover:opacity-80'>
               Gott snack morgonradio

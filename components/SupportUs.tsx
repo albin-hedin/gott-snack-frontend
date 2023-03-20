@@ -1,10 +1,11 @@
-import Image from 'next/image'
 import PatreonButton from './PatreonButton'
 import SectionHeader from './SectionHeader'
 
 const SupportUs = () => {
   return (
-    <div className='text-center flex flex-col items-center bg-slate-600'>
+    <div className='text-center flex flex-col items-center' style={{
+      backgroundColor: '#282828'
+    }}>
       <div className='mt-2'>
         <SectionHeader text='Stötta oss' />
       </div>
