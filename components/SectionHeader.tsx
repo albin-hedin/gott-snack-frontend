@@ -1,8 +1,6 @@
 const SectionHeader = ({ text }: { text: string }) => {
   return (
-    <h1 style={{
-      color: 'rgb(116, 114, 114)'
-    }} className='lg:text-5xl md:text-4xl text-2xl roboto-font mb-3'>
+    <h1 className='lg:text-5xl md:text-4xl text-2xl roboto-font my-3 text-white'>
       {text}
     </h1>
   )

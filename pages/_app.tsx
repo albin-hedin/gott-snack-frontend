@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import MainLayout from '../components/MainLayout'
 import Footer from '@/components/Footer'
-import HamburgerMenu from '@/components/HamburgerMenu'
+import Header from '@/components/Header'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
         </title>
       </Head>
       <div className='flex flex-col min-h-screen'>
+        <Header />
         <MainLayout>
-          <HamburgerMenu />
           <Component {...pageProps} />
         </MainLayout>
         <Footer />
