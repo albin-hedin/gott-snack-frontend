@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (<>
     <Divider />
-    <footer className="paddingX flex pt-12 pb-6 justify-between">
+    <footer className="paddingX flex mt-4 pb-6 justify-between">
       <div className='grid grid-cols-1 text-xs md:text-sm'>
         &copy; Bing bong AB
       </div>
