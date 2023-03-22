@@ -16,20 +16,53 @@ const Gottsnackteam = () => {
           Gott snack behövs för att människor som inte passar in i public service eller de kommersiella kanalernas likriktade mallar också ska få en chans att säga sin mening och få höras i etern. Hur dessa människor ser ut, var de kommer från, hur gamla de är spelar ingen roll, vi vill ha en mix av människor från från alla samhällsskikt i mitt program.
         </div>
       </div>
-      <div className='flex flex-col items-center'>
-        <div className='flex flex-row'>
+      <div className='flex flex-col items-center mx-4'>
+        <div className='flex flex-row mb-6'>
           <ImageWithTitle
             title='Fredrik'
-            linkUrl='/portraits/FREDRIK-kopia-1097x1536.jpg' />
+            picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
+            linkUrl='/fredrik#top' />
           <ImageWithTitle
-            title='Max'
-            linkUrl='/portraits/MAX-1-kopia-732x1024.jpg' />
+            title='Agust'
+            picUrl='/portraits/AUGUST-kopia-1097x1536.jpg' />
           <ImageWithTitle
             title='Ploj'
-            linkUrl='/portraits/PLOJ-kopia-1097x1536.jpg' />
+            picUrl='/portraits/PLOJ-kopia-1097x1536.jpg' />
           <ImageWithTitle
             title='Tora'
-            linkUrl='/portraits/TORA-kopia-1097x1536.jpg' />
+            picUrl='/portraits/TORA-kopia-1097x1536.jpg' />
+        </div>
+        <div className='flex flex-row mb-6'>
+          <ImageWithTitle
+            title='Max'
+            picUrl='/portraits/MAX-1-kopia-732x1024.jpg'
+            linkUrl='/max#top' />
+          <ImageWithTitle
+            title='Jesper'
+            picUrl='/portraits/JESPER-kopia-1097x1536.jpg'
+            linkUrl='/jesper#top' />
+          <ImageWithTitle
+            title='Micke'
+            picUrl='/portraits/MICKE-kopia-1097x1536.jpg' />
+          <ImageWithTitle
+            title='Fanny'
+            picUrl='/portraits/FANNY-kopia-1628x2048.jpeg' />
+        </div>
+        <div className='flex flex-row'>
+        <ImageWithTitle
+            title='Petrina'
+            picUrl='/portraits/PETRINA_Gott_Snack_PORTRAIT_3739_LOW_RES.jpg' />
+          <ImageWithTitle
+            title='Andre'
+            picUrl='/portraits/ANDRE-kopia-1097x1536.jpg'
+            linkUrl='/max#top' />
+          <ImageWithTitle
+            title='Ella'
+            picUrl='/portraits/ELLA-kopia-1097x1536.jpg'
+            linkUrl='/jesper#top' />
+          <ImageWithTitle
+            title='Hampus'
+            picUrl='/portraits/HAMPUS-kopia-1097x1536.jpg' />
         </div>
       </div>
     </>

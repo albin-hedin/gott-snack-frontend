@@ -3,7 +3,7 @@ import LargeHeader from '@/components/LargeHeader'
 
 const JesperAbout = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div id='top' className='flex flex-col items-center'>
       <div className='text-center mb-10'>
         <LargeHeader headerText='Fredrik "Geniet" Söderholm' />
         <div className='px-44'>
@@ -12,7 +12,7 @@ const JesperAbout = () => {
       </div>
       <ImageWithTitle
         title=''
-        linkUrl='/portraits/FREDRIK-kopia-1097x1536.jpg' />
+        picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg' />
     </div>
   )
 }

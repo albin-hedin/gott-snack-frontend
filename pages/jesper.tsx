@@ -1,9 +1,9 @@
 import LargeHeader from '@/components/LargeHeader'
-import Image from 'next/image'
+import ImageWithTitle from '@/components/ImageWithTitle'
 
 const JesperAbout = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div id='top' className='flex flex-col items-center'>
       <div className='text-center mb-10'>
         <LargeHeader headerText='Jesper Ekstedt' />
         <div className='px-44'>
@@ -14,12 +14,9 @@ const JesperAbout = () => {
         display: 'inline-block',
         backgroundPosition: 'center',
       }}>
-        <Image
-        className='rounded-lg'
-          src='/jesper.jpg'
-          alt=''
-          width={300}
-          height={300} />
+   <ImageWithTitle
+        title=''
+        picUrl='/portraits/JESPER-kopia-1097x1536.jpg' />
       </div></div>
   )
 }
