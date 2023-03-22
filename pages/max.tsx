@@ -6,7 +6,7 @@ const JesperAbout = () => {
     <div id='top' className='flex flex-col items-center'>
       <div className='text-center mb-10'>
         <LargeHeader headerText='Max Söderholm' />
-        <div className='px-44'>
+        <div className='md:px-44 px-4'>
           Max Söderholm, bror till Fredrik, från Stockholm sidekickar i programmet. Han jobbar även på SL men extraknäcker inte som personlig kundservice! Max är även basist i Division 7.
         </div>
       </div>

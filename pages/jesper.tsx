@@ -6,7 +6,7 @@ const JesperAbout = () => {
     <div id='top' className='flex flex-col items-center'>
       <div className='text-center mb-10'>
         <LargeHeader headerText='Jesper Ekstedt' />
-        <div className='px-44'>
+        <div className='md:px-44 px-4'>
           Juriststudent från Stockholm, sidekickar i programmet. Jesper briljerar med sina kunskaper om det mesta och bjuder ofta på topplistor med blandat innehåll
         </div>
       </div>
