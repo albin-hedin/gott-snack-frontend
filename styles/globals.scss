@@ -46,11 +46,12 @@ a {
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline !important;
+    text-decoration: none !important;
+    opacity: 0.7;
   }
 
   &.persistent {
-    text-decoration: underline !important;
+    text-decoration: none !important;
   }
 }
 

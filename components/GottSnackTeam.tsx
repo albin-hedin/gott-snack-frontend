@@ -4,7 +4,7 @@ import ImageWithTitle from './ImageWithTitle'
 const Gottsnackteam = () => {
   return (
     <>
-      <div className='mb-10 flex flex-col items-center md:mx-20 mx-4'>
+      <div className='flex flex-col items-center md:mx-20 mx-4'>
         <LargeHeader headerText='Gott snack gänget' />
         <div className='text-center max-w-5xl mb-6'>
           Gott Snack grundades av Fredrik Geniet Söderholm år 2020. Projektet drogs igång med ambitionen att sända ofiltrerad och gränslös morgonradio – på Geniets sätt.
