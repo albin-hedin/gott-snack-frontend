@@ -17,7 +17,7 @@ const ListenLive = () => {
             <MixlrPlayer />
             <div className='flex flex-row mt-2'>
               <div className='mr-1'>
-                <a href="https://play.google.com/store/apps/details?id=com.mixlr.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target='_blank'>
+                <a  style={{ height: "auto" }} href="https://play.google.com/store/apps/details?id=com.mixlr.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target='_blank'>
                   <Image
                     src='/androidstore.png'
                     alt=''
@@ -26,7 +26,7 @@ const ListenLive = () => {
                 </a>
               </div>
               <div>
-                <a href="https://apps.apple.com/se/app/mixlr-social-live-audio/id583705714?fbclid=IwAR3afb1zKBIfucv7C_1R-ML_hhlnMP6YJzyh6fK7JksL9WYXnzhuZH2wiEg" target='_blank'>
+                <a  style={{ height: "auto" }} href="https://apps.apple.com/se/app/mixlr-social-live-audio/id583705714?fbclid=IwAR3afb1zKBIfucv7C_1R-ML_hhlnMP6YJzyh6fK7JksL9WYXnzhuZH2wiEg" target='_blank'>
                   <Image
                     src='/applestore.png'
                     alt=''

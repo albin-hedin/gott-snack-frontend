@@ -17,7 +17,7 @@ const Gottsnackteam = () => {
         </div>
       </div>
       <div className='flex flex-col items-center mx-4'>
-        <div className='flex flex-row mb-6'>
+        <div style={{width: "auto"}} className='flex flex-row mb-6'>
           <ImageWithTitle
             title='Fredrik'
             picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
