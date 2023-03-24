@@ -10,7 +10,7 @@ const Footer = () => {
           &copy; Bing bong AB
         </div>
         <div className='flex flex-row'>
-          <a href='https://www.instagram.com/gottsnackradio/?hl=en' target='_blank' title='Gott snack Instagram'>
+          <a href='https://www.instagram.com/gottsnackradio/?hl=en' target='_blank' title='Instagram'>
             <Image
               className='rounded-xl'
               src='/instagram-logo.jpg'
@@ -18,7 +18,7 @@ const Footer = () => {
               width={40}
               height={40} />
           </a>
-          <a className='ml-2' href='https://www.patreon.com/gottsnack/' target='_blank' title='Gott snack Patreon'>
+          <a className='ml-2' href='https://www.patreon.com/gottsnack/' target='_blank' title='Patreon'>
             <Image
               className='rounded-xl'
               src='/patreon.png'
@@ -26,7 +26,7 @@ const Footer = () => {
               width={40}
               height={40} />
           </a>
-          <a className='ml-2' href='https://gott-snack.mixlr.com/' target='_blank' title='Gott snack mixlr'>
+          <a className='ml-2' href='https://gott-snack.mixlr.com/' target='_blank' title='Mixlr'>
             <Image
               className='rounded-xl'
               src='/mixlr-logo.png'
