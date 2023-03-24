@@ -16,7 +16,7 @@ const RandomQuote = () => {
   }
 
   const quotes = [
-    '"Jesper: Don\'t continue please"',
+    'Jesper: "Don\'t continue please"',
     '"Gott, gott, gottigott gott snack"',
     'Nanna Olasdotter: "Jag rökte spice innan det var farligt"',
     'Micke till KonstAB: "Är ni ironiska?" KonstAB: "Suck"',
