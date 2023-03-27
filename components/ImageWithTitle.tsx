@@ -3,15 +3,15 @@ import SmallHeader from './SmallHeader'
 import Image from 'next/image'
 
 const ImageWithTitle = (
-  { title, picUrl, linkUrl }:
-    { title?: string, picUrl: string, linkUrl?: string }) => {
+  { title, picUrl, linkUrl, forceSize }:
+    { title?: string, picUrl: string, linkUrl?: string, forceSize?: boolean }) => {
 
   const renderImage = (): JSX.Element => {
     if (linkUrl) {
       return (
         <Link href={linkUrl}>
           <Image
-            className='rounded-full mr-4'
+            className={`rounded-full mr-4 ${forceSize ? 'image-force-size' : ''}`}
             src={picUrl}
             alt=''
             width={200}
@@ -21,7 +21,7 @@ const ImageWithTitle = (
     } else {
       return (
         <Image
-          className='rounded-full mr-4'
+          className={`rounded-full mr-4 ${forceSize ? 'image-force-size' : ''}`}
           src={picUrl}
           alt=''
           width={200}

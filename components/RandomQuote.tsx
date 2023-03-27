@@ -16,18 +16,18 @@ const RandomQuote = () => {
   }
 
   const quotes = [
-    'Jesper: "Don\'t continue please"',
-    '"Gott, gott, gottigott gott snack"',
-    'Nanna Olasdotter: "Jag rökte spice innan det var farligt"',
+    '"Don\'t continue please" - Jesper',
+    '"Gott gott gottigott, gott snack"',
+    '"Jag rökte spice innan det var farligt" - Nanna Olasdotter',
     'Micke till KonstAB: "Är ni ironiska?" KonstAB: "Suck"',
-    'Patrik Lundberg på internationella kvinnodagen: "Vem fan vill suga av mig?"',
-    'Marit Bergman: "Jag är inte direkt ensam om att ha legat med Håkan Hellström"',
+    '"Vem fan vill suga av mig?" - Patrik Lundberg på internationella kvinnodagen',
+    '"Jag är inte direkt ensam om att ha legat med Håkan Hellström" - Marit Bergman',
     '"Håll käften och kör köttnacke"',
-    'Stefan Ekengren: "Det fanns många idéer... men det landade i potatis"',
-    'Polyfamiljen: "Vår första trekant var i bastun"',
-    'Dregen om Hellacopters: "Vi knullar inte längre"',
+    '"Det fanns många idéer... men det landade i potatis" - Stefan Ekengren',
+    '"Vår första trekant var i bastun" - Polyfamiljen',
+    '"Vi knullar inte längre" - Dregen om Hellacopter',
     '"Fortsätt ge tillstånd att bränna koranen, eventuellt"',
-    'Stefan Ekengren: "ja så är det, ah det är så, ja det är bra"'
+    '"ja så är det, ah det är så, ja det är bra" - Stefan Ekengren'
   ];
 
   return (

@@ -36,7 +36,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='text-xs md:text-sm'>
-          v 0.1.0
+          v 0.2.0
         </div>
       </div>
     </footer></>

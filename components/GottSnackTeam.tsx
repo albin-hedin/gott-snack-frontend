@@ -17,7 +17,7 @@ const Gottsnackteam = () => {
         </div>
       </div>
       <div className='flex flex-col items-center mx-4'>
-        <div style={{width: "auto"}} className='flex flex-row mb-6'>
+        <div className='flex flex-row mb-6'>
           <ImageWithTitle
             title='Fredrik'
             picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
@@ -46,10 +46,11 @@ const Gottsnackteam = () => {
             picUrl='/portraits/MICKE-kopia-1097x1536.jpg' />
           <ImageWithTitle
             title='Fanny'
-            picUrl='/portraits/FANNY-kopia-1628x2048.jpeg' />
+            picUrl='/portraits/FANNY-kopia-1628x2048.jpeg'
+            forceSize={true} />
         </div>
         <div className='flex flex-row'>
-        <ImageWithTitle
+          <ImageWithTitle
             title='Petrina'
             picUrl='/portraits/PETRINA_Gott_Snack_PORTRAIT_3739_LOW_RES.jpg' />
           <ImageWithTitle
