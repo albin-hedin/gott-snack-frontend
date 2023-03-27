@@ -21,9 +21,9 @@ const AboutModal = (
       <div className="fixed inset-0 flex items-center justify-center">
         <Dialog.Panel className="max-w-3xl rounded bg-gray-300">
         <div className='relative border-4 border-white rounded'>
-            <button className='absolute top-0 right-0 pr-2 pt-2 hover:opacity-50' onClick={() => handleModalClick(false)}>
+            <button className='absolute top-0 right-0 pr-2 pt-2 hover:opacity-50 outline-none' onClick={() => handleModalClick(false)}>
               <Image
-                src={'/close-outline.svg'}
+                src={'/close.svg'}
                 alt="test"
                 width={50}
                 height={50} />
