@@ -1,7 +1,7 @@
 import LargeHeader from '@/components/LargeHeader'
 import ImageWithTitle from './ImageWithTitle'
 
-const Gottsnackteam = () => {
+const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Element => {
   return (
     <>
       <div className='flex flex-col items-center md:mx-20 mx-4'>
@@ -21,7 +21,11 @@ const Gottsnackteam = () => {
           <ImageWithTitle
             title='Fredrik'
             picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
-            linkUrl='/fredrik#top' />
+            onClick={() => handleModalClick(
+              true,
+              'Fredrik Söderholm',
+              '/portraits/FREDRIK-kopia-1097x1536.jpg',
+              'Fredrik Geniet Söderholm grundade Gott Snack med ambitionen att göra morgonradio på sitt sätt. \n \nTidigare känd från Sveriges Radio och har efter Gott Snacks framfart också gjort poddar som Sorry - Allt gick åt helvete med Ola Rapace, Schulman och Geniet med Calle Schulman och den nya klockdotterpodden till Gott Snack- Ur-Gott Snack. Geniet programleder livesändningarna i Gott Snack.\n')} />
           <ImageWithTitle
             title='Agust'
             picUrl='/portraits/AUGUST-kopia-1097x1536.jpg' />
@@ -36,11 +40,19 @@ const Gottsnackteam = () => {
           <ImageWithTitle
             title='Max'
             picUrl='/portraits/MAX-1-kopia-732x1024.jpg'
-            linkUrl='/max#top' />
+            onClick={() => handleModalClick(
+              true,
+              'Max Söderholm',
+              '/portraits/MAX-1-kopia-732x1024.jpg',
+              'Max Söderholm, bror till Fredrik, från Stockholm sidekickar i programmet. Han jobbar även på SL men extraknäcker inte som personlig kundservice! Max är även basist i Division 7.')} />
           <ImageWithTitle
             title='Jesper'
             picUrl='/portraits/JESPER-kopia-1097x1536.jpg'
-            linkUrl='/jesper#top' />
+            onClick={() => handleModalClick(
+              true,
+              'Jesper Ekstedt',
+              '/portraits/JESPER-kopia-1097x1536.jpg',
+              'Juriststudent från Stockholm, sidekickar i programmet. Jesper briljerar med sina kunskaper om det mesta och bjuder ofta på topplistor med blandat innehåll')} />
           <ImageWithTitle
             title='Micke'
             picUrl='/portraits/MICKE-kopia-1097x1536.jpg' />
@@ -55,12 +67,10 @@ const Gottsnackteam = () => {
             picUrl='/portraits/PETRINA_Gott_Snack_PORTRAIT_3739_LOW_RES.jpg' />
           <ImageWithTitle
             title='Andre'
-            picUrl='/portraits/ANDRE-kopia-1097x1536.jpg'
-            linkUrl='/max#top' />
+            picUrl='/portraits/ANDRE-kopia-1097x1536.jpg' />
           <ImageWithTitle
             title='Ella'
-            picUrl='/portraits/ELLA-kopia-1097x1536.jpg'
-            linkUrl='/jesper#top' />
+            picUrl='/portraits/ELLA-kopia-1097x1536.jpg'/>
           <ImageWithTitle
             title='Hampus'
             picUrl='/portraits/HAMPUS-kopia-1097x1536.jpg' />

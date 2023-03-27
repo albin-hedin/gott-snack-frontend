@@ -2,7 +2,7 @@ import Image from 'next/image'
 import MixlrPlayer from './MixlrPlayer'
 import SpotifyPlayer from '@/components/SpotifyPlayer'
 
-const ListenLive = () => {
+const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.Element => {
   return (
     <div>
       <div className='mb-5 mx-3'>
@@ -17,7 +17,7 @@ const ListenLive = () => {
             <MixlrPlayer />
             <div className='flex flex-row mt-2'>
               <div className='mr-1'>
-                <a  style={{ height: "auto" }} href="https://play.google.com/store/apps/details?id=com.mixlr.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target='_blank'>
+                <a style={{ height: "auto" }} href="https://play.google.com/store/apps/details?id=com.mixlr.android&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target='_blank'>
                   <Image
                     src='/androidstore.png'
                     alt=''
@@ -26,7 +26,7 @@ const ListenLive = () => {
                 </a>
               </div>
               <div>
-                <a  style={{ height: "auto" }} href="https://apps.apple.com/se/app/mixlr-social-live-audio/id583705714?fbclid=IwAR3afb1zKBIfucv7C_1R-ML_hhlnMP6YJzyh6fK7JksL9WYXnzhuZH2wiEg" target='_blank'>
+                <a style={{ height: "auto" }} href="https://apps.apple.com/se/app/mixlr-social-live-audio/id583705714?fbclid=IwAR3afb1zKBIfucv7C_1R-ML_hhlnMP6YJzyh6fK7JksL9WYXnzhuZH2wiEg" target='_blank'>
                   <Image
                     src='/applestore.png'
                     alt=''
@@ -39,8 +39,12 @@ const ListenLive = () => {
           <div >
             <SpotifyPlayer />
           </div>
-          <div className=''>
+          <div className='flex flex-col items-center'>
             <Image
+              className='link
+              pointer-events-none
+              md:pointer-events-auto'
+              onClick={() => handlePicModalClick(true)}
               src='/senaste.jpg'
               alt=''
               width={465}
