@@ -55,10 +55,7 @@ a {
 }
 
 .image-force-size {
-  display: block;
-  max-width: 222px;
-  max-height: 200;
-  width: 100%;
+  min-width: 100%;
   height: auto;
 }
 
