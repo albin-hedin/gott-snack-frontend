@@ -25,7 +25,8 @@ const ImageWithTitle = (
           src={picUrl}
           alt=''
           width={200}
-          height={200} />)
+          height={200} />
+      )
     }
   }
   return (
