@@ -1,8 +1,29 @@
 import Image from 'next/image'
 import MixlrPlayer from './MixlrPlayer'
 import SpotifyPlayer from '@/components/SpotifyPlayer'
+import { useEffect, useState } from 'react'
+import cosmic from 'cosmicjs'
 
 const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.Element => {
+  const [weeklySchedulePicUrl, setWeeklySchedulePicUrl] = useState('')
+
+  useEffect(() => {
+    (async () => {
+      const cosmicApi = cosmic()
+      const bucket = cosmicApi.bucket({
+        slug: 'gottsnack-fe-production',
+        read_key: 'P8TfyJeSr2c6W7eMBRuoRXfUes72duVLbFsJ9VaRLcSro2NWDv'
+      })
+
+      const data = await bucket.objects.find({
+        type: 'weekly-schedule',
+        slug: 'la'
+      })
+
+      setWeeklySchedulePicUrl(data?.objects[0]?.metadata?.weeklyschedule.url)
+    })()
+  })
+
   return (
     <div>
       <div className='mb-5 mx-3'>
@@ -44,8 +65,8 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
               className='link
               pointer-events-none
               md:pointer-events-auto'
-              onClick={() => handlePicModalClick(true)}
-              src='/senaste.jpg'
+              onClick={() => handlePicModalClick(true, weeklySchedulePicUrl)}
+              src={weeklySchedulePicUrl}
               alt=''
               width={465}
               height={1000} />
