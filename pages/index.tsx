@@ -8,13 +8,17 @@ import { useState } from 'react'
 
 const Home = () => {
   const [picModalOpen, setPicModalOpen] = useState(false);
+  const [picModalPicUrl, setPicModalPicUrl] = useState('');
   const [aboutModalOpen, setAboutModalOpen] = useState(false);
   const [aboutModaHeaderText, setAboutModalHeaderText] = useState('');
   const [aboutModalImageUrl, setAboutModalImageUrl] = useState('');
   const [aboutModalBreadText, setAboutModalBreadText] = useState('');
 
-  const setPicModalVisable = (isOpen: boolean): void => {
+  const setPicModalVisable = (
+    isOpen: boolean,
+    picUrl: string): void => {
     setPicModalOpen(isOpen)
+    setPicModalPicUrl(picUrl)
   }
 
   const handleAboutModalClick = (
@@ -44,7 +48,7 @@ const Home = () => {
       <PicModal
         handlePicModalClick={setPicModalVisable}
         modalVisable={picModalOpen}
-        imageUrl='/senaste.jpg' />
+        imageUrl={picModalPicUrl} />
       <AboutModal
         modalVisable={aboutModalOpen}
         handleModalClick={handleAboutModalClick}
