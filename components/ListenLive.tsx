@@ -20,7 +20,7 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
         slug: 'la'
       })
 
-      setWeeklySchedulePicUrl(data?.objects[0]?.metadata?.weeklyschedule.url)
+      setWeeklySchedulePicUrl(data?.objects[0]?.metadata?.weeklyschedule.url ?? '/senaste.jpg')
     })()
   })
 
