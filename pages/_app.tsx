@@ -9,28 +9,27 @@ import Script from 'next/script'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* !-- Google tag (gtag.js) */}
-      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX" />
-      <Script
-        id='google-analytics'
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-XXXXXXX', {
-page_path: window.location.pathname,
-});
-`,
-        }}
-      />
-
       <Head>
         <title>
           Gott snack morgonradio
         </title>
+        {/* !-- Google tag (gtag.js) */}
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-6NW5E5W6BV`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag(‘js’, new Date());
+    gtag(‘config’, ‘G-6NW5E5W6BV,{
+        page_path: window.location.pathname,
+      }) `,
+          }}
+        />
       </Head>
+
       <div className='flex flex-col min-h-screen'>
         <Header />
         <MainLayout>
