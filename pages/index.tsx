@@ -11,7 +11,7 @@ const Home = () => {
   const [picModalPicUrl, setPicModalPicUrl] = useState('');
   const [aboutModalOpen, setAboutModalOpen] = useState(false);
   const [aboutModalCoworker, setAboutModalCoworker] = useState('');
-  const [aboutModalImageUrl, setAboutModalImageUrl] = useState('');
+  const [aboutModalInstaUrl, setAboutModalInstaUrl] = useState('');
 
   const setPicModalVisable = (
     isOpen: boolean,
@@ -23,10 +23,10 @@ const Home = () => {
   const handleAboutModalClick = (
     isOpen: boolean,
     coWorker?: string,
-    imageUrl?: string): void => {
+    instaUrl?: string): void => {
     setAboutModalOpen(isOpen)
     setAboutModalCoworker(coWorker ?? '')
-    setAboutModalImageUrl(imageUrl ?? '')
+    setAboutModalInstaUrl(instaUrl ?? '')
   }
 
   return (
@@ -50,7 +50,7 @@ const Home = () => {
         modalVisable={aboutModalOpen}
         handleModalClick={handleAboutModalClick}
         coWorker={aboutModalCoworker}
-        imageUrl={aboutModalImageUrl}
+        instaProfileUrl={aboutModalInstaUrl}
       />
     </>
   )
