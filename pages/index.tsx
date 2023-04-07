@@ -10,9 +10,8 @@ const Home = () => {
   const [picModalOpen, setPicModalOpen] = useState(false);
   const [picModalPicUrl, setPicModalPicUrl] = useState('');
   const [aboutModalOpen, setAboutModalOpen] = useState(false);
-  const [aboutModaHeaderText, setAboutModalHeaderText] = useState('');
+  const [aboutModalCoworker, setAboutModalCoworker] = useState('');
   const [aboutModalImageUrl, setAboutModalImageUrl] = useState('');
-  const [aboutModalBreadText, setAboutModalBreadText] = useState('');
 
   const setPicModalVisable = (
     isOpen: boolean,
@@ -23,13 +22,11 @@ const Home = () => {
 
   const handleAboutModalClick = (
     isOpen: boolean,
-    headerText?: string,
-    imageUrl?: string,
-    breadText?: string): void => {
+    coWorker?: string,
+    imageUrl?: string): void => {
     setAboutModalOpen(isOpen)
-    setAboutModalHeaderText(headerText ?? '')
+    setAboutModalCoworker(coWorker ?? '')
     setAboutModalImageUrl(imageUrl ?? '')
-    setAboutModalBreadText(breadText ?? '')
   }
 
   return (
@@ -52,9 +49,8 @@ const Home = () => {
       <AboutModal
         modalVisable={aboutModalOpen}
         handleModalClick={handleAboutModalClick}
-        headerText={aboutModaHeaderText}
+        coWorker={aboutModalCoworker}
         imageUrl={aboutModalImageUrl}
-        breadText={aboutModalBreadText}
       />
     </>
   )

@@ -3,8 +3,8 @@ import SmallHeader from './SmallHeader'
 import Image from 'next/image'
 
 const ImageWithTitle = (
-  { title, picUrl, onClick, forceSize }:
-    { title?: string, picUrl: string, onClick?: any, forceSize?: boolean }) => {
+  { title, picUrl, onClick, forceSize, small }:
+    { title?: string, picUrl: string, onClick?: any, forceSize?: boolean, small?: boolean }) => {
 
   const renderImage = (): JSX.Element => {
     if (onClick) {
@@ -14,8 +14,8 @@ const ImageWithTitle = (
             className={`rounded-full mr-4 ${forceSize ? 'image-force-size' : ''}`}
             src={picUrl}
             alt=''
-            width={200}
-            height={200} />
+            width={small ? 175 : 200}
+            height={small ? 170 : 200} />
         </div>
       )
     } else {
@@ -24,8 +24,8 @@ const ImageWithTitle = (
           className={`rounded-full mr-4 ${forceSize ? 'image-force-size' : ''}`}
           src={picUrl}
           alt=''
-          width={200}
-          height={200} />
+          width={small ? 175 : 200}
+          height={small ? 170 : 200} />
       )
     }
   }
