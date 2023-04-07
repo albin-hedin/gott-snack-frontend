@@ -73,8 +73,8 @@ const AboutModal = (
               <Image
                 src={'/close.svg'}
                 alt="test"
-                width={50}
-                height={50} />
+                width={30}
+                height={30} />
             </button>
             <div className='flex flex-col items-center'>
               <div className='
