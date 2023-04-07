@@ -5,7 +5,7 @@ const LargeHeader = (
       blackText?: boolean
     }) => {
   return (
-    <h1 className={`lg:text-6xl md:text-4xl text-xl lg:mt-5 md:mt-3 mt-1 pb-5 start-page-title ${blackText ? 'text-black' : 'text-white'}`}>
+    <h1 className={`lg:text-6xl md:text-4xl text-xl lg:mt-5 md:mt-3 mt-1 pb-5 font-fredoka ${blackText ? 'text-black' : 'text-white'}`}>
       {headerText}
     </h1>
   )

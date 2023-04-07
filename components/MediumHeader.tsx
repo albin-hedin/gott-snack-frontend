@@ -13,7 +13,7 @@ const MediumHeader = (
     md:mt-3
     mt-1
     pb-5
-    start-page-title 
+    font-fredoka 
     ${blackText ? 'text-black' : 'text-white'}`}>
       {headerText}
     </h1>

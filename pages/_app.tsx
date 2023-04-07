@@ -13,23 +13,21 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>
           Gott snack morgonradio
         </title>
-        {/* !-- Google tag (gtag.js) */}
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-6NW5E5W6BV`}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag(‘js’, new Date());
-    gtag(‘config’, ‘G-6NW5E5W6BV,{
-        page_path: window.location.pathname,
-      }) `,
-          }}
-        />
       </Head>
+      {/* !-- Global site tag (gtag.js) - Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-6NW5E5W6BV"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'G-6NW5E5W6BV');
+        `}
+      </Script>
       <div className='flex flex-col min-h-screen'>
         <Header />
         <MainLayout>
