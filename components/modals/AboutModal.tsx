@@ -38,15 +38,27 @@ const AboutModal = (
   }
 
   const renderInsta = (): JSX.Element => {
-    return (
-      <a className='pl-3' href={instaProfileUrl} target='_blank' title='Instagram'>
-        <Image
-          className='rounded-xl'
-          src='/instagram-logo.jpg'
-          alt=''
-          width={40}
-          height={40} />
-      </a>)
+    if (isMobile) {
+      return (
+        <a className='pl-1' href={instaProfileUrl} target='_blank' title='Instagram'>
+          <Image
+            className='rounded-xl'
+            src='/instagram-logo.jpg'
+            alt=''
+            width={20}
+            height={20} />
+        </a>)
+    } else {
+      return (
+        <a className='pl-3' href={instaProfileUrl} target='_blank' title='Instagram'>
+          <Image
+            className='rounded-xl'
+            src='/instagram-logo.jpg'
+            alt=''
+            width={40}
+            height={40} />
+        </a>)
+    }
   }
 
   const currentCoWorker = (): any | undefined => {
@@ -57,7 +69,7 @@ const AboutModal = (
       <div className="fixed inset-0 flex items-center justify-center">
         <Dialog.Panel className="max-w-3xl rounded bg-gray-300">
           <div className='relative border-4 border-white rounded'>
-            <button className='absolute top-0 right-0 pr-2 hover:opacity-50 outline-none' onClick={() => handleModalClick(false)}>
+            <button className='absolute top-0 right-0 md:pr-2 pr-0 hover:opacity-50 outline-none' onClick={() => handleModalClick(false)}>
               <Image
                 src={'/close.svg'}
                 alt="test"
@@ -65,7 +77,14 @@ const AboutModal = (
                 height={50} />
             </button>
             <div className='flex flex-col items-center'>
-              <div className='flex flex-row items-center text-center'>
+              <div className='
+              flex
+              flex-row
+              text-center
+              lg:mt-5
+              md:mt-3
+              mt-1
+              pb-5'>
                 <MediumHeader
                   headerText={`${currentCoWorker()?.name} (${currentCoWorker()?.age})`}
                   blackText={true} />
