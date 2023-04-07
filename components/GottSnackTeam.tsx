@@ -24,28 +24,28 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             onClick={() => handleModalClick(
               true,
               'fredrik',
-              '/portraits/FREDRIK-kopia-1097x1536.jpg')} />
+              'https://www.instagram.com/genietsoderholm/')} />
           <ImageWithTitle
             title='Agust'
             picUrl='/portraits/AUGUST-kopia-1097x1536.jpg'
             onClick={() => handleModalClick(
               true,
               'agge',
-              '/portraits/AUGUST-kopia-1097x1536.jpg')} />
+              'https://www.instagram.com/aggeinthehus/')} />
           <ImageWithTitle
             title='Ploj'
             picUrl='/portraits/PLOJ-kopia-1097x1536.jpg'
             onClick={() => handleModalClick(
               true,
               'ploj',
-              '/portraits/PLOJ-kopia-1097x1536.jpg')} />
+              'https://www.instagram.com/rikardploj/')} />
           <ImageWithTitle
             title='Tora'
             picUrl='/portraits/TORA-kopia-1097x1536.jpg' 
             onClick={() => handleModalClick(
               true,
               'tora',
-              '/portraits/TORA-kopia-1097x1536.jpg')}/>
+              'https://www.instagram.com/10gemensamma/')}/>
         </div>
         <div className='flex flex-row mb-6'>
           <ImageWithTitle
@@ -54,21 +54,21 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             onClick={() => handleModalClick(
               true,
               'max',
-              '/portraits/MAX-1-kopia-732x1024.jpg')} />
+              'https://www.instagram.com/seniorsoderholm/')} />
           <ImageWithTitle
             title='Jesper'
             picUrl='/portraits/JESPER-kopia-1097x1536.jpg'
             onClick={() => handleModalClick(
               true,
               'jesper',
-              '/portraits/JESPER-kopia-1097x1536.jpg')} />
+              'https://www.instagram.com/jesperekstedt/')} />
           <ImageWithTitle
             title='Micke'
             picUrl='/portraits/MICKE-kopia-1097x1536.jpg'
             onClick={() => handleModalClick(
               true,
               'micke',
-              '/portraits/MICKE-kopia-1097x1536.jpg')} />
+              'https://www.instagram.com/mikaelljungberg_/')} />
           <ImageWithTitle
             title='Fanny'
             picUrl='/portraits/FANNY-kopia-1628x2048.jpeg'
@@ -76,7 +76,7 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             onClick={() => handleModalClick(
               true,
               'fanny',
-              '/portraits/FANNY-kopia-1628x2048.jpeg')} />
+              'https://www.instagram.com/tjafanny/')} />
         </div>
         <div className='flex flex-row'>
           <ImageWithTitle
@@ -85,14 +85,14 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             onClick={() => handleModalClick(
               true,
               'petrina',
-              '/portraits/PETRINA_Gott_Snack_PORTRAIT_3739_LOW_RES.jpg')} />
+              'https://www.instagram.com/petrinahinas/')} />
           <ImageWithTitle
             title='Andre'
             picUrl='/portraits/ANDRE-kopia-1097x1536.jpg'
             onClick={() => handleModalClick(
               true,
               'andre',
-              '/portraits/ANDRE-kopia-1097x1536.jpg')}  />
+              'https://www.instagram.com/andreperssooon/')}  />
           <ImageWithTitle
             small={true}
             title='Tore'
@@ -100,7 +100,7 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             onClick={() => handleModalClick(
               true,
               'tore',
-              '/portraits/tore.png')} />
+              'https://www.instagram.com/torekullgren/')} />
         </div>
       </div>
     </>

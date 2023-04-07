@@ -7,12 +7,12 @@ const AboutModal = (
   { handleModalClick,
     modalVisable,
     coWorker,
-    imageUrl,
+    instaProfileUrl,
   }: {
     handleModalClick: any,
     modalVisable: boolean,
     coWorker: string
-    imageUrl: string,
+    instaProfileUrl: string,
   }): JSX.Element => {
 
   const renderPic = (): JSX.Element => {
@@ -20,7 +20,7 @@ const AboutModal = (
       return (
         <Image
           className={`rounded-full`}
-          src={imageUrl}
+          src={instaProfileUrl}
           alt=''
           width={80}
           height={80} />
@@ -29,12 +29,24 @@ const AboutModal = (
       return (
         <Image
           className={`rounded-full`}
-          src={imageUrl}
+          src={instaProfileUrl}
           alt=''
           width={130}
           height={130} />
       )
     }
+  }
+
+  const renderInsta = (): JSX.Element => {
+    return (
+      <a className='pl-3' href={instaProfileUrl} target='_blank' title='Instagram'>
+        <Image
+          className='rounded-xl'
+          src='/instagram-logo.jpg'
+          alt=''
+          width={40}
+          height={40} />
+      </a>)
   }
 
   const currentCoWorker = (): any | undefined => {
@@ -53,30 +65,31 @@ const AboutModal = (
                 height={50} />
             </button>
             <div className='flex flex-col items-center'>
-              <div className='text-center'>
+              <div className='flex flex-row items-center text-center'>
                 <MediumHeader
                   headerText={`${currentCoWorker()?.name} (${currentCoWorker()?.age})`}
                   blackText={true} />
+                {instaProfileUrl && renderInsta()}
               </div>
-              <div className='grid grid-cols-2 gap-4 content-center md:px-14 md:py-3 py-3 px-3 md:text-lg text-sm'>
-                <div>
-                  <b>Valslogan:</b> {currentCoWorker()?.slogan}
-                </div>
-                <div>
-                  <b>Intressen:</b> {currentCoWorker()?.interests}
-                </div>
-                <div>
-                  <b>Unpopular opinion:</b> {currentCoWorker()?.opinion}
-                </div>
-                <div>
-                  <b>Favoritämnen:</b> {currentCoWorker()?.favoriteSubject}
-                </div>
-                <div>
-                  <b>Triggers:</b> {currentCoWorker()?.trigers}
-                </div>
-                <div>
-                  <b>Favorit macka:</b> {currentCoWorker()?.sandwich}
-                </div>
+            </div>
+            <div className='grid grid-cols-2 gap-4 content-center md:px-14 md:py-3 py-3 px-3 md:text-lg text-sm'>
+              <div>
+                <b>Valslogan:</b> {currentCoWorker()?.slogan}
+              </div>
+              <div>
+                <b>Intressen:</b> {currentCoWorker()?.interests}
+              </div>
+              <div>
+                <b>Unpopular opinion:</b> {currentCoWorker()?.opinion}
+              </div>
+              <div>
+                <b>Favoritämnen:</b> {currentCoWorker()?.favoriteSubject}
+              </div>
+              <div>
+                <b>Triggers:</b> {currentCoWorker()?.trigers}
+              </div>
+              <div>
+                <b>Favorit macka:</b> {currentCoWorker()?.sandwich}
               </div>
             </div>
           </div>
