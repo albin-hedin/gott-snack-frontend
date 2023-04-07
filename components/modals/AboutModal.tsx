@@ -58,7 +58,7 @@ const AboutModal = (
                   headerText={`${currentCoWorker()?.name} (${currentCoWorker()?.age})`}
                   blackText={true} />
               </div>
-              <div className='grid grid-cols-2 gap-4 content-center md:px-14 md:text-lg text-sm'>
+              <div className='grid grid-cols-2 gap-4 content-center md:px-14 md:py-3 py-3 px-3 md:text-lg text-sm'>
                 <div>
                   <b>Valslogan:</b> {currentCoWorker()?.slogan}
                 </div>
@@ -77,9 +77,6 @@ const AboutModal = (
                 <div>
                   <b>Favorit macka:</b> {currentCoWorker()?.sandwich}
                 </div>
-              </div>
-              <div className='md:py-2 py-1'>
-                {renderPic()}
               </div>
             </div>
           </div>
