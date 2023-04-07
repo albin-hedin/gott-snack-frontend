@@ -8,6 +8,7 @@ const RandomQuote = () => {
 
     const interval = setInterval(() => setNewRandomQuote(), 5000)
     return () => { clearInterval(interval) }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const setNewRandomQuote = (): void => {
@@ -27,7 +28,11 @@ const RandomQuote = () => {
     '"Vår första trekant var i bastun" - Polyfamiljen',
     '"Vi knullar inte längre" - Dregen om Hellacopter',
     '"Fortsätt ge tillstånd att bränna koranen, eventuellt"',
-    '"ja så är det, ah det är så, ja det är bra" - Stefan Ekengren'
+    '"ja så är det, ah det är så, ja det är bra" - Stefan Ekengren',
+    '"Jag måste betala 738 miljoner" - Anders Adali om rekord-skadeståndet',
+    '"Jag hällde diskmedel på Polly" - Marcus Birro',
+    '"De är ju TOKIGA i casino, kineserna!" - Osín Cantwell',
+    '"Jag visade kungfu sparkar för gästerna på diskoteket" - Färjan Håkan',
   ];
 
   return (

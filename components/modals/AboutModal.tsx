@@ -2,7 +2,6 @@ import { Dialog } from '@headlessui/react'
 import Image from 'next/image'
 import MediumHeader from '../MediumHeader'
 import { isMobile } from 'react-device-detect';
-import { ICoworkerData } from '@/models/ICoworkerData';
 
 const AboutModal = (
   { handleModalClick,
@@ -38,7 +37,7 @@ const AboutModal = (
     }
   }
 
-  const currentCoWorker = (): ICoworkerData | undefined => {
+  const currentCoWorker = (): any | undefined => {
     return coWorkerData().find(cw => cw.id === coWorker)
   }
   return (
