@@ -150,7 +150,7 @@ const coWorkerData = () => {
       "interests": "Fordon som går riktigt fort och klockor som kostar oförsvarbara mängder pengar",
       "opinion": "Legalize it?",
       "favoriteSubject": "Gröndalsminnen, therapy thursday (helst på måndagar) samt vad redaktionen har haft för sig i helgen",
-      "trigers": "Folk som tar sig själva på för stor alvar",
+      "trigers": "Folk som tar sig själva på för stort allvar",
       "sandwich": "En väl avvägd köttbullar med rödbetssallad-macka"
     },
     {
