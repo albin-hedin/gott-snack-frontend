@@ -1,5 +1,6 @@
 import LargeHeader from '@/components/LargeHeader'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Festival = () => {
   return (
@@ -26,6 +27,12 @@ const Festival = () => {
             Vi söker nån som vill hjälpa oss göra detta möjligt!
             Pluggar du eller nån du känner musik-/event arrangör eller dylikt och vill praktisera genom att vara med och skapa denna grymma festival?
             Mejla <b>gottsnackfestival@gmail.com</b> så hörs vi!
+            <br />
+            Följ gärna festivalen på <Link
+              href='https://www.instagram.com/gott_snack_festival/'
+              target='_blank'>
+              <b>instagram</b>
+            </Link>
           </div>
         </div>
         <div className='
