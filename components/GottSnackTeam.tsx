@@ -16,92 +16,127 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
           Gott snack behövs för att människor som inte passar in i public service eller de kommersiella kanalernas likriktade mallar också ska få en chans att säga sin mening och få höras i etern. Hur dessa människor ser ut, var de kommer från, hur gamla de är spelar ingen roll, vi vill ha en mix av människor från från alla samhällsskikt i mitt program.
         </div>
       </div>
-      <div className='flex flex-col items-center mx-4'>
-        <div className='flex flex-row mb-6'>
-          <ImageWithTitle
-            title='Fredrik'
-            picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'fredrik',
-              'https://www.instagram.com/genietsoderholm/')} />
-          <ImageWithTitle
-            title='Agust'
-            picUrl='/portraits/AUGUST-kopia-1097x1536.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'agge',
-              'https://www.instagram.com/aggeinthehus/')} />
-          <ImageWithTitle
-            title='Ploj'
-            picUrl='/portraits/PLOJ-kopia-1097x1536.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'ploj',
-              'https://www.instagram.com/rikardploj/')} />
-          <ImageWithTitle
-            title='Tora'
-            picUrl='/portraits/TORA-kopia-1097x1536.jpg' 
-            onClick={() => handleModalClick(
-              true,
-              'tora',
-              'https://www.instagram.com/10gemensamma/')}/>
-        </div>
-        <div className='flex flex-row mb-6'>
-          <ImageWithTitle
-            title='Max'
-            picUrl='/portraits/MAX-1-kopia-732x1024.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'max',
-              'https://www.instagram.com/seniorsoderholm/')} />
-          <ImageWithTitle
-            title='Jesper'
-            picUrl='/portraits/JESPER-kopia-1097x1536.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'jesper',
-              'https://www.instagram.com/jesperekstedt/')} />
-          <ImageWithTitle
-            title='Micke'
-            picUrl='/portraits/MICKE-kopia-1097x1536.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'micke',
-              'https://www.instagram.com/mikaelljungberg_/')} />
-          <ImageWithTitle
-            title='Fanny'
-            picUrl='/portraits/FANNY-kopia-1628x2048.jpeg'
-            forceSize={true} 
-            onClick={() => handleModalClick(
-              true,
-              'fanny',
-              'https://www.instagram.com/tjafanny/')} />
-        </div>
-        <div className='flex flex-row'>
-          <ImageWithTitle
-            title='Petrina'
-            picUrl='/portraits/PETRINA_Gott_Snack_PORTRAIT_3739_LOW_RES.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'petrina',
-              'https://www.instagram.com/petrinahinas/')} />
-          <ImageWithTitle
-            title='Andre'
-            picUrl='/portraits/ANDRE-kopia-1097x1536.jpg'
-            onClick={() => handleModalClick(
-              true,
-              'andre',
-              'https://www.instagram.com/andreperssooon/')}  />
-          <ImageWithTitle
-            small={true}
-            title='Tore'
-            picUrl='/portraits/tore.png'
-            onClick={() => handleModalClick(
-              true,
-              'tore',
-              'https://www.instagram.com/torekullgren/')} />
-        </div>
+      <div className='flex flex-wrap gap-4 justify-center items-center mx-auto max-w-[1200px] px-1'>
+        <ImageWithTitle
+          title='Fredrik'
+          picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'fredrik',
+            'https://www.instagram.com/genietsoderholm/')} />
+        <ImageWithTitle
+          title='Agust'
+          picUrl='/portraits/AUGUST-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'agge',
+            'https://www.instagram.com/aggeinthehus/')} />
+        <ImageWithTitle
+          title='Ploj'
+          picUrl='/portraits/PLOJ-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'ploj',
+            'https://www.instagram.com/rikardploj/')} />
+        <ImageWithTitle
+          title='Tora'
+          picUrl='/portraits/TORA-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'tora',
+            'https://www.instagram.com/10gemensamma/')} />
+        <ImageWithTitle
+          title='Max'
+          picUrl='/portraits/MAX-1-kopia-732x1024.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'max',
+            'https://www.instagram.com/seniorsoderholm/')} />
+        <ImageWithTitle
+          title='Jesper'
+          picUrl='/portraits/JESPER-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'jesper',
+            'https://www.instagram.com/jesperekstedt/')} />
+        <ImageWithTitle
+          title='Micke'
+          picUrl='/portraits/MICKE-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'micke',
+            'https://www.instagram.com/mikaelljungberg_/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Fanny'
+          picUrl='/portraits/FANNY-kopia-1628x2048.jpeg'
+          forceSize={true}
+          onClick={() => handleModalClick(
+            true,
+            'fanny',
+            'https://www.instagram.com/tjafanny/')} />
+        <ImageWithTitle
+          title='Petrina'
+          picUrl='/portraits/PETRINA_Gott_Snack_PORTRAIT_3739_LOW_RES.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'petrina',
+            'https://www.instagram.com/petrinahinas/')} />
+        <ImageWithTitle
+          title='Andre'
+          picUrl='/portraits/ANDRE-kopia-1097x1536.jpg'
+          onClick={() => handleModalClick(
+            true,
+            'andre',
+            'https://www.instagram.com/andreperssooon/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Tore'
+          picUrl='/portraits/tore.png'
+          onClick={() => handleModalClick(
+            true,
+            'tore',
+            'https://www.instagram.com/torekullgren/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Otto'
+          picUrl='/portraits/otto.png'
+          onClick={() => handleModalClick(
+            true,
+            'otto',
+            'https://www.instagram.com/ottoidimman/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Plommon'
+          picUrl='/portraits/plommon.png'
+          onClick={() => handleModalClick(
+            true,
+            'plommon',
+            'https://www.instagram.com/adam.plommon/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Ballafjang'
+          picUrl='/portraits/ballafjang.png'
+          onClick={() => handleModalClick(
+            true,
+            'ballafjang',
+            'https://www.instagram.com/ballafjang/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Sagah'
+          picUrl='/portraits/sagah.png'
+          onClick={() => handleModalClick(
+            true,
+            'sagah',
+            'https://www.instagram.com/satanistsagah/')} />
+        <ImageWithTitle
+          imageSux={true}
+          title='Bruce & Räkan'
+          picUrl='/portraits/cats.png'
+          onClick={() => handleModalClick(
+            true,
+            'bruce',
+            'https://www.instagram.com/gottsnackradio/')} />
       </div>
     </>
   )
