@@ -1,17 +1,30 @@
-import Link from 'next/link'
 import SmallHeader from './SmallHeader'
 import Image from 'next/image'
 
 const ImageWithTitle = (
-  { title, picUrl, onClick, forceSize, small }:
-    { title?: string, picUrl: string, onClick?: any, forceSize?: boolean, small?: boolean }) => {
+  { title, picUrl, onClick, forceSize, small, imageSux }:
+    { title?: string, picUrl: string, onClick?: any, forceSize?: boolean, small?: boolean, imageSux?: boolean }) => {
 
   const renderImage = (): JSX.Element => {
-    if (onClick) {
+    if (imageSux) {
+      return (
+        <div
+          style={{ width: '100%', height: '100%', position: 'relative' }}
+          className='link' onClick={() => onClick()}>
+          <Image
+            src={picUrl}
+            style={{
+              objectFit: 'cover'
+            }}
+            alt=''
+            fill />
+        </div>
+      )
+    }
+    else if (onClick) {
       return (
         <div className='link' onClick={() => onClick()}>
           <Image
-            className={`rounded-full mr-4 ${forceSize ? 'image-force-size' : ''}`}
             src={picUrl}
             alt=''
             width={small ? 175 : 200}
@@ -21,7 +34,6 @@ const ImageWithTitle = (
     } else {
       return (
         <Image
-          className={`rounded-full mr-4 ${forceSize ? 'image-force-size' : ''}`}
           src={picUrl}
           alt=''
           width={small ? 175 : 200}
@@ -30,12 +42,18 @@ const ImageWithTitle = (
     }
   }
   return (
-    <div className='text-center'>
+    <div className='text-center mt-1'>
       {title &&
         <div className='mr-4'>
           <SmallHeader headerText={title} />
         </div>}
-      {renderImage()}
+      <div className='
+       w-[165px] h-[231px]
+       md:w-[195px] md:h-[273px]
+       overflow-hidden 
+       rounded-full'>
+        {renderImage()}
+      </div>
     </div>
   )
 }
