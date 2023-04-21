@@ -8,7 +8,7 @@ const RandomQuote = () => {
 
     const interval = setInterval(() => setNewRandomQuote(), 5000)
     return () => { clearInterval(interval) }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const setNewRandomQuote = (): void => {
@@ -33,6 +33,7 @@ const RandomQuote = () => {
     '"Jag hällde diskmedel på Polly" - Marcus Birro',
     '"De är ju TOKIGA i casino, kineserna!" - Osín Cantwell',
     '"Jag visade kungfu sparkar för gästerna på diskoteket" - Färjan Håkan',
+    'Jag ville inte knarka - Hanna Hellquist om färska ADHD-diagnosen'
   ];
 
   return (
