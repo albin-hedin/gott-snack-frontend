@@ -25,7 +25,7 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             'fredrik',
             'https://www.instagram.com/genietsoderholm/')} />
         <ImageWithTitle
-          title='Agust'
+          title='August'
           picUrl='/portraits/AUGUST-kopia-1097x1536.jpg'
           onClick={() => handleModalClick(
             true,

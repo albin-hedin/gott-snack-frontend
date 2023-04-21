@@ -206,7 +206,7 @@ const coWorkerData = () => {
       "opinion": 'Det ÄR skönt att beställa foodora i snöstorm',
       "favoriteSubject": "Historiska skepp gärna sänkta av andra historiska skepp",
       "trigers": "Är du för gammal för att cyckla i rimlig fart (minst 20km/h) avstå gärna och sluta stanna upp hela cykelvägen",
-      "sandwich": "Klassik toast men glöm inte att ta bort kanterna på skinkan"
+      "sandwich": "Klassisk toast men glöm inte att ta bort kanterna på skinkan"
     },
     {
       "id": "ballafjang",
@@ -258,7 +258,7 @@ const coWorkerData = () => {
       "age": "29+",
       "slogan": 'Ha d gott! Glenn',
       "interests": "Alla killintressen som finns tror jag",
-      "opinion": 'Äslkar public service',
+      "opinion": 'Älskar public service',
       "favoriteSubject": "All jävla sport och reality tyvärr",
       "trigers": "Idioter på twitter främst. Och jag är en av dem",
       "sandwich": "Just nu en go BLT mellan två välrostade rågbrödskillar"
@@ -269,7 +269,7 @@ const coWorkerData = () => {
       "age": "31",
       "slogan": 'Stopp och belägg',
       "interests": "Fundera, åka Voi",
-      "opinion": 'Plant-base burgare är vidriga',
+      "opinion": 'Plant-based burgare är vidriga',
       "favoriteSubject": "Fastighetsjuridik och skavande anekdoter",
       "trigers": '"Forskningen visar"',
       "sandwich": "Allt med salami eller curry. Var för sig"
