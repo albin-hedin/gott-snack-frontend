@@ -12,6 +12,7 @@ const FestivalBanner = () => {
       </div>
       <div className='lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs text-white'>
         Stockholm saknar en MYSIG stadsfestival. Följ med på resan<br />  mot två magiska kvällar sommaren 2023.
+        Fri entré!
       </div>
       <button className='mb-5'>
         <Link href="/festival#top" >
