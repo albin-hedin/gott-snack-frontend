@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Festival = () => {
   return (
-    <div className='mx-2 md:mx-32'>
+    <div className='mx-3 md:mx-44'>
       <div id='top'>
       </div>
       <div>
@@ -13,60 +13,65 @@ const Festival = () => {
         </div>
         <div className='
       text-center
-      lg:text-2xl
-      md:text-2xl
-      sm:text-sm
-      text-xs
+      md:text-lg
       font-sans
       mb-5'>
           <div>
-            Vi vill skapa en mysig och intim festival i Stockholm som drivs av kärleken
-            till musik och gemenskap! En festival för alla som inte drivs för att maximera vinst.
+            Pirrigt! Nu har vi fått tillstånd och nu börjar ju det riktiga arbetet! Dela gärna detta <Link
+              href='https://www.instagram.com/p/CrbcepbtwFL/'
+              target='_blank'>
+              <i>inlägg på instagram</i>
+            </Link> järnet och peppa igång hajpen så folk vill hjälpa till och vara en del av detta drömprojekt!!!
+         
+            Fattar såklart att jag är en GLAD och DUM amatör som säkert kommer behöva fixa ett nytt tillstånd med lite mer grejer på men nu har vi alla fall NÅNTING att börja med!!🥳🥳🥳
+            Känns så sjukt kul att börja jobba ordentligt med detta nu! 🤗🤗
             <br />
             <br />
-            Vi söker nån som vill hjälpa oss göra detta möjligt!
-            Pluggar du eller nån du känner musik-/event arrangör eller dylikt och vill praktisera genom att vara med och skapa denna grymma festival?
-            Mejla <b>gottsnackfestival@gmail.com</b> så hörs vi!
+            Sponsorer känns typ prio för just nu finns NOLL kronor i detta haha! Men vi löser det visst? Tillsammans kan vi ju klara vad som helst visst!!!
+            Tack alla som bidrog på kickstarter för typ TVÅ är sen! Ni ska belönas på nåt sätt🥹🥹
+            <br />
+            <br />
+            Alla som vill bidra med kompetens eller arbetskraft är givetvis också välkomna! Ni förstår ju att det är en jävla massa jobb framgent nu om detta ska ROS i hamn och kunna bli en underbar TRADITION!!🥵🥵🥰🥰🥰
+            <br />
+            <br />
+            Folk verkar peppade bara av moodboarden! Vilket lovar jävligt gott! <Link
+              href='https://www.instagram.com/division7band/'
+              target='_blank'>
+              <b><i>Division 7</i></b>
+            </Link> har sagt ja! <Link
+              href='https://www.instagram.com/rebecka_sandberg/'
+              target='_blank'>
+              <b><i>Rebecka Sandberg</i></b>
+            </Link> med band är ytterst positiva! <Link
+              href='https://www.instagram.com/avantgardet_bandet/'
+              target='_blank'>
+              <b><i>Avantgardet</i></b>
+            </Link> vill köra och undersöker just nu möjligheterna!
+            <br />
+            <br />
+            Vilka är Sveriges två minst aggressiva ordningsvakter?<br /> Dom vill vi ha!
+            Mejla alla tips eller uppslag till: <b>festival@gottsnack.nu</b>
+            <br />
+            <br />
+            Vi vill inte göra den så fina platsen ful med staket så vi skiter i inträde och hoppas att folk vill bidra frivilligt med en slant istället♥️🥰🥹
+            <br />
             <br />
             Följ gärna festivalen på <Link
               href='https://www.instagram.com/gott_snack_festival/'
               target='_blank'>
-              <b>instagram</b>
+              <b>Instagram</b>
             </Link>
-          </div>
-        </div>
-        <div className='
-        mt-2
-        md:mt-16
-        md:columns-2
-        gap-4
-        lg:text-1xl
-        md:text-xl
-        sm:text-sm
-        text-xs
-        font-sans
-        ml-4
-        md:ml-16'>
-          <b>Uppgifter innefattar</b>
-          <ul className='mt-2' style={{
-            listStyleType: "circle"
-          }}>
-            <li> Söka tillstånd</li>
-            <li>  Avfall / Vatten och elförsörjning</li>
-            <li>  Spons</li>
-            <li>    Boka artister</li>
-            <li>Boka teknik</li>
-            <li>Boka personal</li>
-            <li>Hitta konstnärer/rekvisitörersomkan utsmycka området</li>
-            <li>Boka foodtrucks</li>
-          </ul>
-          <div className='mt-2 md:mt-0'>
-            <Image
-              className='pt-4 pr-2'
-              src='/festival.jpg'
-              alt=''
-              width={400}
-              height={300} />
+            <br />
+            <br />
+            <i>Er uppspelta, Söderholm den yngre🌝</i>
+            <div className='flex flex-col items-center'>
+              <Image
+                className='pt-4 pr-2'
+                src='/festival2.png'
+                alt=''
+                width={400}
+                height={300} />
+            </div>
           </div>
         </div>
       </div>
