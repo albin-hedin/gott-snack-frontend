@@ -10,68 +10,77 @@ const Festival = () => {
       <div>
         <div className='text-center'>
           <LargeHeader headerText='Gott snack festival' />
+          <i><b>Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti i sommar!</b></i>
         </div>
-        <div className='
-      text-center
-      md:text-lg
-      font-sans
-      mb-5'>
-          <div>
-            Pirrigt! Nu har vi fått tillstånd och nu börjar ju det riktiga arbetet! Dela gärna detta <Link
-              href='https://www.instagram.com/p/CrbcepbtwFL/'
-              target='_blank'>
-              <i>inlägg på instagram</i>
-            </Link> järnet och peppa igång hajpen så folk vill hjälpa till och vara en del av detta drömprojekt!!!
-         
-            Fattar såklart att jag är en GLAD och DUM amatör som säkert kommer behöva fixa ett nytt tillstånd med lite mer grejer på men nu har vi alla fall NÅNTING att börja med!!🥳🥳🥳
-            Känns så sjukt kul att börja jobba ordentligt med detta nu! 🤗🤗
-            <br />
-            <br />
-            Sponsorer känns typ prio för just nu finns NOLL kronor i detta haha! Men vi löser det visst? Tillsammans kan vi ju klara vad som helst visst!!!
-            Tack alla som bidrog på kickstarter för typ TVÅ är sen! Ni ska belönas på nåt sätt🥹🥹
-            <br />
-            <br />
-            Alla som vill bidra med kompetens eller arbetskraft är givetvis också välkomna! Ni förstår ju att det är en jävla massa jobb framgent nu om detta ska ROS i hamn och kunna bli en underbar TRADITION!!🥵🥵🥰🥰🥰
-            <br />
-            <br />
-            Folk verkar peppade bara av moodboarden! Vilket lovar jävligt gott! <Link
-              href='https://www.instagram.com/division7band/'
-              target='_blank'>
-              <b><i>Division 7</i></b>
-            </Link> har sagt ja! <Link
-              href='https://www.instagram.com/rebecka_sandberg/'
-              target='_blank'>
-              <b><i>Rebecka Sandberg</i></b>
-            </Link> med band är ytterst positiva! <Link
-              href='https://www.instagram.com/avantgardet_bandet/'
-              target='_blank'>
-              <b><i>Avantgardet</i></b>
-            </Link> vill köra och undersöker just nu möjligheterna!
-            <br />
-            <br />
-            Vilka är Sveriges två minst aggressiva ordningsvakter?<br /> Dom vill vi ha!
-            Mejla alla tips eller uppslag till: <b>festival@gottsnack.nu</b>
-            <br />
-            <br />
-            Vi vill inte göra den så fina platsen ful med staket så vi skiter i inträde och hoppas att folk vill bidra frivilligt med en slant istället♥️🥰🥹
-            <br />
-            <br />
-            Följ gärna festivalen på <Link
-              href='https://www.instagram.com/gott_snack_festival/'
-              target='_blank'>
-              <b>Instagram</b>
-            </Link>
-            <br />
-            <br />
-            <i>Er uppspelta, Söderholm den yngre🌝</i>
-            <div className='flex flex-col items-center'>
-              <Image
-                className='pt-4 pr-2'
-                src='/festival2.png'
-                alt=''
-                width={400}
-                height={300} />
+        <div className='items-center grid md:grid-cols-2 grid-cols-1 md:gap-4'>
+          <div className='
+            text-center
+            md:text-lg
+            font-sans
+            mb-5'>
+            <div>
+              <br />
+              <br />
+              Vi har fått tillstånd och har nu börjat jobbat med att boka artister och få in sponsorer!
+              Vi har ett tillstånd på 400 personer men skulle vilja kolla intresset! Om det är så att många fler är sugna så tänker vi att det är bra att öka den siffran i tillståndet!
+              <br />
+              <br />
+              I skrivande stund har vi två bokade band!
+              <br />
+              Sveriges hetaste indiepopare och svensk countrys nya stjärnskott!
+              <br />
+              <Link
+                href='https://www.instagram.com/division7band/'
+                target='_blank'>
+                <b><i>Division 7</i></b>
+                <br />
+              </Link><Link
+                href='https://www.instagram.com/rebecka_sandberg/'
+                target='_blank'>
+                <b><i>Rebecka Sandberg</i></b>
+              </Link>
+              <br />
+              <br />
+              Förfrågade:
+              <br />
+              <Link
+                href='https://www.instagram.com/avantgardet_bandet/'
+                target='_blank'>
+                <b><i>Avantgardet</i></b>
+              </Link>
+              <br />
+              <Link
+                href='https://www.instagram.com/shoutoutloudsofficial/'
+                target='_blank'>
+                <b><i>Shout Out Louds</i></b>
+              </Link>
+              <br />
+              <br />
+              TAW, Aasma och Boys & Ivy kunde tyvärr inte detta datum i år!
+              <br />
+              Har ni förslag på artister var inte blyga för att skicka på insta dm eller mejla på <b>festival@gottsnack.nu</b>
+              <br />
+              <br />
+              Känner ni konstnärer som vill visa upp sina alster får ni gärna tipsa oss!
+              Fler förslag på fler roliga saker på området som vore mysigt mottages tacksamt!
+              Om ni känner härliga människor som driver reko bolag som man kan sammarbeta med får ni gärna tipsa oss också!
+              <br />
+              <br />
+              Följ gärna festivalen på <Link
+                href='https://www.instagram.com/gott_snack_festival/'
+                target='_blank'>
+                <b>Instagram</b>
+              </Link>
+              <br />
             </div>
+          </div>
+          <div className='flex justify-center'>
+            <Image
+              className='pt-4 pr-2'
+              src='/festival2.png'
+              alt=''
+              width={400}
+              height={300} />
           </div>
         </div>
       </div>
