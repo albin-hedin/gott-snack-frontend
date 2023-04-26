@@ -70,6 +70,10 @@ const Festival = () => {
                 href='https://www.instagram.com/gott_snack_festival/'
                 target='_blank'>
                 <b>Instagram</b>
+              </Link> och kolla in evenemanget på <Link
+                href='https://www.facebook.com/events/3412056322456299'
+                target='_blank'>
+                <b>Facebook</b>
               </Link>
               <br />
             </div>
