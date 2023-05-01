@@ -18,8 +18,8 @@ const PicModal = (
             <Image
               src={imageUrl}
               alt=''
-              width={1000}
-              height={1000} />
+              width={500}
+              height={500} />
           </div>
         </Dialog.Panel>
       </div>
