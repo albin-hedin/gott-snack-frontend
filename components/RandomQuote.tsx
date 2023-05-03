@@ -33,7 +33,8 @@ const RandomQuote = () => {
     '"Jag hällde diskmedel på Polly" - Marcus Birro',
     '"De är ju TOKIGA i casino, kineserna!" - Osín Cantwell',
     '"Jag visade kungfu sparkar för gästerna på diskoteket" - Färjan Håkan',
-    'Jag ville inte knarka - Hanna Hellquist om färska ADHD-diagnosen'
+    '"Jag ville inte knarka" - Hanna Hellquist om färska ADHD-diagnosen',
+    '"Jag ska fortsätta hora ut mig" - Henrik Borg om framtiden'
   ];
 
   return (
