@@ -96,10 +96,9 @@ const Festival = () => {
           </div>
           <div className='flex justify-center'>
             <Image
-              className='pt-4 pr-2'
-              src='/festival2.png'
+              src='/gs-festival.jpg'
               alt=''
-              width={400}
+              width={500}
               height={300} />
           </div>
         </div>
