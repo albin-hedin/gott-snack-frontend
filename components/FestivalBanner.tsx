@@ -9,11 +9,11 @@ const FestivalBanner = () => {
     }}>
       <div
         style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.2)' }}
-        className='mt-2'> 
+        className='mt-2'>
         <SectionHeader text='Gott snack festival' />
       </div>
       <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.4)' }} className='lg:text-2xl md:text-2xl font-sans mb-5 text-sm text-white'>
-        Stockholm saknar en MYSIG stadsfestival.<br />  Följ med på resan mot två magiska kvällar 5-6 augusti 2023.
+        Stockholm saknar en MYSIG stadsfestival.<br />  Följ med på resan mot en magisk kväll 5 augusti 2023.
         <br />
         Fri entré!
       </div>
