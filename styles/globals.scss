@@ -37,6 +37,22 @@ a {
   }
 }
 
+@responsive {
+  .festival-bg-image {
+    background-image: url(/gs-festival-no-text.jpg);
+    background-position: 100% 33.5%;
+    background-size: 1300px;
+  }
+}
+
+@responsive {
+  .festival-bg-image-small {
+    background-image: url(/gs-festival-no-text.jpg);
+    background-position: 55% 32%;
+    background-size: 690px;
+  }
+}
+
 .patreon-button {
   background-color: #141518;
 }
