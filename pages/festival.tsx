@@ -10,7 +10,7 @@ const Festival = () => {
       <div>
         <div className='text-center'>
           <LargeHeader headerText='Gott snack festival' />
-          <i><b>Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti i sommar!</b></i>
+          <i><b>Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023!</b></i>
         </div>
         <div className='items-center grid md:grid-cols-2 grid-cols-1 md:gap-4'>
           <div className='
@@ -25,9 +25,7 @@ const Festival = () => {
               Vi har ett tillstånd på 400 personer men skulle vilja kolla intresset! Om det är så att många fler är sugna så tänker vi att det är bra att öka den siffran i tillståndet!
               <br />
               <br />
-              I skrivande stund har vi två bokade band!
-              <br />
-              Sveriges hetaste indiepopare och svensk countrys nya stjärnskott!
+              I skrivande stund har vi tre bokade band!
               <br />
               <Link
                 href='https://www.instagram.com/division7band/'
@@ -38,6 +36,12 @@ const Festival = () => {
                 href='https://www.instagram.com/rebecka_sandberg/'
                 target='_blank'>
                 <b><i>Rebecka Sandberg</i></b>
+              </Link>
+              <br />
+              <Link
+                href='https://www.instagram.com/hej.tiger/'
+                target='_blank'>
+                <b><i>Tiger</i></b>
               </Link>
               <br />
               <br />
@@ -54,6 +58,9 @@ const Festival = () => {
                 target='_blank'>
                 <b><i>Shout Out Louds</i></b>
               </Link>
+              <br />
+              <br />
+              Utöver banden kommer det också finnas <b>Spådam</b>, <b>DJ</b>, <b>Foodtrucks</b> och <b>Konstutställning</b>.
               <br />
               <br />
               TAW, Aasma och Boys & Ivy kunde tyvärr inte detta datum i år!
@@ -75,6 +82,15 @@ const Festival = () => {
                 target='_blank'>
                 <b>Facebook</b>
               </Link>
+              <br />
+              <br />
+              <div className='text-xl md:text-2xl'>
+                <Link
+                  href='https://app.easyarr.se/arrangemang/Gottsnackfestival.html'
+                  target='_blank'>
+                  <b>Köp stödbiljetter här!</b>
+                </Link>
+              </div>
               <br />
             </div>
           </div>

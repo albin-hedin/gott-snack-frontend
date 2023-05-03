@@ -32,6 +32,9 @@ const Home = () => {
 
   return (
     <>
+      <div className='mb-10'>
+        <FestivalBanner />
+      </div>
       <ListenLive
         handlePicModalClick={setPicModalVisable}
       />
@@ -39,9 +42,7 @@ const Home = () => {
       <div className='mt-10'>
         <SupportUs />
       </div>
-      <div className='mt-10'>
-        <FestivalBanner />
-      </div>
+
       <div className='mt-10'>
         <Gottsnackteam
           handleModalClick={handleAboutModalClick} />
