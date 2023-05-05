@@ -23,7 +23,7 @@ const RandomQuote = () => {
     'Micke till KonstAB: "Är ni ironiska?" KonstAB: "Suck"',
     '"Vem fan vill suga av mig?" - Patrik Lundberg på internationella kvinnodagen',
     '"Jag är inte direkt ensam om att ha legat med Håkan Hellström" - Marit Bergman',
-    '"Håll käften och kör köttnacke"',
+    '"Håll käften och kör köttnacke" - Okänd',
     '"Det fanns många idéer... men det landade i potatis" - Stefan Ekengren',
     '"Vår första trekant var i bastun" - Polyfamiljen',
     '"Vi knullar inte längre" - Dregen om Hellacopter',
@@ -34,7 +34,9 @@ const RandomQuote = () => {
     '"De är ju TOKIGA i casino, kineserna!" - Osín Cantwell',
     '"Jag visade kungfu sparkar för gästerna på diskoteket" - Färjan Håkan',
     '"Jag ville inte knarka" - Hanna Hellquist om färska ADHD-diagnosen',
-    '"Jag ska fortsätta hora ut mig" - Henrik Borg om framtiden'
+    '"Jag ska fortsätta hora ut mig" - Henrik Borg om framtiden',
+    '"Förlåt, vi älskar bögar" - Jesus i Örkelljunga',
+    '"Jag fick ett batongslag i ryggen" - Mona Sahlin',
   ];
 
   return (
