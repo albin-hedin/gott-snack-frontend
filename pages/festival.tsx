@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Festival = () => {
   return (
-    <div className='mx-3 md:mx-44'>
+    <div className='mx-3 lg:mx-52'>
       <div id='top'>
       </div>
       <div className='text-center'>
@@ -46,6 +46,12 @@ const Festival = () => {
               href='https://www.facebook.com/events/3412056322456299'
               target='_blank'>
               <b>Facebook</b>
+            </Link>
+            <br />
+            Läs GAFFAS artikel om festivalen på <Link
+              href='https://gaffa.se/nyheter/2023/maj/gott-snack-ny-endagsfestival-till-stockholm/'
+              target='_blank'>
+              <b>Gaffa.se</b>
             </Link>
             <br />
             <br />
