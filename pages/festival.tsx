@@ -73,7 +73,7 @@ const Festival = () => {
               </a>
             </div>
             <br />
-            <div className='text-xl md:text-3xl'>
+            <div className='text-2xl md:text-3xl'>
               <Link
                 href='https://app.easyarr.se/arrangemang/Gottsnackfestival.html'
                 target='_blank'>
