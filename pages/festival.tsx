@@ -48,14 +48,32 @@ const Festival = () => {
               <b>Facebook</b>
             </Link>
             <br />
-            Läs GAFFAS artikel om festivalen på <Link
-              href='https://gaffa.se/nyheter/2023/maj/gott-snack-ny-endagsfestival-till-stockholm/'
-              target='_blank'>
-              <b>Gaffa.se</b>
-            </Link>
             <br />
+            <div className='text-center flex flex-col items-center'>
+              Läs om festivalen på
+              <a
+                href='https://gaffa.se/nyheter/2023/maj/gott-snack-ny-endagsfestival-till-stockholm/'
+                target='_blank'>
+                <Image
+                  className='rounded-lg pt-2'
+                  src='/gaffa.png'
+                  alt=''
+                  width={120}
+                  height={120} />
+              </a>
+              <a
+                href='https://ng.se/artiklar/fredrik-soderholm-startar-festival'
+                target='_blank'>
+                <Image
+                  className='rounded-lg pt-2'
+                  src='/nöjesguiden.png'
+                  alt=''
+                  width={140}
+                  height={140} />
+              </a>
+            </div>
             <br />
-            <div className='text-xl md:text-2xl'>
+            <div className='text-xl md:text-3xl'>
               <Link
                 href='https://app.easyarr.se/arrangemang/Gottsnackfestival.html'
                 target='_blank'>
