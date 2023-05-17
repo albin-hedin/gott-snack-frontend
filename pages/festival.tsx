@@ -51,7 +51,7 @@ const Festival = () => {
             <br />
             <div className='text-center flex flex-col items-center'>
               Läs om festivalen på
-              <a
+              <Link
                 href='https://gaffa.se/nyheter/2023/maj/gott-snack-ny-endagsfestival-till-stockholm/'
                 target='_blank'>
                 <Image
@@ -60,8 +60,8 @@ const Festival = () => {
                   alt=''
                   width={120}
                   height={120} />
-              </a>
-              <a
+              </Link>
+              <Link
                 href='https://ng.se/artiklar/fredrik-soderholm-startar-festival'
                 target='_blank'>
                 <Image
@@ -70,7 +70,17 @@ const Festival = () => {
                   alt=''
                   width={140}
                   height={140} />
-              </a>
+              </Link>
+              <Link
+                href='https://www.mitti.se/nyheter/fredrik-bjuder-in-till-festival-pa-barndomens-ravudden-6.3.82585.e1b32dca83'
+                target='_blank'>
+                <Image
+                  className='rounded-lg pt-2'
+                  src='/mittisthlm.png'
+                  alt=''
+                  width={140}
+                  height={140} />
+              </Link>
             </div>
             <br />
             <div className='text-2xl md:text-3xl'>
