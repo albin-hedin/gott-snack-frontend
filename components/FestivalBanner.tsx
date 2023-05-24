@@ -30,8 +30,10 @@ const FestivalBanner = () => {
           className='mt-2 font-semibold'>
           <SectionHeader text='Gott snack festival' />
         </div>
-        <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }} className='lg:text-2xl md:text-2xl font-sans mb-5 text-sm text-white'>
-          Stockholm saknar en MYSIG stadsfestival.<br />  Följ med på resan mot en magisk kväll 5 augusti 2023.
+        <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }} className='lg:text-2xl md:text-2xl font-sans mb-4 text-sm text-white'>
+          5 augusti 2023
+          <br />
+          Gröndals båtklubb
           <br />
           Fri entré!
         </div>
