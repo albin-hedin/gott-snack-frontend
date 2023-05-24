@@ -9,7 +9,7 @@ const Festival = () => {
       </div>
       <div className='text-center'>
         <LargeHeader headerText='Gott snack festival' />
-        <i><b>Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023!</b></i>
+        <i><b>Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023 vid Gröndals båtklubb!</b></i>
       </div>
       <div className='items-center'>
         <div className='
