@@ -9,7 +9,6 @@ const Festival = () => {
       </div>
       <div className='text-center'>
         <LargeHeader headerText='Gott snack festival' />
-        <i><b>Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023 vid Gröndals båtklubb!</b></i>
       </div>
       <div className='items-center'>
         <div className='
@@ -18,24 +17,17 @@ const Festival = () => {
             font-sans
             mb-5'>
           <div>
+            <div className='text-2xl md:text-3xl mt-2'>
+              <Link
+                href='https://app.easyarr.se/arrangemang/Gottsnackfestival.html'
+                target='_blank'>
+                <b>Köp stödbiljetter här!</b>
+              </Link>
+            </div>
             <br />
-            Äntligen sjösätter vi drömprojektet Gott snack festival på riktigt! Vi hoppas att ni vill hjälpa oss göra detta möjligt så att det kan bli en underbar tradition!
-            För att gå runt kommer vi behöva sälja minst 600 stödbiljetter á 250 kronor! Vi kommer inte kräva biljetter för inträde men vi behöver ert stöd för att kunna genom genomföra denna folkfest!
+            Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023 vid Gröndals båtklubb!
             <br />
-            <br />
-            Vi behöver även få in några företag som stöttar festivalen! Där finns möjlighet att köpa två olika typer av biljetter: stora eller lilla företagskramen!
-            Mejla oss på <b>festival@gottsnack.nu</b> så snackar vi upplägg!
-            <br />
-            <br />
-            Vi kommer inte neka någon inträde eller jaga plankare för vi vill att festivalen ska finnas för att ni vill att den ska finnas! Och då hoppas vi att ni vill stötta den med en stödbiljett!
-            Om vi inte får in den summa vi behöver för att gå runt (ca 280K) två veckor innan datumet för festivalen <b>(22/7)</b> så kommer evenemanget ställas in och alla får sina pengar tillbaka! Man tar alltså ingen risk genom att köpa en biljett!
-            <br />
-            <br />
-            <b>Vi måste alltså ha sålt ALLA stödbiljetter senast 22/7</b>
-            <br />
-            Detta är tack vare EasyArr som har ett fiffigt system som håller i pengarna tills deadline och sedan betalar tillbaka pengarna till varje enskild biljettköpare om evenemanget inte blir av pga att hela summan inte lyckades tjänas in.
-            <br />
-            <i>Pengarna tillbaka om festivalen ställs in!</i>
+            Köp en stödbiljett eller två så att vi äntligen kan sjösätta Stockholms nya kärleksfulla endags-festival!
             <br />
             <br />
             Följ gärna festivalen på <Link
@@ -80,14 +72,6 @@ const Festival = () => {
                   alt=''
                   width={140}
                   height={140} />
-              </Link>
-            </div>
-            <br />
-            <div className='text-2xl md:text-3xl'>
-              <Link
-                href='https://app.easyarr.se/arrangemang/Gottsnackfestival.html'
-                target='_blank'>
-                <b>Köp stödbiljetter här!</b>
               </Link>
             </div>
           </div>
