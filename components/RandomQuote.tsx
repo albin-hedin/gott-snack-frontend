@@ -114,7 +114,7 @@ const RandomQuote = () => {
             {`${currentQuote.text}`}
           </blockquote>
         </i>
-        <div className='flex flex-col items-center'>
+        <div className='flex flex-col items-center mt-2'>
           <ImageWithTitle
             imageSux
             picUrl={currentQuote.picUrl} />

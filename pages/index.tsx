@@ -3,6 +3,7 @@ import Gottsnackteam from '@/components/GottSnackTeam'
 import ListenLive from '@/components/ListenLive'
 import AboutModal from '@/components/modals/AboutModal'
 import PicModal from '@/components/modals/PicModal'
+import PartyBus from '@/components/PartyBus'
 import RandomQuote from '@/components/RandomQuote'
 import SupportUs from '@/components/SupportUs'
 import { useState } from 'react'
@@ -34,6 +35,9 @@ const Home = () => {
     <>
       <div className='mb-10'>
         <FestivalBanner />
+      </div>
+      <div className='mb-10'>
+        <PartyBus />
       </div>
       <ListenLive
         handlePicModalClick={setPicModalVisable}
