@@ -54,6 +54,23 @@ a {
   }
 }
 
+@responsive {
+  .festival-bus-bg-image {
+    background-image: url(/WOW-2023_Facebook-Event_1920x1005px.png);
+    background-position: 100% 33.5%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@responsive {
+  .festival-bus-bg-image-small {
+    background-image: url(/WOW-2023_Facebook-Event_1920x1005px.png);
+    background-position: 55% 32%;
+    background-size: 690px;
+  }
+}
+
 .patreon-button {
   background-color: #141518;
 }
