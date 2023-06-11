@@ -39,7 +39,7 @@ const RandomQuote = () => {
     },
     {
       text: '"Jag är inte direkt ensam om att ha legat med Håkan Hellström" - Marit Bergman',
-      picUrl: '/portraits/maritb.avif'
+      picUrl: '/portraits/marit.jpg'
     },
     {
       text: '"Håll käften och kör köttnacke" - Okänd',
@@ -47,7 +47,7 @@ const RandomQuote = () => {
     },
     {
       text: '"Det fanns många idéer... men det landade i potatis" - Stefan Ekengren',
-      picUrl: '/portraits/Stefan Ekengren.jpg'
+      picUrl: '/portraits/stefan-ekengren.jpg'
     },
     {
       text: '"Vår första trekant var i bastun" - Polyfamiljen',
@@ -63,7 +63,7 @@ const RandomQuote = () => {
     },
     {
       text: '"ja så är det, ah det är så, ja det är bra" - Stefan Ekengren',
-      picUrl: '/portraits/Stefan Ekengren.jpg'
+      picUrl: '/portraits/stefan-ekengren.jpg'
     },
     {
       text: '"Jag måste betala 738 miljoner" - Anders Adali om rekord-skadeståndet',
@@ -71,11 +71,11 @@ const RandomQuote = () => {
     },
     {
       text: '"Jag hällde diskmedel på Polly" - Marcus Birro',
-      picUrl: '/portraits/birro.avif'
+      picUrl: '/portraits/birro.jpg'
     },
     {
       text: '"De är ju TOKIGA i casino, kineserna!" - Osín Cantwell',
-      picUrl: '/portraits/cantwell.avif'
+      picUrl: '/portraits/osin.jpeg'
     },
     {
       text: '"Jag visade kungfu sparkar för gästerna på diskoteket" - Färjan Håkan',
@@ -87,7 +87,7 @@ const RandomQuote = () => {
     },
     {
       text: '"Jag ska fortsätta hora ut mig" - Henrik Borg om framtiden',
-      picUrl: '/portraits/borg.avif'
+      picUrl: '/portraits/borg_.jpg'
     },
     {
       text: '"Förlåt, vi älskar bögar" - Jesus i Örkelljunga',
