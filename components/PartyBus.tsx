@@ -9,7 +9,7 @@ const PartyBus = () => {
         backgroundColor: '#7a5df5'
       }}>
         <div className='mt-2'>
-          <SectionHeader text='Party buss till Way Out West' />
+          <SectionHeader text='Partybuss till Way Out West' />
         </div>
         <div className='lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs text-white'>
           9 augusti 2023
