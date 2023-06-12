@@ -6,13 +6,18 @@ const PartyBus = () => {
   return (
     <>
       <div className='text-center flex flex-col items-center' style={{
-        backgroundColor: '#7a5df5'
+        backgroundColor: '#7964d1'
       }}>
-        <div className='mt-2'>
+        <div style={{
+          textShadow: '1px 1px 2px rgba(0,0,0,0.2)'
+        }}
+          className='mt-2 font-semibold'>
           <SectionHeader text='Partybuss till Way Out West' />
         </div>
-        <div className='lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs text-white'>
+        <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }} className='lg:text-2xl md:text-2xl font-sans mb-4 text-sm text-white'>
           9 augusti 2023
+          <br />
+          Gott snack bjuder in till den ultimata roadtripen
         </div>
         <div className='grid grid-cols-1'>
           <button className='mb-6'>

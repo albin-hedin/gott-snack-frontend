@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='mb-10'>
+      <div className='mb-4'>
         <FestivalBanner />
       </div>
       <div className='mb-10'>
