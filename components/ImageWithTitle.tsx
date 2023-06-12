@@ -10,7 +10,7 @@ const ImageWithTitle = (
       return (
         <div
           style={{ width: '100%', height: '100%', position: 'relative' }}
-          className='link' onClick={() => onClick()}>
+          className={`${onClick ? 'link' : ''}`} onClick={() => onClick ? onClick() : () => { }}>
           <Image
             src={picUrl}
             style={{
@@ -23,7 +23,7 @@ const ImageWithTitle = (
     }
     else if (onClick) {
       return (
-        <div className='link' onClick={() => onClick()}>
+        <div className={`${onClick ? 'link' : ''}`} onClick={() => onClick ? onClick() : () => { }}>
           <Image
             src={picUrl}
             alt=''
