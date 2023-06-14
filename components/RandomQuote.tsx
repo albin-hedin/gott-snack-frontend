@@ -96,6 +96,38 @@ const RandomQuote = () => {
     {
       text: '"Jag fick ett batongslag i ryggen" - Mona Sahlin',
       picUrl: '/portraits/Mona_Sahlin.jpg'
+    },
+    {
+      text: '"Martinus är Zayn, jag är Harry" - Marcus & Martinus',
+      picUrl: '/portraits/marcus-martinus.png'
+    },
+    {
+      text: '"Är du utsläppt i samhället måste du anses vara en rehabilitated, sund människa" - Fredrick Federley',
+      picUrl: '/portraits/Federley.jpg'
+    },
+    {
+      text: '"Jag trodde Erik Galli skulle vara elak" - Farao Groth',
+      picUrl: '/portraits/farao.jpg'
+    },
+    {
+      text: '"Jag har skrivit 23 tennisböcker, ingen läser dem" - Björn Hellberg',
+      picUrl: '/portraits/hellberg_.jpg'
+    },
+    {
+      text: '"Ingvar levde ju hårt det vet alla, det behöver man inte sticka under stolen" - Björn Hellberg',
+      picUrl: '/portraits/hellberg_.jpg'
+    },
+    {
+      text: '"Det var märklig stämning när Zlatan grät" - Linn Nordström',
+      picUrl: '/portraits/linn_nordström.jpg'
+    },
+    {
+      text: '"Jag är inte undergiven, men inte heller övergiven i sängen" - Messiah Hallberg',
+      picUrl: '/portraits/messiah.jpg'
+    },
+    {
+      text: '"Min dotter håller på att glida ifrån mig" - Messiah Hallberg',
+      picUrl: '/portraits/messiah.jpg'
     }
   ];
 
