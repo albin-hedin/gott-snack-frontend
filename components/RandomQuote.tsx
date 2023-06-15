@@ -102,6 +102,10 @@ const RandomQuote = () => {
       picUrl: '/portraits/marcus-martinus.png'
     },
     {
+      text: '"Jag hittad min flickvän på utforkskarsidan" - Marcus & Martinus',
+      picUrl: '/portraits/marcus-martinus.png'
+    },
+    {
       text: '"Är du utsläppt i samhället måste du anses vara en rehabilitated, sund människa" - Fredrick Federley',
       picUrl: '/portraits/Federley.jpg'
     },
@@ -128,6 +132,30 @@ const RandomQuote = () => {
     {
       text: '"Min dotter håller på att glida ifrån mig" - Messiah Hallberg',
       picUrl: '/portraits/messiah.jpg'
+    },
+    {
+      text: '"Jag har braj i pungen vart jag än åker" - ODZ',
+      picUrl: '/portraits/odz.jpg'
+    },
+    {
+      text: '"Jag har haft några jobbiga återfall" - Johan Croneman',
+      picUrl: '/portraits/croneman.jpg'
+    },
+    {
+      text: '"Jag har 100 trauman" - Pål Hollender',
+      picUrl: '/portraits/pål.png'
+    },
+    {
+      text: '"Jonas Gardell försökte knulla mig i en bastu" - Pål Hollender',
+      picUrl: '/portraits/pål.png'
+    },
+    {
+      text: '"Jessika är min livs kärlek" - Pål Hollender',
+      picUrl: '/portraits/pål.png'
+    },
+    {
+      text: '"Det är bara alkoholen jag fortfarande brottas med" - Pål Hollender',
+      picUrl: '/portraits/pål.png'
     }
   ];
 
