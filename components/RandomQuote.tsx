@@ -102,7 +102,7 @@ const RandomQuote = () => {
       picUrl: '/portraits/marcus-martinus.png'
     },
     {
-      text: '"Jag hittad min flickvän på utforkskarsidan" - Marcus & Martinus',
+      text: '"Jag hittade min flickvän på utforkskarsidan" - Marcus & Martinus',
       picUrl: '/portraits/marcus-martinus.png'
     },
     {
@@ -150,7 +150,7 @@ const RandomQuote = () => {
       picUrl: '/portraits/pål.png'
     },
     {
-      text: '"Jessika är min livs kärlek" - Pål Hollender',
+      text: '"Jessika är mitt livs kärlek" - Pål Hollender',
       picUrl: '/portraits/pål.png'
     },
     {
@@ -170,7 +170,7 @@ const RandomQuote = () => {
        md:mt-10'>
         <i
           className='inline-flex' >
-          <blockquote className='md:text-3xl text-lg roboto-font text-black'>
+          <blockquote className='md:text-2xl text-lg roboto-font text-black'>
             {`${currentQuote.text}`}
           </blockquote>
         </i>
