@@ -156,6 +156,42 @@ const RandomQuote = () => {
     {
       text: '"Det är bara alkoholen jag fortfarande brottas med" - Pål Hollender',
       picUrl: '/portraits/pål.png'
+    },
+    {
+      text: '"Jag vill ta pappa till LA och ge han svamp" - Filip Hammar',
+      picUrl: '/portraits/filip-hammar.jpg'
+    },
+    {
+      text: '"Narcissism gör sig bra i radio och TV" - Filip Hammar',
+      picUrl: '/portraits/filip-hammar.jpg'
+    },
+    {
+      text: '"Om man tappar 10 g koks på golvet är det lika bra att dra upp det" - Filip Hammar',
+      picUrl: '/portraits/filip-hammar.jpg'
+    },
+    {
+      text: '"Filip Hammars "woke-sida" är bullshit" - Navid Modiri',
+      picUrl: '/portraits/modiri.jpeg'
+    },
+    {
+      text: '"Jag är enormt besviken på Iphone" - Cecilia Blankens',
+      picUrl: '/portraits/Blankens_1.jpg'
+    },
+    {
+      text: '"Livet som hemmafru var inte för mig" - Cecilia Blankens',
+      picUrl: '/portraits/Blankens_1.jpg'
+    },
+    {
+      text: '"Jag är mån om att uppfattas som en person som kan mina kollegors namn" - Fredrik Wikingsson',
+      picUrl: '/portraits/wikingsson.jpg'
+    },
+    {
+      text: '"Du har mikrodoserat svek, Söderholm" - Emil Persson',
+      picUrl: '/portraits/emil-persson.jpg'
+    },
+    {
+      text: '"Upphovsman till kolonhumorn: Jag" - Emil Persson',
+      picUrl: '/portraits/emil-persson.jpg'
     }
   ];
 
