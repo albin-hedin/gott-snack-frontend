@@ -3,6 +3,20 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <header className='md:mb-10 mb-2'>
+      <div className='text-center flex flex-col items-center' style={{
+        backgroundColor: '#282828'
+      }}>
+        <div
+          className='mt-2 font-semibold'>
+        </div>
+        <div className='lg:text-lg md:text-sm font-sans mt-2 text-xs text-white'>
+          Gott snack har sommarlov. Livesändningar tillbaka i augusti. Sommarpoddar släpps varje vecka
+        </div>
+        <div className='grid grid-cols-1'>
+          <button className='mb-6'>
+          </button>
+        </div>
+      </div>
       <div className='
          text-center
          text-white 
