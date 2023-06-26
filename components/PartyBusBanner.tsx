@@ -2,7 +2,7 @@ import Link from 'next/link'
 import SectionHeader from './SectionHeader'
 import Image from 'next/image'
 
-const PartyBus = () => {
+const PartyBusBanner = () => {
   return (
     <>
       <div className='text-center flex flex-col items-center' style={{
@@ -44,4 +44,4 @@ const PartyBus = () => {
   )
 }
 
-export default PartyBus 
+export default PartyBusBanner 
