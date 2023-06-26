@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import MainLayout from '../components/MainLayout'
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import SiteHeader from '@/components/SiteHeader'
 import Script from 'next/script'
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <div className='flex flex-col min-h-screen'>
-        <Header />
+        <SiteHeader />
         <MainLayout>
           <Component {...pageProps} />
         </MainLayout>
