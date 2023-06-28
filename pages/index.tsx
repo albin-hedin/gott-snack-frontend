@@ -47,7 +47,7 @@ const Home = () => {
             className='mt-2 font-semibold'>
           </div>
           <div className='lg:text-lg md:text-sm font-sans mt-2 text-xs text-white'>
-            Gott snack har sommarlov. Livesändningar tillbaka i augusti. Sommaravsnitt släpps varje veckas för 50 kr Patreons
+            Gott snack har sommarlov. Livesändningar tillbaka i augusti. Sommaravsnitt släpps varje vecka (i sin helhet för 50 kr Patreons)
           </div>
           <div className='grid grid-cols-1'>
             <button className='mb-6'>
