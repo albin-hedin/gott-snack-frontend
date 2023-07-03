@@ -16,7 +16,14 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
           Gott snack behövs för att människor som inte passar in i public service eller de kommersiella kanalernas likriktade mallar också ska få en chans att säga sin mening och få höras i etern. Hur dessa människor ser ut, var de kommer från, hur gamla de är spelar ingen roll, vi vill ha en mix av människor från från alla samhällsskikt i mitt program.
         </div>
       </div>
-      <div className='flex flex-wrap gap-4 justify-center items-center mx-auto max-w-[1200px] px-1'>
+      <div className='
+      flex 
+      flex-wrap
+      gap-4
+      justify-center
+      items-center
+      mx-auto max-w-[1200px]
+      px-1'>
         <ImageWithTitle
           title='Fredrik'
           picUrl='/portraits/FREDRIK-kopia-1097x1536.jpg'
