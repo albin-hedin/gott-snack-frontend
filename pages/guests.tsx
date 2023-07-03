@@ -26,15 +26,10 @@ const Guests = () => {
       name: string;
     }) =>
       <>
-        <div className='mx-2'>
-          <div
-            style={{
-              minHeight: '56px'
-            }}
-            className='
-            text-center
-            mt-2
-            md:mt-2'></div>
+        <div className='
+        mx-2
+        md:my-8
+        my-2'>
           <h1 className={`
           text-center
           lg:text-3xl
@@ -65,7 +60,7 @@ const Guests = () => {
   }
 
   return (
-    <div className='mx-3 lg:mx-52'>
+    <div className='mx-3 lg:mx-50'>
       <div id='top'>
       </div>
       <div className='text-center'>

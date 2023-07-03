@@ -21,13 +21,13 @@ const Festival = () => {
               <Link
                 href='https://app.easyarr.se/arrangemang/Gottsnackfestival.html'
                 target='_blank'>
-                <b>Köp stödbiljetter här!</b>
+                <b>Köp biljetter här!</b>
               </Link>
             </div>
             <br />
             Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023 vid Gröndals båtklubb!
             <br />
-            Köp en stödbiljett eller två så att vi äntligen kan sjösätta Stockholms nya kärleksfulla endags-festival!
+            Köp en biljett eller två så att vi äntligen kan sjösätta Stockholms nya kärleksfulla endags-festival!
             <br />
             <br />
             Följ gärna festivalen på <Link
