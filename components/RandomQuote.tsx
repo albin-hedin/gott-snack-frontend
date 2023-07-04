@@ -55,7 +55,7 @@ const RandomQuote = () => {
           href="/guests#top" >
           <div className='patreon-button rounded-xl link flex justify-between px-4 py-3 items-center gap-1'>
             <span className='text-white text-lg roboto-font font-bold'>
-              Alla citat
+              Gäster vi minns
             </span>
             <div>
               <Image
