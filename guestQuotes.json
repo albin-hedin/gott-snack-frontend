@@ -5,19 +5,14 @@
     "name": "Fredrik Wikingsson"
   },
   {
-    "text": "\"Jonas Gardell försökte knulla mig i en bastu\"",
-    "picUrl": "/portraits/pål.png",
-    "name": "Pål Hollender"
+    "text": "\"ja så är det, ah det är så, ja det är bra\"",
+    "picUrl": "/portraits/stefan-ekengren.jpg",
+    "name": "Stefan Ekengren"
   },
   {
     "text": "\"Det fanns många idéer... men det landade i potatis\"",
     "picUrl": "/portraits/stefan-ekengren.jpg",
     "name": "Stefan Ekengren"
-  },
-  {
-    "text": "\"Jag har haft några jobbiga återfall\"",
-    "picUrl": "/portraits/croneman.jpg",
-    "name": "Johan Croneman"
   },
   {
     "text": "\"Jag har 100 trauman\"",
@@ -31,6 +26,11 @@
   },
   {
     "text": "\"Det är bara alkoholen jag fortfarande brottas med\"",
+    "picUrl": "/portraits/pål.png",
+    "name": "Pål Hollender"
+  },
+  {
+    "text": "\"Jonas Gardell försökte knulla mig i en bastu\"",
     "picUrl": "/portraits/pål.png",
     "name": "Pål Hollender"
   },
@@ -55,6 +55,16 @@
     "name": "Navid Modiri"
   },
   {
+    "text": "\"Jag fick ett batongslag i ryggen\"",
+    "picUrl": "/portraits/Mona_Sahlin.jpg",
+    "name": "Mona Sahlin"
+  },
+  {
+    "text": "\"Jag har haft några jobbiga återfall\"",
+    "picUrl": "/portraits/croneman.jpg",
+    "name": "Johan Croneman"
+  },
+  {
     "text": "\"Jag är enormt besviken på Iphone\"",
     "picUrl": "/portraits/Blankens_1.jpg",
     "name": "Cecilia Blankens"
@@ -73,11 +83,6 @@
     "text": "\"Upphovsman till kolonhumorn: Jag\"",
     "picUrl": "/portraits/emil-persson.jpg",
     "name": "Emil Persson"
-  },
-  {
-    "text": "\"Jag fick ett batongslag i ryggen\"",
-    "picUrl": "/portraits/Mona_Sahlin.jpg",
-    "name": "Mona Sahlin"
   },
   {
     "text": "\"Martinus är Zayn, jag är Harry\"",
@@ -173,11 +178,6 @@
     "text": "\"Fortsätt ge tillstånd att bränna koranen, eventuellt\"",
     "picUrl": "/portraits/question.jpg",
     "name": ""
-  },
-  {
-    "text": "\"ja så är det, ah det är så, ja det är bra\"",
-    "picUrl": "/portraits/stefan-ekengren.jpg",
-    "name": "Stefan Ekengren"
   },
   {
     "text": "\"Jag måste betala 738 miljoner\"",

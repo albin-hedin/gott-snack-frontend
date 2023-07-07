@@ -65,8 +65,7 @@ const Guests = () => {
       </div>
       <div className='text-center'>
         <LargeHeader headerText='Gäster vi minns' />
-      </div>
-      <div className='
+        <div className='
       flex 
       flex-wrap
       gap-4
@@ -74,7 +73,8 @@ const Guests = () => {
       items-center
       mx-auto max-w-[1200px]
       px-1'>
-        {renderGuests()}
+          {renderGuests()}
+        </div>
       </div>
     </div>
   )
