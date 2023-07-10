@@ -76,9 +76,21 @@ const Festival = () => {
             </div>
           </div>
         </div>
-        <div className='flex justify-center'>
+        <div className='
+        flex 
+        flex-wrap
+        gap-4
+        justify-center
+        items-center
+        mx-auto max-w-[1200px]
+        px-1'>
           <Image
             src='/gs-festival.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/festrival_funk.jpg'
             alt=''
             width={400}
             height={300} />
