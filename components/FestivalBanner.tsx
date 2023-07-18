@@ -34,8 +34,6 @@ const FestivalBanner = () => {
           5 augusti 2023
           <br />
           Gröndals båtklubb
-          <br />
-          Fri entré!
         </div>
         <div className='grid grid-cols-2 md:gap-6 gap-2'>
           <button className='mb-6'>
