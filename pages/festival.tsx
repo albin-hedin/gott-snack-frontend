@@ -24,6 +24,8 @@ const Festival = () => {
                 <b>Köp biljetter här!</b>
               </Link>
             </div>
+            Färre än <span style={{ color: "red" }}>100</span> kvar
+            <br />
             <br />
             Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023 vid Gröndals båtklubb!
             <br />
@@ -90,7 +92,47 @@ const Festival = () => {
             width={400}
             height={300} />
           <Image
+            src='/forfest.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
             src='/festrival_funk.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch4.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch5.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch6.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch3.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch2.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch.jpg'
+            alt=''
+            width={400}
+            height={300} />
+          <Image
+            src='/planch7.jpg'
             alt=''
             width={400}
             height={300} />
