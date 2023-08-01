@@ -24,7 +24,7 @@ const Festival = () => {
                 <b>Köp biljetter här!</b>
               </Link>
             </div>
-            Färre än <span style={{ color: "red" }}>100</span> kvar
+            Färre än <span style={{ color: "red" }}>50</span> kvar
             <br />
             <br />
             Första upplagan av Gott snack festivalen BLIR av lördagen den 5 augusti 2023 vid Gröndals båtklubb!

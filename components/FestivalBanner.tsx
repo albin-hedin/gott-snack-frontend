@@ -35,7 +35,7 @@ const FestivalBanner = () => {
           <br />
           Gröndals båtklubb
           <br />
-          Färre än <span style={{color: "red"}}>100</span> biljetter kvar!
+          Färre än <span style={{color: "red"}}>50</span> biljetter kvar!
         </div>
         <div className='grid grid-cols-2 md:gap-6 gap-2'>
           <button className='mb-6'>
