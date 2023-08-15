@@ -1,9 +1,7 @@
-import FestivalBanner from '@/components/FestivalBanner'
 import Gottsnackteam from '@/components/GottSnackTeam'
 import ListenLive from '@/components/ListenLive'
 import AboutModal from '@/components/modals/AboutModal'
 import PicModal from '@/components/modals/PicModal'
-import PartyBus from '@/components/PartyBusBanner'
 import RandomQuote from '@/components/RandomQuote'
 import SupportUs from '@/components/SupportUs'
 import { useState } from 'react'
@@ -33,12 +31,6 @@ const Home = () => {
 
   return (
     <>
-      <div className='mb-4'>
-        <FestivalBanner />
-      </div>
-      <div className='mb-4'>
-        <PartyBus />
-      </div>
       <div className='mb-4'>
         <div className='text-center flex flex-col items-center' style={{
           backgroundColor: '#282828'
