@@ -31,22 +31,6 @@ const Home = () => {
 
   return (
     <>
-      <div className='mb-4'>
-        <div className='text-center flex flex-col items-center' style={{
-          backgroundColor: '#282828'
-        }}>
-          <div
-            className='mt-2 font-semibold'>
-          </div>
-          <div className='lg:text-lg md:text-sm font-sans mt-2 text-xs text-white'>
-            Gott snack är tillbaka från sommarlovet!
-          </div>
-          <div className='grid grid-cols-1'>
-            <button className='mb-6'>
-            </button>
-          </div>
-        </div>
-      </div>
       <ListenLive
         handlePicModalClick={setPicModalVisable}
       />
