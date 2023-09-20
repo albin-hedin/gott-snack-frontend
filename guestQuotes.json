@@ -20,6 +20,11 @@
     "name": "Pål Hollender"
   },
   {
+    "text": "\"Terrorister är som barn, man måste prata med dom\"",
+    "picUrl": "/portraits/krunegard.png",
+    "name": "Markus Krunegård"
+  },
+  {
     "text": "\"Jessika är mitt livs kärlek\"",
     "picUrl": "/portraits/pål.png",
     "name": "Pål Hollender"
@@ -58,6 +63,26 @@
     "text": "\"Jag fick ett batongslag i ryggen\"",
     "picUrl": "/portraits/Mona_Sahlin.jpg",
     "name": "Mona Sahlin"
+  },
+  {
+    "text": "\"Jag kan bli oklädsamt aggressiv... hemma\"",
+    "picUrl": "/portraits/EvaRosel.jpg",
+    "name": "Eva Röse"
+  },
+  {
+    "text": "\"Känns som att jag är fast i en priviligerad bur\"",
+    "picUrl": "/portraits/EvaRosel.jpg",
+    "name": "Eva Röse"
+  },
+  {
+    "text": "\"Jag har sagt åt gubbarna på Dramaten på skarpen\"",
+    "picUrl": "/portraits/Johan_Rabaeus.jpg",
+    "name": "Johan Rabaeus"
+  },
+  {
+    "text": "\"Jag är riktigt förbannad på digitaliseringen\"",
+    "picUrl": "/portraits/Johan_Rabaeus.jpg",
+    "name": "Johan Rabaeus"
   },
   {
     "text": "\"Jag har haft några jobbiga återfall\"",
@@ -213,5 +238,30 @@
     "text": "\"Förlåt, vi älskar bögar\"",
     "picUrl": "/portraits/jesus.jpg",
     "name": "Jesus i Örkelljunga"
+  },
+  {
+    "text": "\"Vissa männsikor har som affärsidé att bli kränkta varje dag\"",
+    "picUrl": "/portraits/boltes.jpg",
+    "name": "Fredrik Boltes"
+  },
+  {
+    "text": "\"Etiopiska kaffebönor är blytunga\"",
+    "picUrl": "/portraits/Dogge_Doggelito.jpg",
+    "name": "Dogge Doggelito"
+  },
+  {
+    "text": "\"Jag har bara äldre vänner, det är dom man lär sig av\"",
+    "picUrl": "/portraits/Dogge_Doggelito.jpg",
+    "name": "Dogge Doggelito"
+  },
+  {
+    "text": "\"Jag har försökt få ett posstivt ADHD besked tre gånger\"",
+    "picUrl": "/portraits/Victor-de-Almeida.png",
+    "name": "Victor De Almeida"
+  },
+  {
+    "text": "\"Människosmugglare lurade mig på en seglats över Atlanten\"",
+    "picUrl": "/portraits/Victor-de-Almeida.png",
+    "name": "Victor De Almeida"
   }
 ]
