@@ -15,26 +15,6 @@ const FestivalContent2024 = () => {
           dekor, hyrtoaletter, event-prylar etc.
           BingBong Event AB arrangerar festivalen och ansvarar för allt från tillstånd,
           logistik, planering, redovisning, städning, bokning av artister etc.
-          <br />
-          <br />
-        </div>
-        <div>
-          <MediumHeader blackText headerText='ARTISTER' />
-          Tanken att boka några större namn som kan dra lite mer publik.
-          Exempel på artister vi redan börjat dra i:
-          <br />
-          • Avantgardet
-          <br />
-          • Linn Koch-Emmery
-          <br />
-          • Love Antell
-          <br />
-          • Kristian Anttila
-          <br />
-          • Bröderna Norén
-          <br />
-          Vi planerar även att boka en mellanakt i form av manliga dansare
-          i Chippendale-stil.
           <div className='
               mt-4
               flex 
