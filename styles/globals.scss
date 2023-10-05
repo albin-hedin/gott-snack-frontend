@@ -75,6 +75,25 @@ a {
   background-color: #141518;
 }
 
+.patreon-button-white {
+  background-color: #dddee4;
+
+  &:hover {
+    background-color: #f2f3f8;
+    transition: background-color 0.18s;
+  }
+
+  &:active {
+    background-color: #f2f3f8;
+    transition: all 0.18s;
+    transform: scale(0.95);
+  }
+
+  &.isActive {
+    background-color: #f2f3f8;
+  }
+}
+
 .link {
   text-decoration: none !important;
   cursor: pointer;

@@ -1,3 +1,4 @@
+import FestivalBanner from '@/components/FestivalBanner'
 import Gottsnackteam from '@/components/GottSnackTeam'
 import ListenLive from '@/components/ListenLive'
 import AboutModal from '@/components/modals/AboutModal'
@@ -38,7 +39,9 @@ const Home = () => {
       <div className='mt-10'>
         <SupportUs />
       </div>
-
+      <div className='mt-10'>
+        <FestivalBanner />
+      </div>
       <div className='mt-10'>
         <Gottsnackteam
           handleModalClick={handleAboutModalClick} />
