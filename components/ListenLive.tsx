@@ -11,7 +11,7 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
     (async () => {
       const cosmicApi = cosmic()
       const bucket = cosmicApi.bucket({
-        slug: 'gottsnack-fe-production',
+        slug: 'gottsnack-fe-prd',
         read_key: 'P8TfyJeSr2c6W7eMBRuoRXfUes72duVLbFsJ9VaRLcSro2NWDv'
       })
 
