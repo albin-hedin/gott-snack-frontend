@@ -2,25 +2,23 @@ import Image from 'next/image'
 import MixlrPlayer from './MixlrPlayer'
 import SpotifyPlayer from '@/components/SpotifyPlayer'
 import { useEffect, useState } from 'react'
-import cosmic from 'cosmicjs'
+import { createBucketClient } from '@cosmicjs/sdk'
 
 const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.Element => {
   const [weeklySchedulePicUrl, setWeeklySchedulePicUrl] = useState('')
 
   useEffect(() => {
     (async () => {
-      const cosmicApi = cosmic()
-      const bucket = cosmicApi.bucket({
-        slug: 'gottsnack-fe-prd',
-        read_key: 'P8TfyJeSr2c6W7eMBRuoRXfUes72duVLbFsJ9VaRLcSro2NWDv'
+      const cosmic = createBucketClient({
+        bucketSlug: 'gott-snack-production',
+        readKey: '61qc6dpfu9xYJioAJyYF9pqsQrl7DMp3bbonTCPanTjBXCccHT'
       })
+      const data = await cosmic.objects.findOne({
+        type: "guests",
+        slug: "guests"
+      }).props("metadata")
 
-      const data = await bucket.objects.find({
-        type: 'weekly-schedule',
-        slug: 'la'
-      })
-
-      setWeeklySchedulePicUrl(data?.objects[0]?.metadata?.weeklyschedule.url ?? '/senaste.jpg')
+      setWeeklySchedulePicUrl(data.object.metadata.guests.url ?? '/senaste.jpg')
     })()
   })
 
