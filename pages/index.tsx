@@ -1,3 +1,4 @@
+import AwayBanner from '@/components/AwayBanner'
 import FestivalBanner from '@/components/FestivalBanner'
 import Gottsnackteam from '@/components/GottSnackTeam'
 import ListenLive from '@/components/ListenLive'
@@ -32,6 +33,9 @@ const Home = () => {
 
   return (
     <>
+      <div className='mb-10'>
+        <AwayBanner />
+      </div>
       <ListenLive
         handlePicModalClick={setPicModalVisable}
       />
