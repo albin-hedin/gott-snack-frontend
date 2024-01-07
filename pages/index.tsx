@@ -33,9 +33,9 @@ const Home = () => {
 
   return (
     <>
-      <div className='mb-10'>
+      {/* <div className='mb-10'>
         <AwayBanner />
-      </div>
+      </div> */}
       <ListenLive
         handlePicModalClick={setPicModalVisable}
       />
