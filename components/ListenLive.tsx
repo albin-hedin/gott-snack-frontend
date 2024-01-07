@@ -60,10 +60,10 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
           </div>
           <div className='flex flex-col items-center'>
             <Image
-              className='link
-              pointer-events-none
-              md:pointer-events-auto'
-              onClick={() => handlePicModalClick(true, weeklySchedulePicUrl)}
+              // className='link
+              // pointer-events-none
+              // md:pointer-events-auto'
+              //onClick={() => handlePicModalClick(true, weeklySchedulePicUrl)}
               src={weeklySchedulePicUrl}
               alt=''
               width={465}
