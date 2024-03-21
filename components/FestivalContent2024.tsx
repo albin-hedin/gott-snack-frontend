@@ -1,5 +1,6 @@
 import MediumHeader from '@/components/MediumHeader'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const FestivalContent2024 = () => {
   return (
@@ -15,6 +16,15 @@ const FestivalContent2024 = () => {
           dekor, hyrtoaletter, event-prylar etc.
           BingBong Event AB arrangerar festivalen och ansvarar för allt från tillstånd,
           logistik, planering, redovisning, städning, bokning av artister etc.
+          <br></br>
+          <br></br>
+          <b>
+            <Link href='https://billetto.se/e/gott-snack-festival-biljetter-969436?utm_source=organiser&utm_medium=share&utm_campaign=copy_link&utm_content=1' target='_blank'>
+              <div className='text-2xl'>
+                Biljetter
+              </div>
+            </Link>
+          </b>
           <div className='
               mt-4
               flex 

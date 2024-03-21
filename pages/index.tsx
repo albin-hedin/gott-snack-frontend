@@ -36,15 +36,15 @@ const Home = () => {
       {/* <div className='mb-10'>
         <AwayBanner />
       </div> */}
+      <div className='mb-10'>
+        <FestivalBanner />
+      </div>
       <ListenLive
         handlePicModalClick={setPicModalVisable}
       />
       <RandomQuote />
       <div className='mt-10'>
         <SupportUs />
-      </div>
-      <div className='mt-10'>
-        <FestivalBanner />
       </div>
       <div className='mt-10'>
         <Gottsnackteam
