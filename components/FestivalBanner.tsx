@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SectionHeader from './SectionHeader'
 import Image from 'next/image'
+import SmallHeader from './SmallHeader'
 
 const FestivalBanner = () => {
   return (
@@ -13,6 +14,7 @@ const FestivalBanner = () => {
           className='mt-2 font-semibold'>
           <SectionHeader text='Gott snack festival 2024' />
         </div>
+        <SmallHeader white headerText='2-3 Augusti' />
         <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }} className='lg:text-2xl md:text-2xl font-sans mb-4 text-sm text-white'>
         </div>
         <div className='grid grid-cols-2 md:gap-6 gap-2'>
