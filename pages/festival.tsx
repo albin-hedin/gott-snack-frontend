@@ -9,7 +9,7 @@ import MediumHeader from '@/components/MediumHeader'
 import Link from 'next/link'
 
 const Festival = () => {
-  const [contentToShow, setContentToShow] = useState('start')
+  const [contentToShow, setContentToShow] = useState('2024')
 
   return (
     <div className='mx-3 lg:mx-52'>
@@ -30,17 +30,17 @@ const Festival = () => {
         space-y-2
         mb-4'>
           <FestivalButton
-            onclick={() => setContentToShow('start')}
-            text='Start'
-            isActive={contentToShow === 'start'} />
+            onclick={() => setContentToShow('2024')}
+            text='2024'
+            isActive={contentToShow === '2024'} />
           <FestivalButton
             onclick={() => setContentToShow('2023')}
             text='2023'
             isActive={contentToShow === '2023'} />
           <FestivalButton
-            onclick={() => setContentToShow('2024')}
-            text='2024'
-            isActive={contentToShow === '2024'} />
+            onclick={() => setContentToShow('start')}
+            text='Allmänt'
+            isActive={contentToShow === 'start'} />
           <FestivalButton
             onclick={() => setContentToShow('intern')}
             text='Jobba som praktikant'
@@ -143,7 +143,8 @@ const Festival = () => {
             <div>
               <MediumHeader blackText headerText='Kontakt' />
               <div className='mt-4'>
-                Gott snack festival på <Link
+                Gott snack festival på
+                <Link
                   href='https://www.instagram.com/gott_snack_festival/'
                   target='_blank'>
                   <b>Instagram</b>
