@@ -147,10 +147,14 @@ const Festival = () => {
                 <Link
                   href='https://www.instagram.com/gott_snack_festival/'
                   target='_blank'>
-                  <b>Instagram</b>
+                  <b> Instagram</b>
                 </Link>
                 <br />
-                <b>Mail:</b> festival@gottsnack.nu
+                <b>Mail: </b>
+                <Link
+                  href='mailto:festival@gottsnack.nu'>
+                  festival@gottsnack.nu
+                </Link>
                 <br />
                 <b>Telefon:</b> 070-6067591
               </div>
@@ -160,7 +164,8 @@ const Festival = () => {
             <FestivalContent2023 />
           }
           {contentToShow === '2024' &&
-            <FestivalContent2024 />
+            <FestivalContent2024
+              setContentToShow={setContentToShow} />
           }
           {contentToShow === 'intern' &&
             <FestivalContentIntern />

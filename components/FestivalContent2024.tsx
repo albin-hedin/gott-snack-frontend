@@ -2,7 +2,7 @@ import MediumHeader from '@/components/MediumHeader'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const FestivalContent2024 = () => {
+const FestivalContent2024 = ({ setContentToShow }: { setContentToShow: (contentToShow: string) => void }) => {
   return (
     <>
       <div>
@@ -22,6 +22,11 @@ const FestivalContent2024 = () => {
           Köp dina biljetter nu och åk med på det kärleksfulla tåget som är Stockholms enda nya indie-festival!
           <br></br>
           <br></br>
+          Alla ska trivas och känna sig välkomna på festivalen. Om du har särskilda behov eller önskemål för tillgänglighetsanpassning, såsom tillgång till handikapptoalett eller en reserverad plats på ett avspärrat område, är vi här för att hjälpa till.
+          <br></br>
+          <span className='font-bold link' onClick={() => setContentToShow('contact')}> Kontakta oss gärna</span> så gör vi vårt absolut bästa för att tillgodose dina behov. Vi vill göra din festivalupplevelse så rolig, trevlig och smidig som möjligt!
+          <br></br>
+          <br></br>
           Liten festival = väldigt begränsat antal biljetter!
           Området ligger ca 10 minuter från Liljeholmen. Tar du buss eller tvärbanan till Gröndal är det bara 5 minuters promenad till båtklubben!
           <br></br>
@@ -29,10 +34,9 @@ const FestivalContent2024 = () => {
           <b>
             <Link href='https://billetto.se/e/gott-snack-festival-biljetter-969436?utm_source=organiser&utm_medium=share&utm_campaign=copy_link&utm_content=1' target='_blank'>
               <div className='text-2xl'>
-                Biljetter
+                Biljetter (billetto.se)
               </div>
             </Link>
-            (EARLY BIRD TILLS 29/3)
           </b>
           <div className='
               mt-4
@@ -41,10 +45,10 @@ const FestivalContent2024 = () => {
               justify-center'>
             <Image
               className='rounded-xl'
-              src='/festival24/poster24.jpg'
+              src='/festival24/poster24WithText.JPG'
               alt=''
-              width={300}
-              height={300} />
+              width={400}
+              height={500} />
           </div>
         </div>
       </div>
