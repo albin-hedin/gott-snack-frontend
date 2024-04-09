@@ -64,6 +64,7 @@ const AboutModal = (
   const currentCoWorker = (): any | undefined => {
     return coWorkerData().find(cw => cw.id === coWorker)
   }
+
   return (
     <Dialog className="relative z-50" open={modalVisable} onClose={() => handleModalClick(false)}>
       <div className="fixed inset-0 flex items-center justify-center">
@@ -118,12 +119,18 @@ const AboutModal = (
   )
 }
 
+const calculateAge = (yearOfBirth: number): string => {
+  const currentYear: number = new Date().getFullYear();
+  const age: number = currentYear - yearOfBirth;
+  return age.toString();
+}
+
 const coWorkerData = () => {
   return ([
     {
       "id": "fredrik",
       "name": "Fredrik Söderholm",
-      "age": "31",
+      "age": (() => calculateAge(1991))(),
       "slogan": "Var lite snällare än vad situationen kräver",
       "interests": "Skratta och ha kul",
       "opinion": "FÖRSIKTIGT positiv till Dumpen",
@@ -134,7 +141,7 @@ const coWorkerData = () => {
     {
       "id": "max",
       "name": "Max Söderholm",
-      "age": "34",
+      "age": (() => calculateAge(1989))(),
       "slogan": "Allt smakar bättre med smält ost",
       "interests": "Rock mat och stilla hemmakvällar kärestan My och Bob",
       "opinion": "Dålig smak = dålig människa",
@@ -145,7 +152,7 @@ const coWorkerData = () => {
     {
       "id": "plommon",
       "name": "Adam Plommon",
-      "age": "22",
+      "age": (() => calculateAge(2001))(),
       "slogan": "Mer åt alla hela tiden",
       "interests": "Kollektivtrafik och damer",
       "opinion": "Abort bör vara tillåtet fram till att man klippt navelsträngen",
@@ -156,7 +163,7 @@ const coWorkerData = () => {
     {
       "id": "micke",
       "name": "Mikael Ljungberg",
-      "age": "25",
+      "age": (() => calculateAge(1998))(),
       "slogan": "Rättigheter - men framförallt skyldigheter",
       "interests": "Sport och fritid",
       "opinion": '"Ryck upp dig" är den bästa terapin',
@@ -167,7 +174,7 @@ const coWorkerData = () => {
     {
       "id": "tollstoy",
       "name": "Rickard Tollstoy",
-      "age": "28",
+      "age": (() => calculateAge(1995))(),
       "slogan": "Trygghet. Trivlse. Tollstoy",
       "interests": "Adventures, song and mead",
       "opinion": '"Springsteen är tvåplus',
@@ -178,7 +185,7 @@ const coWorkerData = () => {
     {
       "id": "tore",
       "name": "Tore Kullgren",
-      "age": "42",
+      "age": (() => calculateAge(1981))(),
       "slogan": "Gör bättre själv då!",
       "interests": "Standup, geografi och killyoga",
       "opinion": 'Avskaffa kravet att simma 200 meter i årskurs 6',
@@ -189,7 +196,7 @@ const coWorkerData = () => {
     {
       "id": "agge",
       "name": "August Bohlin",
-      "age": "30",
+      "age": (() => calculateAge(1993))(),
       "slogan": '"Ta någon annan först jag måste tänka lite"',
       "interests": "Bygga lägerplatser av schysta pinnar och gott doftande barr!",
       "opinion": 'Det ÄR skönt att beställa foodora i snöstorm',
@@ -200,7 +207,7 @@ const coWorkerData = () => {
     {
       "id": "ballafjang",
       "name": 'Petter "Ballafjang" Ströbaek',
-      "age": "21",
+      "age": (() => calculateAge(2002))(),
       "slogan": 'Kriminalisera allt',
       "interests": "Musik",
       "opinion": 'Mobbning är kul',
@@ -211,7 +218,7 @@ const coWorkerData = () => {
     {
       "id": "sagah",
       "name": 'Sagah Larsson',
-      "age": "29",
+      "age": (() => calculateAge(1994))(),
       "slogan": 'Inte gett upp än',
       "interests": "Gud, Marabou helnöt, rock från 92-99 och schack",
       "opinion": 'Alla med katt är psykiskt sjuka',
@@ -233,7 +240,7 @@ const coWorkerData = () => {
     {
       "id": "zorbas",
       "name": 'Zorbas Newton',
-      "age": "34",
+      "age": (() => calculateAge(1989))(),
       "slogan": '"Kriminalisera allt"',
       "interests": "Böcker om gubbar som betett sig illa",
       "opinion": 'Alla stockholmare bör göra lumpen ett år genom att bo i en svensk småstad',
@@ -255,7 +262,7 @@ const coWorkerData = () => {
     {
       "id": "jesper",
       "name": 'Jesper Ekstedt',
-      "age": "31",
+      "age": (() => calculateAge(1992))(),
       "slogan": 'Stopp och belägg',
       "interests": "Fundera, åka Voi",
       "opinion": 'Plant-based burgare är vidriga',
@@ -266,7 +273,7 @@ const coWorkerData = () => {
     {
       "id": "otto",
       "name": 'Otto "HEMAN" Larsson',
-      "age": "32 (16)",
+      "age": (() => calculateAge(1992))(),
       "slogan": 'Det finns nog med Otto till alla som vill ha, och lite till...',
       "interests": "Månskens promenader i VR, hämtmatsfinedining, gåtor och cannabis!",
       "opinion": 'Ananas på pizza är en grje, banan är inte!',
@@ -277,7 +284,7 @@ const coWorkerData = () => {
     {
       "id": "fanny",
       "name": 'Fanny Klefelt',
-      "age": "29",
+      "age": (() => calculateAge(1994))(),
       "slogan": 'Frihetsberöva män som tar selfies',
       "interests": "Mord, katastrofer och ond bråd död",
       "opinion": 'Har inga, är en opinion popular så är det den jag har',
@@ -288,7 +295,7 @@ const coWorkerData = () => {
     {
       "id": "tora",
       "name": 'Tora Rydelius',
-      "age": "29",
+      "age": (() => calculateAge(1994))(),
       "slogan": 'Ro och vila',
       "interests": "Gå på event, konstnärliga och kommersiella (ej privata firanden)",
       "opinion": 'Tjejer som orkar sminka sig får inte klaga',
@@ -299,7 +306,7 @@ const coWorkerData = () => {
     {
       "id": "bruce",
       "name": 'Bruce & Räkan',
-      "age": "4 & 0.5",
+      "age": "5 & 1.5",
       "slogan": 'Man har bara nio liv',
       "interests": "Sova, äta, gosa och krafsa frenetikst på ishinken",
       "opinion": 'Tonfisk lite överskattat ändå?',
