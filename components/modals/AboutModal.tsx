@@ -130,7 +130,7 @@ const coWorkerData = () => {
     {
       "id": "fredrik",
       "name": "Fredrik Söderholm",
-      "age": (() => calculateAge(1991))(),
+      "age": (() => calculateAge(1992))(),
       "slogan": "Var lite snällare än vad situationen kräver",
       "interests": "Skratta och ha kul",
       "opinion": "FÖRSIKTIGT positiv till Dumpen",
