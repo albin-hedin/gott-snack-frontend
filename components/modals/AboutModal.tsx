@@ -143,17 +143,6 @@ const coWorkerData = () => {
       "sandwich": "En grilled cheese-variant med jalapenos, signerad My Jonsson"
     },
     {
-      "id": "ploj",
-      "name": "Rickard Ploj",
-      "age": "34",
-      "slogan": "Turn on, tune in, drop out",
-      "interests": "Fordon som går riktigt fort och klockor som kostar oförsvarbara mängder pengar",
-      "opinion": "Legalize it?",
-      "favoriteSubject": "Gröndalsminnen, therapy thursday (helst på måndagar) samt vad redaktionen har haft för sig i helgen",
-      "trigers": "Folk som tar sig själva på för stort allvar",
-      "sandwich": "En väl avvägd köttbullar med rödbetssallad-macka"
-    },
-    {
       "id": "plommon",
       "name": "Adam Plommon",
       "age": "22",
