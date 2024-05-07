@@ -35,9 +35,6 @@ const Footer = () => {
               height={40} />
           </a>
         </div>
-        <div className='text-xs md:text-sm'>
-          v 1.0.0
-        </div>
       </div>
     </footer></>
   )
