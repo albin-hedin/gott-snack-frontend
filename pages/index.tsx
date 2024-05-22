@@ -37,9 +37,9 @@ const Home = () => {
       {/* <div className='mb-10'>
         <AwayBanner />
       </div> */}
-      <div className='mb-10'>
+      {/* <div className='mb-10'>
         <MovieBanner />
-      </div>
+      </div> */}
       <div className='mb-10'>
         <FestivalBanner />
       </div>

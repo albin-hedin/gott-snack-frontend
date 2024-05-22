@@ -2,7 +2,7 @@ import Link from 'next/link'
 import SectionHeader from './SectionHeader'
 import Image from 'next/image'
 
-const FestivalBanner = () => {
+const MovieBanner = () => {
   return (
     <>
       <div className='text-center flex flex-col items-center'
@@ -49,4 +49,4 @@ const FestivalBanner = () => {
   )
 }
 
-export default FestivalBanner
+export default MovieBanner
