@@ -6,7 +6,7 @@ const AwayBanner = () => {
       backgroundColor: '#282828'
     }}>
       <div className='lg:text-xl md:text-xl sm:text-sm font-sans my-2 text-xs text-white'>
-        <span role="img" aria-label="sheep">🎅🏼Redaktionen tar julledigt 23 december. Tillbaka 8 januari🎅🏼</span>
+        <span role="img" aria-label="sheep">🌞 Redaktionen har sommarledigt. Två avsnitt släpps varje vecka så behåll er patreon. Tillbaka i augusti 🌞</span>
       </div>
     </div>
   )

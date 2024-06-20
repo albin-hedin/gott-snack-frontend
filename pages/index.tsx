@@ -16,7 +16,7 @@ const Home = () => {
   const [aboutModalCoworker, setAboutModalCoworker] = useState('');
   const [aboutModalInstaUrl, setAboutModalInstaUrl] = useState('');
 
-  const setPicModalVisable = (
+  const setPicModalVisible = (
     isOpen: boolean,
     picUrl: string): void => {
     setPicModalOpen(isOpen)
@@ -34,9 +34,9 @@ const Home = () => {
 
   return (
     <>
-      {/* <div className='mb-10'>
+      <div className='mb-10'>
         <AwayBanner />
-      </div> */}
+      </div>
       {/* <div className='mb-10'>
         <MovieBanner />
       </div> */}
@@ -44,7 +44,7 @@ const Home = () => {
         <FestivalBanner />
       </div>
       <ListenLive
-        handlePicModalClick={setPicModalVisable}
+        handlePicModalClick={setPicModalVisible}
       />
       <RandomQuote />
       <div className='mt-10'>
@@ -55,7 +55,7 @@ const Home = () => {
           handleModalClick={handleAboutModalClick} />
       </div>
       <PicModal
-        handlePicModalClick={setPicModalVisable}
+        handlePicModalClick={setPicModalVisible}
         modalVisable={picModalOpen}
         imageUrl={picModalPicUrl} />
       <AboutModal
