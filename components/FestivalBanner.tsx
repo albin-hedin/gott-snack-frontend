@@ -13,7 +13,7 @@ const FestivalBanner = () => {
           className='mt-2 font-semibold'>
           <SectionHeader text='Gott snack festival 2024' />
         </div>
-        <span className='text-white lg:text-lg md:text-sm text-xs font-sans italic'>Med stöd av Stockholm stad och Kulturrådet</span>
+        <span className='text-white lg:text-lg md:text-sm text-xs font-sans italic'>Med stöd av Stockholms stad och Kulturrådet</span>
         <span className='text-white lg:text-2xl md:text-lg text-sm '>2-3 Augusti</span>
         <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }} className='lg:text-2xl md:text-2xl font-sans mb-4 text-sm text-white'>
         </div>

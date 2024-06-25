@@ -64,7 +64,7 @@ const Guests = () => {
       <div id='top'>
       </div>
       <div className='text-center'>
-        <LargeHeader headerText='Gäster vi minns' />
+        <LargeHeader blackText headerText='Gäster vi minns' />
         <div className='
       flex 
       flex-wrap
