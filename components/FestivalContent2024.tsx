@@ -8,8 +8,7 @@ const FestivalContent2024 = ({ setContentToShow }: { setContentToShow: (contentT
       <div>
         <div>
           <MediumHeader blackText headerText='Festivalen 2024' />
-          Gott snack festival återkommer till Gröndals båtklubb den 2 & 3 augusti efter förra årets succé där 700 gäster dansade in sommarnatten till ljus musik.
-          Gröndals Båtklubb är en gemytlig oas 10 min från city med tillgång till bastu, bad och kajak-uthyrning.
+          Gott snack festival kommer i år att arrangeras på Stadsgårdsterminalen den 2 & 3 augusti. Förra året blev en succé där 700 gäster dansade in sommarnatten till ljus musik.
           På området kommer det dessutom finnas två barer, foodtrucks, co-creation, loungehäng, schyssta viner utvalda av sommelier, närproducerad öl från Fjäderholmarnas bryggeri och hard seltzer i goda smaker från Kubik.
           <br></br>
           <br></br>
@@ -28,7 +27,6 @@ const FestivalContent2024 = ({ setContentToShow }: { setContentToShow: (contentT
           <br></br>
           <br></br>
           Liten festival = väldigt begränsat antal biljetter!
-          Området ligger ca 10 minuter från Liljeholmen. Tar du buss eller tvärbanan till Gröndal är det bara 5 minuters promenad till båtklubben!
           <br></br>
           <br></br>
           <b>
