@@ -11,16 +11,16 @@ const FestivalBanner = () => {
             textShadow: '1px 1px 2px rgba(0,0,0,0.2)'
           }}
           className='mt-2 font-semibold'>
-          <SectionHeader text='Gott snack festival 2024' />
+          <SectionHeader text='Gott snack festival' />
         </div>
         <span className='text-white lg:text-lg md:text-sm text-xs font-sans italic'>Med stöd av Stockholms stad och Kulturrådet</span>
-        <span className='text-white lg:text-2xl md:text-lg text-sm '>2-3 Augusti</span>
+        <span className='text-white lg:text-2xl md:text-lg text-sm '>Tack för i år älskade ni!! Vi återkommer snart med information om nästa festival 2025</span>
         <div style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }} className='lg:text-2xl md:text-2xl font-sans mb-4 text-sm text-white'>
         </div>
         {/* <div className='grid grid-cols-2 md:gap-6 gap-2'> */}
         <div className=''>
           <button className='mb-6'>
-            {/* <Link href="/festival#top" >
+            <Link href="/festival#top" >
               <div className='patreon-button rounded-xl link flex justify-between px-4 py-3 items-center gap-1'>
                 <span className='text-white text-lg roboto-font font-bold'>
                   Läs mer
@@ -33,9 +33,9 @@ const FestivalBanner = () => {
                     height={25} />
                 </div>
               </div>
-            </Link> */}
+            </Link>
           </button>
-          <button className='mb-6'>
+          {/* <button className='mb-6'>
             <Link href='https://billetto.se/e/gott-snack-festival-biljetter-969436?utm_source=organiser&utm_medium=share&utm_campaign=copy_link&utm_content=1' target='_blank'>
               <div className='patreon-button rounded-xl link flex justify-between px-4 py-3 items-center gap-1'>
                 <span className='text-white text-lg roboto-font font-bold'>
@@ -50,7 +50,7 @@ const FestivalBanner = () => {
                 </div>
               </div>
             </Link>
-          </button>
+          </button> */}
         </div>
       </div>
     </>

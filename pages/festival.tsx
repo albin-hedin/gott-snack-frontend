@@ -7,6 +7,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import MediumHeader from '@/components/MediumHeader'
 import Link from 'next/link'
+import FestivalContent2025 from '@/components/FestivalContent2025'
 
 const Festival = () => {
   const [contentToShow, setContentToShow] = useState('2024')
@@ -29,6 +30,10 @@ const Festival = () => {
         space-x-2
         space-y-2
         mb-4'>
+          <FestivalButton
+            onclick={() => setContentToShow('2025')}
+            text='2025'
+            isActive={contentToShow === '2025'} />
           <FestivalButton
             onclick={() => setContentToShow('2024')}
             text='2024'
@@ -169,6 +174,10 @@ const Festival = () => {
           }
           {contentToShow === 'intern' &&
             <FestivalContentIntern />
+          }
+          {contentToShow === '2025' &&
+            <FestivalContent2025
+              setContentToShow={setContentToShow} />
           }
         </div>
       </div>
