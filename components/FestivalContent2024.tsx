@@ -8,7 +8,7 @@ const FestivalContent2024 = ({ setContentToShow }: { setContentToShow: (contentT
       <div>
         <div>
           <MediumHeader blackText headerText='Festivalen 2024' />
-          Gott snack festival kommer i år att arrangeras på Stadsgårdsterminalen den 2 & 3 augusti. Förra året blev en succé där 700 gäster dansade in sommarnatten till ljus musik.
+          Gott snack festival kommer i år att arrangeras på Stadsgårdsterminalen den 2 & 3 augusti med stöd av Stockholms stad och Kulturrådet. Förra året blev en succé där 700 gäster dansade in sommarnatten till ljus musik.
           På området kommer det dessutom finnas två barer, foodtrucks, co-creation, loungehäng, schyssta viner utvalda av sommelier, närproducerad öl från Fjäderholmarnas bryggeri och hard seltzer i goda smaker från Kubik.
           <br></br>
           <br></br>
