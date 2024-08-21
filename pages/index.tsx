@@ -4,7 +4,6 @@ import Gottsnackteam from '@/components/GottSnackTeam'
 import ListenLive from '@/components/ListenLive'
 import AboutModal from '@/components/modals/AboutModal'
 import PicModal from '@/components/modals/PicModal'
-import MovieBanner from '@/components/MovieBanner'
 import RandomQuote from '@/components/RandomQuote'
 import SupportUs from '@/components/SupportUs'
 import { useState } from 'react'
@@ -34,9 +33,9 @@ const Home = () => {
 
   return (
     <>
-      <div className='mb-10'>
+      {/* <div className='mb-10'>
         <AwayBanner />
-      </div>
+      </div> */}
       {/* <div className='mb-10'>
         <MovieBanner />
       </div> */}
