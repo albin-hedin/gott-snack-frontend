@@ -306,7 +306,7 @@ const coWorkerData = () => {
     {
       "id": "bruce",
       "name": 'Bruce & Räkan',
-      "age": "5 & 1.5",
+      "age": "6 & 2.5",
       "slogan": 'Man har bara nio liv',
       "interests": "Sova, äta, gosa och krafsa frenetikst på ishinken",
       "opinion": 'Tonfisk lite överskattat ändå?',

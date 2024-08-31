@@ -91,14 +91,6 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             'https://www.instagram.com/andreperssooon/')} />
         <ImageWithTitle
           imageSux={true}
-          title='Tore'
-          picUrl='/portraits/tore.png'
-          onClick={() => handleModalClick(
-            true,
-            'tore',
-            'https://www.instagram.com/torekullgren/')} />
-        <ImageWithTitle
-          imageSux={true}
           title='Otto'
           picUrl='/portraits/otto.png'
           onClick={() => handleModalClick(
@@ -113,22 +105,6 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             true,
             'plommon',
             'https://www.instagram.com/adam.plommon/')} />
-        <ImageWithTitle
-          imageSux={true}
-          title='Ballafjang'
-          picUrl='/portraits/ballafjang.png'
-          onClick={() => handleModalClick(
-            true,
-            'ballafjang',
-            'https://www.instagram.com/ballafjang/')} />
-        <ImageWithTitle
-          imageSux={true}
-          title='Sagah'
-          picUrl='/portraits/sagah.png'
-          onClick={() => handleModalClick(
-            true,
-            'sagah',
-            'https://www.instagram.com/satanistsagah/')} />
         <ImageWithTitle
           imageSux={true}
           title='Bruce & Räkan'
