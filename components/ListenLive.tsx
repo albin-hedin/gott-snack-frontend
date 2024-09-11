@@ -29,7 +29,7 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
          grid
          grid-cols-1 
          gap-4
-         md:grid-cols-3 
+         md:grid-cols-2
          md:gap-6
          md:mx-6'>
           <div className='flex flex-col items-center'>
@@ -58,7 +58,7 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
           <div >
             <SpotifyPlayer />
           </div>
-          <div className='flex flex-col items-center'>
+          {/* <div className='flex flex-col items-center'>
             <Image
               // className='link
               // pointer-events-none
@@ -68,7 +68,7 @@ const ListenLive = ({ handlePicModalClick }: { handlePicModalClick: any }): JSX.
               alt=''
               width={465}
               height={1000} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
