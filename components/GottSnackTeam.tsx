@@ -97,14 +97,14 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
             true,
             'otto',
             'https://www.instagram.com/ottoidimman/')} />
-        <ImageWithTitle
+        {/* <ImageWithTitle
           imageSux={true}
           title='Plommon'
           picUrl='/portraits/plommon.png'
           onClick={() => handleModalClick(
             true,
             'plommon',
-            'https://www.instagram.com/adam.plommon/')} />
+            'https://www.instagram.com/adam.plommon/')} /> */}
         <ImageWithTitle
           imageSux={true}
           title='Bruce & Räkan'
