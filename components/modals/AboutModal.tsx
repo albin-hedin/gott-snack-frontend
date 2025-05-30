@@ -293,17 +293,6 @@ const coWorkerData = () => {
       "sandwich": "Allt med mycket ost och krispigt bröd? Gillar inte att ta i för hårt med tänderna"
     },
     {
-      "id": "tora",
-      "name": 'Tora Rydelius',
-      "age": (() => calculateAge(1994))(),
-      "slogan": 'Ro och vila',
-      "interests": "Gå på event, konstnärliga och kommersiella (ej privata firanden)",
-      "opinion": 'Tjejer som orkar sminka sig får inte klaga',
-      "favoriteSubject": "Färganalys just nu och folks problem",
-      "trigers": '"Det är femte koppen jag dricker idag, hahahaha" i chat Folk som släpper loss',
-      "sandwich": "Toast skagen"
-    },
-    {
       "id": "bruce",
       "name": 'Bruce & Räkan',
       "age": "6 & 2.5",
