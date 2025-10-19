@@ -83,7 +83,7 @@ const Festival = () => {
               <div>
                 <MediumHeader blackText headerText="Bakgrund" />
                 Jag (Fredrik Söderholm) har startat och driver
-                morgonradioprogrammet Gott snack och har haft många artister och
+                radioprogrammet Gott snack och har haft många artister och
                 konstnärer som gäster. Jag vill anordna en festival där några av
                 dessa begåvade människor får möjligheten att uppträda live och
                 visa upp sina alster. Målet med podden är att möta människor med
@@ -132,7 +132,7 @@ const Festival = () => {
                 <br />
                 <br />
                 Vi väljer ut ett antal akter som sedan kommer att få spela i
-                Gott snack morgonradio för att få låta publiken lyssna och rösta
+                Gott snack radio för att få låta publiken lyssna och rösta
                 på vilken artist som ska få spela ett set på festivalen.
                 <br />
                 <br />

@@ -1,20 +1,21 @@
-import '../styles/globals.scss'
-import type { AppProps } from 'next/app'
-import Head from 'next/head'
-import MainLayout from '../components/MainLayout'
-import Footer from '@/components/Footer'
-import SiteHeader from '@/components/SiteHeader'
-import Script from 'next/script'
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import MainLayout from "../components/MainLayout";
+import Footer from "@/components/Footer";
+import SiteHeader from "@/components/SiteHeader";
+import Script from "next/script";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>
-          Gott snack morgonradio
-        </title>
+        <title>Gott snack</title>
       </Head>
-      <meta name="description" content="Gott snack morgonradio är en podd som sänds live kl 08:00-10:00. Vi pratar om allt mellan himmel och jord och spelar musik som får dig att vakna till liv. Välkommen att lyssna! Gott Snack grundades av Fredrik Geniet Söderholm år 2020. Projektet drogs igång med ambitionen att sända ofiltrerad och gränslös morgonradio – på Geniets sätt." />
+      <meta
+        name="description"
+        content="Gott snack är en podd/radio som sänds live kl 08:00-10:00. Vi pratar om allt mellan himmel och jord och spelar musik som får dig att vakna till liv. Välkommen att lyssna! Gott Snack grundades av Fredrik Geniet Söderholm år 2020. Projektet drogs igång med ambitionen att sända ofiltrerad och gränslös radio – på Geniets sätt."
+      />
       {/* !-- Global site tag (gtag.js) - Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6NW5E5W6BV"
@@ -29,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag('config', 'G-6NW5E5W6BV');
         `}
       </Script>
-      <div className='flex flex-col min-h-screen'>
+      <div className="flex flex-col min-h-screen">
         <SiteHeader />
         <MainLayout>
           <Component {...pageProps} />
@@ -37,6 +38,5 @@ export default function App({ Component, pageProps }: AppProps) {
         <Footer />
       </div>
     </>
-
-  )
+  );
 }

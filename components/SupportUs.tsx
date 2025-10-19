@@ -1,22 +1,26 @@
-import PatreonButton from './PatreonButton'
-import SectionHeader from './SectionHeader'
+import PatreonButton from "./PatreonButton";
+import SectionHeader from "./SectionHeader";
 
 const SupportUs = () => {
   return (
-    <div className='text-center flex flex-col items-center' style={{
-      backgroundColor: '#282828'
-    }}>
-      <div className='mt-2'>
-        <SectionHeader text='Stötta oss' />
+    <div
+      className="text-center flex flex-col items-center"
+      style={{
+        backgroundColor: "#282828",
+      }}
+    >
+      <div className="mt-2">
+        <SectionHeader text="Stötta oss" />
       </div>
-      <div className='lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs text-white'>
-        Som Patron får du varje vardag hela sändningen på <br /> två timmar ca 30 minuter efter att den är avslutad 10:00
+      <div className="lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs text-white">
+        Som Patron får du varje vardag hela sändningen på <br /> två timmar -
+        cirka 30 minuter efter avslutad sändning
       </div>
-      <div className='mb-5'>
+      <div className="mb-5">
         <PatreonButton />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SupportUs 
+export default SupportUs;
