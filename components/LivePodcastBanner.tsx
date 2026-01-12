@@ -28,7 +28,7 @@ const LivePodcastBanner = () => {
           style={{
             backgroundImage: "url(/gs-live.jpg)",
             backgroundSize: "cover",
-            backgroundPosition: `center ${75 - scrollY * 0.05}%`,
+            backgroundPosition: `center ${80 - scrollY * 0.05}%`,
             backgroundRepeat: "no-repeat",
             filter: "brightness(0.4)",
           }}
