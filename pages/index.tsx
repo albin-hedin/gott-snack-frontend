@@ -2,6 +2,7 @@ import AwayBanner from "@/components/AwayBanner";
 import FestivalBanner from "@/components/FestivalBanner";
 import Gottsnackteam from "@/components/GottSnackTeam";
 import ListenLive from "@/components/ListenLive";
+import LivePodcastBanner from "@/components/LivePodcastBanner";
 import AboutModal from "@/components/modals/AboutModal";
 import PicModal from "@/components/modals/PicModal";
 import RandomQuote from "@/components/RandomQuote";
@@ -39,6 +40,9 @@ const Home = () => {
         <MovieBanner />
       </div> */}
       <ListenLive handlePicModalClick={setPicModalVisible} />
+      <div className="mt-10">
+        <LivePodcastBanner />
+      </div>
       <RandomQuote />
       <div className="mt-10">
         <SupportUs />
