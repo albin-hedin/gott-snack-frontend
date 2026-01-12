@@ -52,7 +52,7 @@ const LivePodcastBanner = () => {
             style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
             className="lg:text-xl md:text-lg font-sans mb-4 text-sm text-white mt-1"
           >
-            Missa inte vår live podcast!
+            Missa inte vår mest episka liveshow nånsin!
           </div>
           <div>
             <button>
