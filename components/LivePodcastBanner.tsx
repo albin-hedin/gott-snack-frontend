@@ -18,17 +18,17 @@ const LivePodcastBanner = () => {
   return (
     <>
       <div
-        className="relative flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 py-12 px-4 overflow-hidden"
+        className="relative flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 py-16 px-4 overflow-hidden"
         style={{
-          minHeight: "400px",
+          minHeight: "450px",
         }}
       >
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: "url(/gs-live.jpg)",
-            backgroundSize: "100% auto",
-            backgroundPosition: `center ${50 - scrollY * 0.05}%`,
+            backgroundSize: "cover",
+            backgroundPosition: `center ${75 - scrollY * 0.05}%`,
             backgroundRepeat: "no-repeat",
             filter: "brightness(0.4)",
           }}
