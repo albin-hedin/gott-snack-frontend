@@ -7,6 +7,7 @@ import AboutModal from "@/components/modals/AboutModal";
 import PicModal from "@/components/modals/PicModal";
 import RandomQuote from "@/components/RandomQuote";
 import SupportUs from "@/components/SupportUs";
+import YouTubeSection from "@/components/YouTubeSection";
 import { useState } from "react";
 
 const Home = () => {
@@ -40,6 +41,9 @@ const Home = () => {
         <MovieBanner />
       </div> */}
       <ListenLive handlePicModalClick={setPicModalVisible} />
+      <div className="mt-10">
+        <YouTubeSection />
+      </div>
       <div className="mt-10">
         <LivePodcastBanner />
       </div>
