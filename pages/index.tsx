@@ -25,7 +25,7 @@ const Home = () => {
   const handleAboutModalClick = (
     isOpen: boolean,
     coWorker?: string,
-    instaUrl?: string
+    instaUrl?: string,
   ): void => {
     setAboutModalOpen(isOpen);
     setAboutModalCoworker(coWorker ?? "");
@@ -44,13 +44,13 @@ const Home = () => {
       <div className="mt-10">
         <YouTubeSection />
       </div>
-      <div className="mt-10">
+      {/* <div className="mt-10">
         <LivePodcastBanner />
-      </div>
-      <RandomQuote />
+      </div> */}
       <div className="mt-10">
         <SupportUs />
       </div>
+      <RandomQuote />
       <div className="mt-10">
         <FestivalBanner />
       </div>
