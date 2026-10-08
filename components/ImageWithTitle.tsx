@@ -16,7 +16,8 @@ const ImageWithTitle = (
             objectFit: 'cover'
           }}
           alt={altText}
-          fill />
+          fill
+          sizes='(min-width: 768px) 195px, 165px' />
       )
       : (
         <Image
