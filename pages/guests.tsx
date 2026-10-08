@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import ImageWithTitle from '@/components/ImageWithTitle'
 import LargeHeader from '@/components/LargeHeader'
 import guestQuotes from '../guestQuotes.json';

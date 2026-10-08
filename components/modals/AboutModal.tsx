@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { Dialog } from '@headlessui/react'
 import Image from 'next/image'
 import MediumHeader from '../MediumHeader'
@@ -68,9 +69,9 @@ const AboutModal = (
   return (
     <Dialog className="relative z-50" open={modalVisable} onClose={() => handleModalClick(false)}>
       <div className="fixed inset-0 flex items-center justify-center">
-        <Dialog.Panel className="max-w-3xl rounded bg-gray-300">
-          <div className='relative border-4 border-white rounded'>
-            <button className='absolute top-0 right-0 md:pr-2 pr-0 hover:opacity-50 outline-none' onClick={() => handleModalClick(false)}>
+        <Dialog.Panel className="max-w-3xl rounded-sm bg-gray-300">
+          <div className='relative border-4 border-white rounded-sm'>
+            <button className='absolute top-0 right-0 md:pr-2 pr-0 hover:opacity-50 outline-hidden' onClick={() => handleModalClick(false)}>
               <Image
                 src={'/close.svg'}
                 alt="test"

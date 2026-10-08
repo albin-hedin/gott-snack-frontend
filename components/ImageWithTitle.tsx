@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import SmallHeader from './SmallHeader'
 import Image from 'next/image'
 

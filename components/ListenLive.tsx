@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Image from 'next/image'
 import MixlrPlayer from './MixlrPlayer'
 import SpotifyPlayer from '@/components/SpotifyPlayer'

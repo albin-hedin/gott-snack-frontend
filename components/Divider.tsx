@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 
 /**
  * Divider has a default margin bottom of 0.5rem - override with className

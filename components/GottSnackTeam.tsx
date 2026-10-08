@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import LargeHeader from '@/components/LargeHeader'
 import ImageWithTitle from './ImageWithTitle'
 
