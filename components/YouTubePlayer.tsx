@@ -26,7 +26,7 @@ const YouTubePlayer = () => {
   if (failed) return null;
 
   if (!video) {
-    return <div className="w-full aspect-video rounded-lg bg-black/10 animate-pulse" />;
+    return <div className="w-full h-88 rounded-xl bg-black/10 animate-pulse" />;
   }
 
   return (
@@ -34,13 +34,13 @@ const YouTubePlayer = () => {
       href={`https://www.youtube.com/watch?v=${video.videoId}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="block relative w-full aspect-video shadow-2xl rounded-lg overflow-hidden group"
+      className="block relative w-full h-88 shadow-2xl rounded-xl overflow-hidden group"
     >
       <Image
         src={video.thumbnail}
         alt={video.title}
         fill
-        sizes="(min-width: 448px) 448px, 100vw"
+        sizes="(min-width: 768px) 50vw, 100vw"
         className="object-cover"
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
