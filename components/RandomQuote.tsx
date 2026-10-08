@@ -1,28 +1,25 @@
 import { useEffect, useState } from 'react'
 import ImageWithTitle from './ImageWithTitle';
 import guestQuotes from '../guestQuotes.json';
-import Link from 'next/link';
-import Image from 'next/image'
+import CtaLink from './CtaLink';
+import type { GuestQuote } from '@/types/guestQuote';
+
+const getRandomQuote = (): GuestQuote =>
+  guestQuotes[Math.floor(Math.random() * guestQuotes.length)];
 
 const RandomQuote = () => {
-  const [currentQuote, setCurrentQuote] = useState<{
-    text: string;
-    picUrl: string;
-    name: string;
-  }>({ text: '', picUrl: '', name: '' });
+  const [currentQuote, setCurrentQuote] = useState<GuestQuote | null>(null);
 
   useEffect(() => {
-    setNewRandomQuote()
-
-    const interval = setInterval(() => setNewRandomQuote(), 5000)
-    return () => { clearInterval(interval) }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Pick the first quote after mount so server and client markup match
+    const showRandomQuote = () => setCurrentQuote(getRandomQuote())
+    const initial = setTimeout(showRandomQuote, 0)
+    const interval = setInterval(showRandomQuote, 5000)
+    return () => {
+      clearTimeout(initial)
+      clearInterval(interval)
+    }
   }, [])
-
-  const setNewRandomQuote = (): void => {
-    const randomQuoteIndex: number = Math.floor(Math.random() * guestQuotes.length);
-    setCurrentQuote(guestQuotes[randomQuoteIndex]);
-  }
 
   return (
     <div className='
@@ -41,32 +38,23 @@ const RandomQuote = () => {
         <i
           className='inline-flex' >
           <blockquote className='md:text-2xl text-lg roboto-font text-black'>
-            {`${currentQuote.text} ${currentQuote.name ? ' -' : ''} ${currentQuote.name ? currentQuote.name : ''}`}
+            {currentQuote && `${currentQuote.text}${currentQuote.name ? ` - ${currentQuote.name}` : ''}`}
           </blockquote>
         </i>
         <div className='flex flex-col items-center mt-2'>
-          <ImageWithTitle
-            imageSux
-            picUrl={currentQuote.picUrl} />
+          {currentQuote ? (
+            <ImageWithTitle
+              imageSux
+              picUrl={currentQuote.picUrl}
+              alt={currentQuote.name} />
+          ) : (
+            <div className='w-[165px] h-[231px] md:w-[195px] md:h-[273px] mt-1' />
+          )}
         </div>
       </div>
-      <button className='mt-3'>
-        <Link
-          href="/guests#top" >
-          <div className='patreon-button rounded-xl link flex justify-between px-4 py-3 items-center gap-1'>
-            <span className='text-white text-lg roboto-font font-bold'>
-              Gäster vi minns
-            </span>
-            <div>
-              <Image
-                src='/icons8-chevron-right-30.png'
-                alt=''
-                width={25}
-                height={25} />
-            </div>
-          </div>
-        </Link>
-      </button>
+      <div className='mt-3'>
+        <CtaLink href="/guests#top" text="Gäster vi minns" />
+      </div>
     </div>
   )
 }

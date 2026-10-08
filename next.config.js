@@ -5,10 +5,12 @@ const nextConfig = {
     scrollRestoration: true,
   },
   images: {
+    formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'cdn.cosmicjs.com',
+        hostname: 'i.ytimg.com',
+        pathname: '/vi/**',
       },
     ],
   },

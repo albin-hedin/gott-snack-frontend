@@ -14,11 +14,13 @@ const FestivalContent2023 = () => {
         <br />
         Följ gärna festivalen på <Link
           href='https://www.instagram.com/gott_snack_festival/'
-          target='_blank'>
+          target='_blank'
+          rel='noopener noreferrer'>
           <b>Instagram</b>
         </Link> och kolla in evenemanget på <Link
           href='https://www.facebook.com/events/3412056322456299'
-          target='_blank'>
+          target='_blank'
+          rel='noopener noreferrer'>
           <b>Facebook</b>
         </Link>
         <br />
@@ -27,31 +29,34 @@ const FestivalContent2023 = () => {
           Läs om festivalen på
           <Link
             href='https://gaffa.se/nyheter/2023/maj/gott-snack-ny-endagsfestival-till-stockholm/'
-            target='_blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             <Image
               className='rounded-lg pt-2'
               src='/gaffa.png'
-              alt=''
+              alt='Gaffa'
               width={120}
               height={120} />
           </Link>
           <Link
             href='https://ng.se/artiklar/fredrik-soderholm-startar-festival'
-            target='_blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             <Image
               className='rounded-lg pt-2'
               src='/nöjesguiden.png'
-              alt=''
+              alt='Nöjesguiden'
               width={140}
               height={140} />
           </Link>
           <Link
             href='https://www.mitti.se/nyheter/fredrik-bjuder-in-till-festival-pa-barndomens-ravudden-6.3.82585.e1b32dca83'
-            target='_blank'>
+            target='_blank'
+            rel='noopener noreferrer'>
             <Image
               className='rounded-lg pt-2'
               src='/mittisthlm.png'
-              alt=''
+              alt='Mitt i Stockholm'
               width={140}
               height={140} />
           </Link>
@@ -68,52 +73,52 @@ const FestivalContent2023 = () => {
               px-1'>
         <Image
           src='/gs-festival.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/forfest.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/festrival_funk.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch4.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch5.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch6.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch3.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch2.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
         <Image
           src='/planch7.jpg'
-          alt=''
+          alt='Bild från Gott snack festival 2023'
           width={400}
           height={300} />
       </div>

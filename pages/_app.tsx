@@ -12,11 +12,16 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Gott snack</title>
+        <meta
+          name="description"
+          content="Gott snack är en podd/radio som sänds live kl 08:00-10:00. Vi pratar om allt mellan himmel och jord och spelar musik som får dig att vakna till liv. Välkommen att lyssna! Gott Snack grundades av Fredrik Geniet Söderholm år 2020. Projektet drogs igång med ambitionen att sända ofiltrerad och gränslös radio – på Geniets sätt."
+          key="description"
+        />
+        <meta property="og:site_name" content="Gott snack" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gott snack" key="og:title" />
+        <meta property="og:image" content="/background-startpage.jpg" />
       </Head>
-      <meta
-        name="description"
-        content="Gott snack är en podd/radio som sänds live kl 08:00-10:00. Vi pratar om allt mellan himmel och jord och spelar musik som får dig att vakna till liv. Välkommen att lyssna! Gott Snack grundades av Fredrik Geniet Söderholm år 2020. Projektet drogs igång med ambitionen att sända ofiltrerad och gränslös radio – på Geniets sätt."
-      />
       {/* !-- Global site tag (gtag.js) - Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-6NW5E5W6BV"

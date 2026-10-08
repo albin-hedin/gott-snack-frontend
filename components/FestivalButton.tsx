@@ -4,13 +4,14 @@ const FestivalButton = ({
   text,
   isActive,
 }: {
-  onclick: any,
+  onclick: () => void,
   text: string,
   isActive?: boolean,
 }): JSX.Element => {
   return (
     <>
       <button
+        type='button'
         onClick={() => onclick()}>
         <div className={`
       ${isActive ? 'patreon-button-white isActive' : 'patreon-button-white'} 

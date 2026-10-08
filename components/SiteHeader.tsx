@@ -1,21 +1,23 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const SiteHeader = () => {
   return (
     <header className='md:mb-10 mb-2'>
-      <Link className='hover:!no-underline' href="/">
+      <Link className='hover:!no-underline' href="/" aria-label="Gott snack – startsida">
         <div className='
-         text-center
-         text-white 
+         relative
+         w-full
          md:h-[500px] 
-         h-[150px]' style={{
-            background: 'url(/background-startpage.jpg)',
-            display: 'inline-block',
-            width: '100%',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-          }}>
+         h-[150px]'>
+          <Image
+            src='/background-startpage.jpg'
+            alt=''
+            fill
+            preload
+            sizes='100vw'
+            className='object-cover object-center'
+          />
         </div>
       </Link>
     </header>

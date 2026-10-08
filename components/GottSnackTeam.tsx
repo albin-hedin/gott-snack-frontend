@@ -2,11 +2,11 @@ import type { JSX } from "react";
 import LargeHeader from '@/components/LargeHeader'
 import ImageWithTitle from './ImageWithTitle'
 
-const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Element => {
+const Gottsnackteam = ({ handleModalClick }: { handleModalClick: (isOpen: boolean, coWorker?: string, instaUrl?: string) => void }): JSX.Element => {
   return (
     <>
       <div className='flex flex-col items-center md:mx-20 mx-4'>
-        <LargeHeader blackText headerText='Gott snack familjen' />
+        <LargeHeader as='h2' blackText headerText='Gott snack familjen' />
         <div className='text-center max-w-5xl mb-6'>
           Gott Snack grundades av Fredrik Geniet Söderholm år 2020. Projektet drogs igång med ambitionen att sända ofiltrerad och gränslös radio – på Geniets sätt.
           <br />
@@ -64,7 +64,6 @@ const Gottsnackteam = ({ handleModalClick }: { handleModalClick: any }): JSX.Ele
           imageSux={true}
           title='Fanny'
           picUrl='/portraits/FANNY-kopia-1628x2048.jpeg'
-          forceSize={true}
           onClick={() => handleModalClick(
             true,
             'fanny',

@@ -5,14 +5,14 @@ const MediumHeader = (
       blackText?: boolean
     }) => {
   return (
-    <h1 className={`
+    <h2 className={`
     lg:text-3xl
     md:text-2xl
     text-lg
     font-fredoka 
     ${blackText ? 'text-black' : 'text-white'}`}>
       {headerText}
-    </h1>
+    </h2>
   )
 }
 

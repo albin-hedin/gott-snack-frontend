@@ -14,7 +14,9 @@ const Footer = () => {
             <a
               href="https://www.instagram.com/gottsnackradio/?hl=en"
               target="_blank"
+              rel="noopener noreferrer"
               title="Instagram"
+              aria-label="Gott snack på Instagram"
             >
               <Image
                 className="rounded-xl"
@@ -28,7 +30,9 @@ const Footer = () => {
               className="ml-2"
               href="https://www.patreon.com/gottsnack/"
               target="_blank"
+              rel="noopener noreferrer"
               title="Patreon"
+              aria-label="Gott snack på Patreon"
             >
               <Image
                 className="rounded-xl"
@@ -42,7 +46,9 @@ const Footer = () => {
               className="ml-2"
               href="https://gott-snack.mixlr.com/"
               target="_blank"
+              rel="noopener noreferrer"
               title="Mixlr"
+              aria-label="Gott snack på Mixlr"
             >
               <Image
                 className="rounded-xl"
@@ -56,7 +62,9 @@ const Footer = () => {
               className="ml-2"
               href="https://www.youtube.com/GOTTSNACK"
               target="_blank"
-              title="Youtube"
+              rel="noopener noreferrer"
+              title="YouTube"
+              aria-label="Gott snack på YouTube"
             >
               <Image
                 className="rounded-xl"

@@ -1,8 +1,7 @@
 import type { JSX } from "react";
-import { Dialog } from '@headlessui/react'
+import { Dialog, DialogPanel } from '@headlessui/react'
 import Image from 'next/image'
 import MediumHeader from '../MediumHeader'
-import { isMobile } from 'react-device-detect';
 
 const AboutModal = (
   { handleModalClick,
@@ -10,71 +9,23 @@ const AboutModal = (
     coWorker,
     instaProfileUrl,
   }: {
-    handleModalClick: any,
+    handleModalClick: (isOpen: boolean) => void,
     modalVisable: boolean,
     coWorker: string
     instaProfileUrl: string,
   }): JSX.Element => {
 
-  const renderPic = (): JSX.Element => {
-    if (isMobile) {
-      return (
-        <Image
-          className={`rounded-full`}
-          src={instaProfileUrl}
-          alt=''
-          width={80}
-          height={80} />
-      )
-    } else {
-      return (
-        <Image
-          className={`rounded-full`}
-          src={instaProfileUrl}
-          alt=''
-          width={130}
-          height={130} />
-      )
-    }
-  }
-
-  const renderInsta = (): JSX.Element => {
-    if (isMobile) {
-      return (
-        <a className='pl-1' href={instaProfileUrl} target='_blank' title='Instagram'>
-          <Image
-            className='rounded-xl'
-            src='/instagram-logo.jpg'
-            alt=''
-            width={20}
-            height={20} />
-        </a>)
-    } else {
-      return (
-        <a className='pl-3' href={instaProfileUrl} target='_blank' title='Instagram'>
-          <Image
-            className='rounded-xl'
-            src='/instagram-logo.jpg'
-            alt=''
-            width={40}
-            height={40} />
-        </a>)
-    }
-  }
-
-  const currentCoWorker = (): any | undefined => {
-    return coWorkerData().find(cw => cw.id === coWorker)
-  }
+  const currentCoWorker = coWorkerData.find(cw => cw.id === coWorker)
 
   return (
     <Dialog className="relative z-50" open={modalVisable} onClose={() => handleModalClick(false)}>
       <div className="fixed inset-0 flex items-center justify-center">
-        <Dialog.Panel className="max-w-3xl rounded-sm bg-gray-300">
+        <DialogPanel className="max-w-3xl rounded-sm bg-gray-300">
           <div className='relative border-4 border-white rounded-sm'>
             <button className='absolute top-0 right-0 md:pr-2 pr-0 hover:opacity-50 outline-hidden' onClick={() => handleModalClick(false)}>
               <Image
                 src={'/close.svg'}
-                alt="test"
+                alt="Stäng"
                 width={30}
                 height={30} />
             </button>
@@ -88,33 +39,41 @@ const AboutModal = (
               mt-1
               pb-5'>
                 <MediumHeader
-                  headerText={`${currentCoWorker()?.name} (${currentCoWorker()?.age})`}
+                  headerText={`${currentCoWorker?.name} (${currentCoWorker?.age})`}
                   blackText={true} />
-                {instaProfileUrl && renderInsta()}
+                {instaProfileUrl &&
+                  <a className='pl-1 md:pl-3' href={instaProfileUrl} target='_blank' rel='noopener noreferrer' title='Instagram' aria-label={`${currentCoWorker?.name ?? ''} på Instagram`}>
+                    <Image
+                      className='rounded-xl w-5 h-5 md:w-10 md:h-10'
+                      src='/instagram-logo.jpg'
+                      alt=''
+                      width={40}
+                      height={40} />
+                  </a>}
               </div>
             </div>
             <div className='grid grid-cols-2 gap-4 content-center md:px-14 md:py-3 py-3 px-3 md:text-lg text-sm'>
               <div>
-                <b>Valslogan:</b> {currentCoWorker()?.slogan}
+                <b>Valslogan:</b> {currentCoWorker?.slogan}
               </div>
               <div>
-                <b>Intressen:</b> {currentCoWorker()?.interests}
+                <b>Intressen:</b> {currentCoWorker?.interests}
               </div>
               <div>
-                <b>Unpopular opinion:</b> {currentCoWorker()?.opinion}
+                <b>Unpopular opinion:</b> {currentCoWorker?.opinion}
               </div>
               <div>
-                <b>Favoritämnen:</b> {currentCoWorker()?.favoriteSubject}
+                <b>Favoritämnen:</b> {currentCoWorker?.favoriteSubject}
               </div>
               <div>
-                <b>Triggers:</b> {currentCoWorker()?.trigers}
+                <b>Triggers:</b> {currentCoWorker?.triggers}
               </div>
               <div>
-                <b>Favorit macka:</b> {currentCoWorker()?.sandwich}
+                <b>Favorit macka:</b> {currentCoWorker?.sandwich}
               </div>
             </div>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </div>
     </Dialog>
   )
@@ -126,105 +85,104 @@ const calculateAge = (yearOfBirth: number): string => {
   return age.toString();
 }
 
-const coWorkerData = () => {
-  return ([
+const coWorkerData = [
     {
       "id": "fredrik",
       "name": "Fredrik Söderholm",
-      "age": (() => calculateAge(1992))(),
+      "age": calculateAge(1992),
       "slogan": "Var lite snällare än vad situationen kräver",
       "interests": "Skratta och ha kul",
       "opinion": "FÖRSIKTIGT positiv till Dumpen",
       "favoriteSubject": "Folks mörker & Nostalgi",
-      "trigers": "Triggervarningar och snack om löpning",
+      "triggers": "Triggervarningar och snack om löpning",
       "sandwich": "Pågens sirapslimpa med fasansfulla mängder smör och skarp ost"
     },
     {
       "id": "max",
       "name": "Max Söderholm",
-      "age": (() => calculateAge(1989))(),
+      "age": calculateAge(1989),
       "slogan": "Allt smakar bättre med smält ost",
       "interests": "Rock mat och stilla hemmakvällar kärestan My och Bob",
       "opinion": "Dålig smak = dålig människa",
       "favoriteSubject": "Rock, mat & otrevliga kändisar",
-      "trigers": "Samtiden",
+      "triggers": "Samtiden",
       "sandwich": "En grilled cheese-variant med jalapenos, signerad My Jonsson"
     },
     {
       "id": "plommon",
       "name": "Adam Plommon",
-      "age": (() => calculateAge(2001))(),
+      "age": calculateAge(2001),
       "slogan": "Mer åt alla hela tiden",
       "interests": "Kollektivtrafik och damer",
       "opinion": "Abort bör vara tillåtet fram till att man klippt navelsträngen",
       "favoriteSubject": "Droger och hjärnan, personlig hygien samt tåg",
-      "trigers": "Folk som har mammor",
+      "triggers": "Folk som har mammor",
       "sandwich": "Köttmacka (kallt, grillat nöt/fläsk kött från grillfesten innan serverat mellan två skivor rostbröd med bea och grillkrydda"
     },
     {
       "id": "micke",
       "name": "Mikael Ljungberg",
-      "age": (() => calculateAge(1998))(),
+      "age": calculateAge(1998),
       "slogan": "Rättigheter - men framförallt skyldigheter",
       "interests": "Sport och fritid",
       "opinion": '"Ryck upp dig" är den bästa terapin',
       "favoriteSubject": "Hockey och allt som rör norra dalarna",
-      "trigers": "Kroppsaktivister och långa naglar (obs även lösnaglar)",
+      "triggers": "Kroppsaktivister och långa naglar (obs även lösnaglar)",
       "sandwich": "Skogaholmslimpa med leverpastej och smörgåsgurka (Önos mor Annas)"
     },
     {
       "id": "tollstoy",
       "name": "Rickard Tollstoy",
-      "age": (() => calculateAge(1995))(),
+      "age": calculateAge(1995),
       "slogan": "Trygghet. Trivlse. Tollstoy",
       "interests": "Adventures, song and mead",
       "opinion": '"Springsteen är tvåplus',
       "favoriteSubject": "Vädret",
-      "trigers": "Dålig andedräkt",
+      "triggers": "Dålig andedräkt",
       "sandwich": "Croque Monsieur med hutlösa mängder dijon"
     },
     {
       "id": "tore",
       "name": "Tore Kullgren",
-      "age": (() => calculateAge(1981))(),
+      "age": calculateAge(1981),
       "slogan": "Gör bättre själv då!",
       "interests": "Standup, geografi och killyoga",
       "opinion": 'Avskaffa kravet att simma 200 meter i årskurs 6',
       "favoriteSubject": "Arkitektur, kriget i Ukraina och dejting",
-      "trigers": "Identitetspolitik och astrologi",
+      "triggers": "Identitetspolitik och astrologi",
       "sandwich": "Färska räkor på rågbröd"
     },
     {
       "id": "agge",
       "name": "August Bohlin",
-      "age": (() => calculateAge(1993))(),
+      "age": calculateAge(1993),
       "slogan": '"Ta någon annan först jag måste tänka lite"',
       "interests": "Bygga lägerplatser av schysta pinnar och gott doftande barr!",
       "opinion": 'Det ÄR skönt att beställa foodora i snöstorm',
       "favoriteSubject": "Historiska skepp gärna sänkta av andra historiska skepp",
-      "trigers": "Är du för gammal för att cyckla i rimlig fart (minst 20km/h) avstå gärna och sluta stanna upp hela cykelvägen",
+      "triggers": "Är du för gammal för att cyckla i rimlig fart (minst 20km/h) avstå gärna och sluta stanna upp hela cykelvägen",
       "sandwich": "Klassisk toast men glöm inte att ta bort kanterna på skinkan"
     },
     {
       "id": "ballafjang",
       "name": 'Petter "Ballafjang" Ströbaek',
-      "age": (() => calculateAge(2002))(),
+      "age": calculateAge(2002),
       "slogan": 'Kriminalisera allt',
       "interests": "Musik",
       "opinion": 'Mobbning är kul',
       "favoriteSubject": "Melodifestivalen 1986",
-      "trigers": "Persilja",
+      "triggers": "Persilja",
       "sandwich": "New york style bagel med gravlax"
     },
     {
       "id": "sagah",
       "name": 'Sagah Larsson',
-      "age": (() => calculateAge(1994))(),
+      "age": calculateAge(1994),
       "slogan": 'Inte gett upp än',
       "interests": "Gud, Marabou helnöt, rock från 92-99 och schack",
       "opinion": 'Alla med katt är psykiskt sjuka',
       "favoriteSubject": "Helium och väte",
-      "trigers": "Folk som snyter sig, spoken word poesi, sand",
+      "triggers": "Folk som snyter sig, spoken word poesi, sand",
       "sandwich": "Lingongrova, philadelphia, kalkon, tomat, örtsalt"
     },
     {
@@ -235,18 +193,18 @@ const coWorkerData = () => {
       "interests": "Efter Jonatan Unges krönika om kvinnor säger jag pass",
       "opinion": 'Här? Att jag gillar public service',
       "favoriteSubject": "Usch vilken jobbig fråga, skvaller, politik, sex & relationer",
-      "trigers": "Smala yngre tjejer och sär skrivningar",
+      "triggers": "Smala yngre tjejer och sär skrivningar",
       "sandwich": "Dubbelmackan"
     },
     {
       "id": "zorbas",
       "name": 'Zorbas Newton',
-      "age": (() => calculateAge(1989))(),
+      "age": calculateAge(1989),
       "slogan": '"Kriminalisera allt"',
       "interests": "Böcker om gubbar som betett sig illa",
       "opinion": 'Alla stockholmare bör göra lumpen ett år genom att bo i en svensk småstad',
       "favoriteSubject": "Bardomsminnen",
-      "trigers": "Poliser på sociala medier",
+      "triggers": "Poliser på sociala medier",
       "sandwich": "Lätt rostad formfranska med slapp prästost"
     },
     {
@@ -257,40 +215,40 @@ const coWorkerData = () => {
       "interests": "Alla killintressen som finns tror jag",
       "opinion": 'Älskar public service',
       "favoriteSubject": "All jävla sport och reality tyvärr",
-      "trigers": "Idioter på twitter främst. Och jag är en av dem",
+      "triggers": "Idioter på twitter främst. Och jag är en av dem",
       "sandwich": "Just nu en go BLT mellan två välrostade rågbrödskillar"
     },
     {
       "id": "jesper",
       "name": 'Jesper Ekstedt',
-      "age": (() => calculateAge(1992))(),
+      "age": calculateAge(1992),
       "slogan": 'Stopp och belägg',
       "interests": "Fundera, åka Voi",
       "opinion": 'Plant-based burgare är vidriga',
       "favoriteSubject": "Fastighetsjuridik och skavande anekdoter",
-      "trigers": '"Forskningen visar"',
+      "triggers": '"Forskningen visar"',
       "sandwich": "Allt med salami eller curry. Var för sig"
     },
     {
       "id": "otto",
       "name": 'Otto "HEMAN" Larsson',
-      "age": (() => calculateAge(1992))(),
+      "age": calculateAge(1992),
       "slogan": 'Det finns nog med Otto till alla som vill ha, och lite till...',
       "interests": "Månskens promenader i VR, hämtmatsfinedining, gåtor och cannabis!",
       "opinion": 'Ananas på pizza är en grje, banan är inte!',
       "favoriteSubject": "Narkotikapolitik och kändisskvaller",
-      "trigers": 'Icke korrekt pasta carbonara, orättvisor och typ allt annat',
+      "triggers": 'Icke korrekt pasta carbonara, orättvisor och typ allt annat',
       "sandwich": "Smörgåstårta"
     },
     {
       "id": "fanny",
       "name": 'Fanny Klefelt',
-      "age": (() => calculateAge(1994))(),
+      "age": calculateAge(1994),
       "slogan": 'Frihetsberöva män som tar selfies',
       "interests": "Mord, katastrofer och ond bråd död",
       "opinion": 'Har inga, är en opinion popular så är det den jag har',
       "favoriteSubject": "Mig själv",
-      "trigers": 'Mig själv',
+      "triggers": 'Mig själv',
       "sandwich": "Allt med mycket ost och krispigt bröd? Gillar inte att ta i för hårt med tänderna"
     },
     {
@@ -301,10 +259,9 @@ const coWorkerData = () => {
       "interests": "Sova, äta, gosa och krafsa frenetikst på ishinken",
       "opinion": 'Tonfisk lite överskattat ändå?',
       "favoriteSubject": "Jakt, fiske och mat",
-      "trigers": 'Folk som inte släpper in under tröjan',
+      "triggers": 'Folk som inte släpper in under tröjan',
       "sandwich": "Räkmacka"
     }
-  ])
-}
+]
 
 export default AboutModal

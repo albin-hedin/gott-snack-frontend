@@ -1,19 +1,28 @@
 import FestivalButton from "@/components/FestivalButton";
 import FestivalContent2023 from "@/components/FestivalContent2023";
 import FestivalContent2024 from "@/components/FestivalContent2024";
-import FestivalContentIntern from "@/components/FestivalContentIntern";
 import LargeHeader from "@/components/LargeHeader";
 import { useState } from "react";
 import Image from "next/image";
 import MediumHeader from "@/components/MediumHeader";
 import Link from "next/link";
 import FestivalContent2025 from "@/components/FestivalContent2025";
+import Head from "next/head";
 
 const Festival = () => {
   const [contentToShow, setContentToShow] = useState("start");
 
   return (
     <div className="mx-3 lg:mx-52">
+      <Head>
+        <title>Festival | Gott snack</title>
+        <meta
+          name="description"
+          key="description"
+          content="Gott snack festival – musik, konst och gemenskap i Stockholm."
+        />
+        <meta property="og:title" key="og:title" content="Festival | Gott snack" />
+      </Head>
       <div id="top"></div>
       <div className="text-center">
         <LargeHeader blackText headerText="Gott snack festival" />
@@ -48,11 +57,6 @@ const Festival = () => {
             text="2024"
             isActive={contentToShow === "2024"}
           />
-          {/* <FestivalButton
-            onclick={() => setContentToShow("intern")}
-            text="Jobba som praktikant"
-            isActive={contentToShow === "intern"}
-          /> */}
           <FestivalButton
             onclick={() => setContentToShow("contact")}
             text="Kontakt"
@@ -100,7 +104,7 @@ const Festival = () => {
                   <Image
                     className="rounded-xl"
                     src="/fredrik_festival.png"
-                    alt=""
+                    alt="Fredrik Söderholm på festivalen"
                     width={300}
                     height={300}
                   />
@@ -159,7 +163,7 @@ const Festival = () => {
                   <Image
                     className="rounded-xl"
                     src="/festival2023_pink.png"
-                    alt=""
+                    alt="Gott snack festival 2023"
                     width={500}
                     height={400}
                   />
@@ -175,6 +179,7 @@ const Festival = () => {
                 <Link
                   href="https://www.instagram.com/gott_snack_festival/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <b> Instagram</b>
                 </Link>
@@ -192,9 +197,8 @@ const Festival = () => {
           {contentToShow === "2024" && (
             <FestivalContent2024 setContentToShow={setContentToShow} />
           )}
-          {contentToShow === "intern" && <FestivalContentIntern />}
           {contentToShow === "2025" && (
-            <FestivalContent2025 setContentToShow={setContentToShow} />
+            <FestivalContent2025 />
           )}
         </div>
       </div>
