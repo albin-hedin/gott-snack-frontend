@@ -7,6 +7,14 @@ const ListenLive = (): JSX.Element => {
   return (
     <div>
       <div className="mb-5 mx-3">
+        <section className="flex flex-col items-center text-center mt-4 mb-8 md:mt-6 md:mb-10">
+          <p className="text-black text-xs md:text-sm font-fredoka uppercase tracking-widest mb-1">
+            Sänds live
+          </p>
+          <p className="text-black text-2xl md:text-4xl font-fredoka font-semibold">
+            Mån – tor, 15:00 – 16:30
+          </p>
+        </section>
         <div
           className="
          grid
