@@ -1,15 +1,13 @@
 import YouTubePlayer from "./YouTubePlayer";
+import Section from "./ui/Section";
 
 const YouTubeSection = () => {
   return (
-    <div className="mx-3 md:mx-6">
-      <div className="mx-auto md:w-[calc(50%-0.75rem)]">
-        <p className="text-center text-black text-sm md:text-base font-fredoka mb-2">
-          YouTube
-        </p>
+    <Section eyebrow="YouTube" className="pt-0 md:pt-0">
+      <div className="mx-auto max-w-2xl">
         <YouTubePlayer />
       </div>
-    </div>
+    </Section>
   );
 };
 

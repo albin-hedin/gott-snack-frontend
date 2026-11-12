@@ -1,80 +1,54 @@
-import Head from 'next/head'
-import ImageWithTitle from '@/components/ImageWithTitle'
-import LargeHeader from '@/components/LargeHeader'
-import guestQuotes from '../guestQuotes.json';
-import type { GuestQuote } from '@/types/guestQuote';
+import Head from "next/head";
+import ImageWithTitle from "@/components/ImageWithTitle";
+import Section from "@/components/ui/Section";
+import Card from "@/components/ui/Card";
+import guestQuotes from "../guestQuotes.json";
+import type { GuestQuote } from "@/types/guestQuote";
 
-const hiddenPicUrls = [
-  '/portraits/JESPER-kopia-1097x1536.jpg',
-  '/portraits/question.jpg',
-]
+const hiddenPicUrls = ["/portraits/JESPER-kopia-1097x1536.jpg", "/portraits/question.jpg"];
 
 const nameOverrides: Record<string, string> = {
-  '/portraits/konstab.jpg': 'KonstAB',
-}
+  "/portraits/konstab.jpg": "KonstAB",
+};
 
-const uniqueGuests: GuestQuote[] = [...new Map(guestQuotes.map((quote) => [quote.picUrl, quote])).values()]
-  .filter(quote => !hiddenPicUrls.includes(quote.picUrl))
-  .map(quote => ({ ...quote, name: nameOverrides[quote.picUrl] ?? quote.name }))
+const uniqueGuests: GuestQuote[] = [
+  ...new Map(guestQuotes.map((quote) => [quote.picUrl, quote])).values(),
+]
+  .filter((quote) => !hiddenPicUrls.includes(quote.picUrl))
+  .map((quote) => ({ ...quote, name: nameOverrides[quote.picUrl] ?? quote.name }));
 
 const Guests = () => {
   return (
-    <div className='mx-3 lg:mx-50'>
+    <>
       <Head>
         <title>Gäster vi minns | Gott snack</title>
-        <meta name="description" key="description" content="Gäster och citat vi minns från Gott snack." />
+        <meta
+          name="description"
+          key="description"
+          content="Gäster och citat vi minns från Gott snack."
+        />
         <meta property="og:title" key="og:title" content="Gäster vi minns | Gott snack" />
       </Head>
-      <div id='top'>
-      </div>
-      <div className='text-center'>
-        <LargeHeader blackText headerText='Gäster vi minns' />
-        <div className='
-      flex 
-      flex-wrap
-      gap-4
-      justify-center
-      items-center
-      mx-auto max-w-[1200px]
-      px-1'>
-          {uniqueGuests.map((quote) =>
-            <div
-              key={quote.picUrl}
-              className='
-              mx-2
-              md:my-8
-              my-2'>
-              <h2 className={`
-              text-center
-              lg:text-3xl
-              md:text-2xl
-              text-lg
-              font-fredoka`
-              }>
-                {quote.name}
-              </h2>
-              <i
-                className='inline-flex' >
-                <blockquote className='
-                md:text-lg
-                text-sm
-                roboto-font
-                text-black
-                max-w-xs'>
+      <div id="top"></div>
+      <Section eyebrow="Citat" title="Gäster vi minns" titleAs="h1">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {uniqueGuests.map((quote) => (
+            <li key={quote.picUrl} className="flex">
+              <Card className="flex w-full flex-col items-center gap-4 text-center">
+                <ImageWithTitle picUrl={quote.picUrl} alt={quote.name} />
+                <h2 className="font-display text-xl font-bold tracking-tight md:text-2xl">
+                  {quote.name}
+                </h2>
+                <blockquote className="text-base italic leading-relaxed text-ink-muted md:text-lg">
                   {quote.text}
                 </blockquote>
-              </i>
-              <div className='flex flex-col items-center mt-2'>
-                <ImageWithTitle
-                  imageSux
-                  picUrl={quote.picUrl}
-                  alt={quote.name} />
-              </div>
-            </div>)}
-        </div>
-      </div>
-    </div>
-  )
-}
+              </Card>
+            </li>
+          ))}
+        </ul>
+      </Section>
+    </>
+  );
+};
 
-export default Guests 
+export default Guests;

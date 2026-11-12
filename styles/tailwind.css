@@ -1,5 +1,21 @@
 @import "tailwindcss";
-@config "../tailwind.config.js";
+
+@theme {
+  --color-paper: #fff8ef;
+  --color-paper-2: #ffedd6;
+  --color-ink: #1f1a17;
+  --color-ink-muted: #6e635b;
+  --color-primary: #e8432f;
+  --color-primary-deep: #c2321f;
+  --color-accent: #ffb020;
+  --color-sky: #bfd3da;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), var(--font-body), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-card: 0 10px 30px -12px rgb(31 26 23 / 0.18);
+  --shadow-card-lg: 0 24px 50px -20px rgb(31 26 23 / 0.28);
+}
 
 /* Restore Tailwind v3 defaults that v4 changed */
 @layer base {
@@ -15,17 +31,4 @@
   [role="button"]:not(:disabled) {
     cursor: pointer;
   }
-}
-
-@utility festival-bg-image {
-  background-image: url(/festival24/new-cat-festival.jpg);
-  background-position: 100% 41%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-@utility festival-bg-image-small {
-  background-image: url(/festival24/new-cat-festival.jpg);
-  background-position: 55% 32%;
-  background-size: 690px;
 }

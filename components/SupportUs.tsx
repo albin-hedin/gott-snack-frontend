@@ -1,25 +1,34 @@
-import PatreonButton from "./PatreonButton";
-import SectionHeader from "./SectionHeader";
+import Image from "next/image";
+import Section from "./ui/Section";
+import Button from "./ui/Button";
 
 const SupportUs = () => {
   return (
-    <div
-      className="text-center flex flex-col items-center"
-      style={{
-        backgroundColor: "#282828",
-      }}
+    <Section
+      tone="dark"
+      eyebrow="Patreon"
+      title="Stötta oss"
+      lead="Som Patron får du varje vardag hela sändningen på två timmar – cirka 30 minuter efter avslutad sändning"
     >
-      <div className="mt-2">
-        <SectionHeader text="Stötta oss" />
+      <div className="flex justify-center">
+        <Button
+          href="https://www.patreon.com/gottsnack/"
+          external
+          size="lg"
+          className="pl-2"
+          chevron
+        >
+          <Image
+            className="rounded-full"
+            src="/patreon.png"
+            alt=""
+            width={44}
+            height={44}
+          />
+          Gott snack Patreon
+        </Button>
       </div>
-      <div className="lg:text-2xl md:text-2xl sm:text-sm font-sans mb-5 text-xs text-white">
-        Som Patron får du varje vardag hela sändningen på <br /> två timmar -
-        cirka 30 minuter efter avslutad sändning
-      </div>
-      <div className="mb-5">
-        <PatreonButton />
-      </div>
-    </div>
+    </Section>
   );
 };
 

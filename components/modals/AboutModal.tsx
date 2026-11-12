@@ -1,95 +1,97 @@
 import type { JSX } from "react";
-import { Dialog, DialogPanel } from '@headlessui/react'
-import Image from 'next/image'
-import MediumHeader from '../MediumHeader'
+import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from "@headlessui/react";
+import Image from "next/image";
 
-const AboutModal = (
-  { handleModalClick,
-    modalVisable,
-    coWorker,
-    instaProfileUrl,
-  }: {
-    handleModalClick: (isOpen: boolean) => void,
-    modalVisable: boolean,
-    coWorker: string
-    instaProfileUrl: string,
-  }): JSX.Element => {
+const facts: { label: string; key: "slogan" | "interests" | "opinion" | "favoriteSubject" | "triggers" | "sandwich" }[] = [
+  { label: "Valslogan", key: "slogan" },
+  { label: "Intressen", key: "interests" },
+  { label: "Unpopular opinion", key: "opinion" },
+  { label: "Favoritämnen", key: "favoriteSubject" },
+  { label: "Triggers", key: "triggers" },
+  { label: "Favorit macka", key: "sandwich" },
+];
 
-  const currentCoWorker = coWorkerData.find(cw => cw.id === coWorker)
+const AboutModal = ({
+  handleModalClick,
+  modalVisable,
+  coWorker,
+  instaProfileUrl,
+}: {
+  handleModalClick: (isOpen: boolean) => void;
+  modalVisable: boolean;
+  coWorker: string;
+  instaProfileUrl: string;
+}): JSX.Element => {
+  const currentCoWorker = coWorkerData.find((cw) => cw.id === coWorker);
 
   return (
-    <Dialog className="relative z-50" open={modalVisable} onClose={() => handleModalClick(false)}>
-      <div className="fixed inset-0 flex items-center justify-center">
-        <DialogPanel className="max-w-3xl rounded-sm bg-gray-300">
-          <div className='relative border-4 border-white rounded-sm'>
-            <button className='absolute top-0 right-0 md:pr-2 pr-0 hover:opacity-50 outline-hidden' onClick={() => handleModalClick(false)}>
-              <Image
-                src={'/close.svg'}
-                alt="Stäng"
-                width={30}
-                height={30} />
-            </button>
-            <div className='flex flex-col items-center'>
-              <div className='
-              flex
-              flex-row
-              text-center
-              lg:mt-5
-              md:mt-3
-              mt-1
-              pb-5'>
-                <MediumHeader
-                  headerText={`${currentCoWorker?.name} (${currentCoWorker?.age})`}
-                  blackText={true} />
-                {instaProfileUrl &&
-                  <a className='pl-1 md:pl-3' href={instaProfileUrl} target='_blank' rel='noopener noreferrer' title='Instagram' aria-label={`${currentCoWorker?.name ?? ''} på Instagram`}>
-                    <Image
-                      className='rounded-xl w-5 h-5 md:w-10 md:h-10'
-                      src='/instagram-logo.jpg'
-                      alt=''
-                      width={40}
-                      height={40} />
-                  </a>}
-              </div>
-            </div>
-            <div className='grid grid-cols-2 gap-4 content-center md:px-14 md:py-3 py-3 px-3 md:text-lg text-sm'>
-              <div>
-                <b>Valslogan:</b> {currentCoWorker?.slogan}
-              </div>
-              <div>
-                <b>Intressen:</b> {currentCoWorker?.interests}
-              </div>
-              <div>
-                <b>Unpopular opinion:</b> {currentCoWorker?.opinion}
-              </div>
-              <div>
-                <b>Favoritämnen:</b> {currentCoWorker?.favoriteSubject}
-              </div>
-              <div>
-                <b>Triggers:</b> {currentCoWorker?.triggers}
-              </div>
-              <div>
-                <b>Favorit macka:</b> {currentCoWorker?.sandwich}
-              </div>
-            </div>
+    <Dialog
+      className="relative z-50"
+      open={modalVisable}
+      onClose={() => handleModalClick(false)}
+    >
+      <DialogBackdrop className="fixed inset-0 bg-ink/60 backdrop-blur-sm" />
+      <div className="fixed inset-0 flex items-center justify-center p-4">
+        <DialogPanel className="relative w-full max-w-2xl rounded-3xl bg-paper p-6 shadow-card-lg md:p-10">
+          <button
+            type="button"
+            className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink/5 text-ink transition-colors hover:bg-ink/10 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/60"
+            onClick={() => handleModalClick(false)}
+            aria-label="Stäng"
+          >
+            <svg
+              className="h-5 w-5"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2.5}
+              strokeLinecap="round"
+              aria-hidden="true"
+            >
+              <path d="M6 6l12 12M18 6 6 18" />
+            </svg>
+          </button>
+
+          <div className="flex flex-wrap items-center gap-3 pr-12">
+            <DialogTitle className="font-display text-2xl font-bold tracking-tight md:text-4xl">
+              {currentCoWorker?.name}
+            </DialogTitle>
+            {instaProfileUrl && (
+              <a
+                href={instaProfileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Instagram"
+                aria-label={`${currentCoWorker?.name ?? ""} på Instagram`}
+                className="overflow-hidden rounded-xl shadow-card transition-transform hover:-translate-y-0.5"
+              >
+                <Image src="/instagram-logo.jpg" alt="" width={36} height={36} />
+              </a>
+            )}
           </div>
+
+          <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">
+            {facts.map((fact) => (
+              <div key={fact.key}>
+                <dt className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+                  {fact.label}
+                </dt>
+                <dd className="mt-1 text-sm leading-relaxed md:text-base">
+                  {currentCoWorker?.[fact.key]}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </DialogPanel>
       </div>
     </Dialog>
-  )
-}
-
-const calculateAge = (yearOfBirth: number): string => {
-  const currentYear: number = new Date().getFullYear();
-  const age: number = currentYear - yearOfBirth;
-  return age.toString();
-}
+  );
+};
 
 const coWorkerData = [
     {
       "id": "fredrik",
       "name": "Fredrik Söderholm",
-      "age": calculateAge(1992),
       "slogan": "Var lite snällare än vad situationen kräver",
       "interests": "Skratta och ha kul",
       "opinion": "FÖRSIKTIGT positiv till Dumpen",
@@ -100,7 +102,6 @@ const coWorkerData = [
     {
       "id": "max",
       "name": "Max Söderholm",
-      "age": calculateAge(1989),
       "slogan": "Allt smakar bättre med smält ost",
       "interests": "Rock mat och stilla hemmakvällar kärestan My och Bob",
       "opinion": "Dålig smak = dålig människa",
@@ -111,7 +112,6 @@ const coWorkerData = [
     {
       "id": "plommon",
       "name": "Adam Plommon",
-      "age": calculateAge(2001),
       "slogan": "Mer åt alla hela tiden",
       "interests": "Kollektivtrafik och damer",
       "opinion": "Abort bör vara tillåtet fram till att man klippt navelsträngen",
@@ -122,7 +122,6 @@ const coWorkerData = [
     {
       "id": "micke",
       "name": "Mikael Ljungberg",
-      "age": calculateAge(1998),
       "slogan": "Rättigheter - men framförallt skyldigheter",
       "interests": "Sport och fritid",
       "opinion": '"Ryck upp dig" är den bästa terapin',
@@ -133,7 +132,6 @@ const coWorkerData = [
     {
       "id": "tollstoy",
       "name": "Rickard Tollstoy",
-      "age": calculateAge(1995),
       "slogan": "Trygghet. Trivlse. Tollstoy",
       "interests": "Adventures, song and mead",
       "opinion": '"Springsteen är tvåplus',
@@ -144,7 +142,6 @@ const coWorkerData = [
     {
       "id": "tore",
       "name": "Tore Kullgren",
-      "age": calculateAge(1981),
       "slogan": "Gör bättre själv då!",
       "interests": "Standup, geografi och killyoga",
       "opinion": 'Avskaffa kravet att simma 200 meter i årskurs 6',
@@ -155,7 +152,6 @@ const coWorkerData = [
     {
       "id": "agge",
       "name": "August Bohlin",
-      "age": calculateAge(1993),
       "slogan": '"Ta någon annan först jag måste tänka lite"',
       "interests": "Bygga lägerplatser av schysta pinnar och gott doftande barr!",
       "opinion": 'Det ÄR skönt att beställa foodora i snöstorm',
@@ -166,7 +162,6 @@ const coWorkerData = [
     {
       "id": "ballafjang",
       "name": 'Petter "Ballafjang" Ströbaek',
-      "age": calculateAge(2002),
       "slogan": 'Kriminalisera allt',
       "interests": "Musik",
       "opinion": 'Mobbning är kul',
@@ -177,7 +172,6 @@ const coWorkerData = [
     {
       "id": "sagah",
       "name": 'Sagah Larsson',
-      "age": calculateAge(1994),
       "slogan": 'Inte gett upp än',
       "interests": "Gud, Marabou helnöt, rock från 92-99 och schack",
       "opinion": 'Alla med katt är psykiskt sjuka',
@@ -188,7 +182,6 @@ const coWorkerData = [
     {
       "id": "petrina",
       "name": 'Petrina Hinas',
-      "age": "20+",
       "slogan": 'Slogan, är det 1997 eller?',
       "interests": "Efter Jonatan Unges krönika om kvinnor säger jag pass",
       "opinion": 'Här? Att jag gillar public service',
@@ -199,7 +192,6 @@ const coWorkerData = [
     {
       "id": "zorbas",
       "name": 'Zorbas Newton',
-      "age": calculateAge(1989),
       "slogan": '"Kriminalisera allt"',
       "interests": "Böcker om gubbar som betett sig illa",
       "opinion": 'Alla stockholmare bör göra lumpen ett år genom att bo i en svensk småstad',
@@ -210,7 +202,6 @@ const coWorkerData = [
     {
       "id": "andre",
       "name": 'André Miettinen Persson',
-      "age": "29+",
       "slogan": 'Ha d gott! Glenn',
       "interests": "Alla killintressen som finns tror jag",
       "opinion": 'Älskar public service',
@@ -221,7 +212,6 @@ const coWorkerData = [
     {
       "id": "jesper",
       "name": 'Jesper Ekstedt',
-      "age": calculateAge(1992),
       "slogan": 'Stopp och belägg',
       "interests": "Fundera, åka Voi",
       "opinion": 'Plant-based burgare är vidriga',
@@ -232,7 +222,6 @@ const coWorkerData = [
     {
       "id": "otto",
       "name": 'Otto "HEMAN" Larsson',
-      "age": calculateAge(1992),
       "slogan": 'Det finns nog med Otto till alla som vill ha, och lite till...',
       "interests": "Månskens promenader i VR, hämtmatsfinedining, gåtor och cannabis!",
       "opinion": 'Ananas på pizza är en grje, banan är inte!',
@@ -243,7 +232,6 @@ const coWorkerData = [
     {
       "id": "fanny",
       "name": 'Fanny Klefelt',
-      "age": calculateAge(1994),
       "slogan": 'Frihetsberöva män som tar selfies',
       "interests": "Mord, katastrofer och ond bråd död",
       "opinion": 'Har inga, är en opinion popular så är det den jag har',
@@ -254,7 +242,6 @@ const coWorkerData = [
     {
       "id": "bruce",
       "name": 'Bruce & Räkan',
-      "age": "6 & 2.5",
       "slogan": 'Man har bara nio liv',
       "interests": "Sova, äta, gosa och krafsa frenetikst på ishinken",
       "opinion": 'Tonfisk lite överskattat ändå?',

@@ -1,29 +1,22 @@
-import MediumHeader from '@/components/MediumHeader'
-import Image from 'next/image'
+import Image from "next/image";
+import Heading from "@/components/ui/Heading";
 
 const FestivalContent2025 = () => {
   return (
-    <>
-      <div>
-        <div>
-          <MediumHeader blackText headerText='Festivalen 2025' />
-          Mer info kommer snart!
-          <div className='
-              mt-4
-              flex 
-              flex-wrap
-              justify-center'>
-            <Image
-              className='rounded-xl'
-              src='/festival24/new-cat-festival.jpg'
-              alt='Gott snack festival'
-              width={400}
-              height={500} />
-          </div>
-        </div>
+    <div className="space-y-4">
+      <Heading level={2}>Festivalen 2025</Heading>
+      <p>Mer info kommer snart!</p>
+      <div className="flex justify-center pt-2">
+        <Image
+          className="rounded-2xl shadow-card"
+          src="/festival24/new-cat-festival.jpg"
+          alt="Gott snack festival"
+          width={400}
+          height={225}
+        />
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default FestivalContent2025
+export default FestivalContent2025;

@@ -1,9 +1,7 @@
-const MainLayout = ({ children }: any) => {
-  return (
-    <main className='flex-1'>
-      {children}
-    </main>
-  )
-}
+import type { ReactNode } from "react";
 
-export default MainLayout
+const MainLayout = ({ children }: { children: ReactNode }) => {
+  return <main className="flex-1">{children}</main>;
+};
+
+export default MainLayout;

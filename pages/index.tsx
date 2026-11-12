@@ -1,5 +1,6 @@
 import FestivalBanner from "@/components/FestivalBanner";
 import Gottsnackteam from "@/components/GottSnackTeam";
+import Hero from "@/components/Hero";
 import ListenLive from "@/components/ListenLive";
 import AboutModal from "@/components/modals/AboutModal";
 import RandomQuote from "@/components/RandomQuote";
@@ -25,20 +26,13 @@ const Home = () => {
   return (
     <>
       <h1 className="sr-only">Gott snack – podd och radio live</h1>
+      <Hero />
       <ListenLive />
-      <div className="mt-10">
-        <YouTubeSection />
-      </div>
-      <div className="mt-10">
-        <SupportUs />
-      </div>
+      <YouTubeSection />
+      <SupportUs />
       <RandomQuote />
-      <div className="mt-10">
-        <FestivalBanner />
-      </div>
-      <div className="mt-10">
-        <Gottsnackteam handleModalClick={handleAboutModalClick} />
-      </div>
+      <FestivalBanner />
+      <Gottsnackteam handleModalClick={handleAboutModalClick} />
       <AboutModal
         modalVisable={aboutModalOpen}
         handleModalClick={handleAboutModalClick}

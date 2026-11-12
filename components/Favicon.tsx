@@ -23,8 +23,8 @@ const Favicon = (): JSX.Element => {
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="apple-mobile-web-app-title" content="Gott snack" />
       <meta name="application-name" content="Gott snack" />
-      <meta name="msapplication-TileColor" content="#0057ad" />
-      <meta name="theme-color" content="#0057ad"></meta>
+      <meta name="msapplication-TileColor" content="#e8432f" />
+      <meta name="theme-color" content="#e8432f"></meta>
     </>
   )
 }

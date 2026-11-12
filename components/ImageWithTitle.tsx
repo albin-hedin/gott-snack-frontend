@@ -1,70 +1,53 @@
 import type { JSX } from "react";
-import SmallHeader from './SmallHeader'
-import Image from 'next/image'
+import Image from "next/image";
 
-const ImageWithTitle = (
-  { title, picUrl, alt, onClick, small, imageSux }:
-    { title?: string, picUrl: string, alt?: string, onClick?: () => void, small?: boolean, imageSux?: boolean }) => {
-  const altText = alt ?? title ?? ''
+const frame =
+  "relative w-[165px] h-[220px] md:w-[195px] md:h-[260px] overflow-hidden rounded-[2rem] bg-paper-2 shadow-card ring-4 ring-paper";
 
-  const renderImage = (): JSX.Element => {
-    const image = imageSux
-      ? (
-        <Image
-          src={picUrl}
-          style={{
-            objectFit: 'cover'
-          }}
-          alt={altText}
-          fill
-          sizes='(min-width: 768px) 195px, 165px' />
-      )
-      : (
-        <Image
-          src={picUrl}
-          alt={altText}
-          width={small ? 175 : 200}
-          height={small ? 170 : 200} />
-      )
+const ImageWithTitle = ({
+  title,
+  picUrl,
+  alt,
+  onClick,
+}: {
+  title?: string;
+  picUrl: string;
+  alt?: string;
+  onClick?: () => void;
+}): JSX.Element => {
+  const altText = alt ?? title ?? "";
 
-    if (onClick) {
-      return (
+  const image = (
+    <Image
+      src={picUrl}
+      alt={altText}
+      fill
+      sizes="(min-width: 768px) 195px, 165px"
+      className="object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+    />
+  );
+
+  return (
+    <div className="flex flex-col items-center gap-3 text-center">
+      {onClick ? (
         <button
-          type='button'
+          type="button"
           aria-label={title ? `Läs mer om ${title}` : undefined}
-          style={imageSux ? { width: '100%', height: '100%', position: 'relative' } : undefined}
-          className='link block'
-          onClick={onClick}>
+          onClick={onClick}
+          className={`group ${frame} transition-transform hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-accent`}
+        >
           {image}
         </button>
-      )
-    }
-
-    if (imageSux) {
-      return (
-        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-          {image}
-        </div>
-      )
-    }
-
-    return image
-  }
-  return (
-    <div className='text-center mt-1'>
-      {title &&
-        <div className='mr-4'>
-          <SmallHeader headerText={title} />
-        </div>}
-      <div className='
-       w-[165px] h-[231px]
-       md:w-[195px] md:h-[273px]
-       overflow-hidden 
-       rounded-full'>
-        {renderImage()}
-      </div>
+      ) : (
+        <div className={frame}>{image}</div>
+      )}
+      {title && (
+        <p className="font-display text-lg font-semibold tracking-tight md:text-xl">
+          {title}
+        </p>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default ImageWithTitle
+export default ImageWithTitle;

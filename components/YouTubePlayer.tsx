@@ -26,7 +26,7 @@ const YouTubePlayer = () => {
   if (failed) return null;
 
   if (!video) {
-    return <div className="w-full h-88 rounded-xl bg-black/10 animate-pulse" />;
+    return <div className="w-full h-88 rounded-2xl bg-ink/10 animate-pulse" />;
   }
 
   return (
@@ -34,18 +34,18 @@ const YouTubePlayer = () => {
       href={`https://www.youtube.com/watch?v=${video.videoId}`}
       target="_blank"
       rel="noopener noreferrer"
-      className="block relative w-full h-88 shadow-2xl rounded-xl overflow-hidden group"
+      className="group block relative w-full h-88 overflow-hidden rounded-2xl shadow-card transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-accent/60"
     >
       <Image
         src={video.thumbnail}
         alt={video.title}
         fill
-        sizes="(min-width: 768px) 50vw, 100vw"
-        className="object-cover"
+        sizes="(min-width: 768px) 672px, 100vw"
+        className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
       />
-      <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+      <div className="absolute inset-0 flex items-center justify-center bg-ink/30 transition-colors group-hover:bg-ink/40">
         <svg
-          className="w-16 h-auto opacity-90"
+          className="w-16 h-auto opacity-90 drop-shadow-lg"
           viewBox="0 0 159 110"
           fill="none"
           aria-hidden="true"
@@ -57,8 +57,8 @@ const YouTubePlayer = () => {
           <path d="M63 79.5L104 55 63 30.5v49z" fill="#FFF" />
         </svg>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent">
-        <p className="text-white text-sm font-medium truncate">{video.title}</p>
+      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent p-4">
+        <p className="truncate text-sm font-semibold text-paper md:text-base">{video.title}</p>
       </div>
     </a>
   );
