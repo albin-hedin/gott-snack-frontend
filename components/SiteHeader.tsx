@@ -26,12 +26,8 @@ const SiteHeader = () => {
         <Link
           href="/"
           aria-label="Gott snack – startsida"
-          className="flex items-center gap-2"
+          className="flex items-center"
         >
-          <span
-            aria-hidden="true"
-            className="inline-block h-3 w-3 rounded-full bg-accent ring-4 ring-accent/30"
-          />
           <Wordmark className="text-2xl leading-none" />
         </Link>
 

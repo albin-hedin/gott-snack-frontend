@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Button from "./ui/Button";
 import { Container, Eyebrow } from "./ui/Section";
 
 const Hero = () => {
@@ -21,9 +20,9 @@ const Hero = () => {
       </div>
 
       <Container className="relative -mt-10 md:-mt-16">
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 rounded-3xl bg-paper px-6 py-6 text-center shadow-card-lg ring-1 ring-ink/5 md:flex-row md:justify-between md:px-8 md:text-left">
+        <div className="mx-auto flex max-w-3xl flex-col items-center py-4 text-center">
           <div>
-            <Eyebrow className="flex items-center justify-center gap-2 text-primary md:justify-start">
+            <Eyebrow className="flex items-center justify-center gap-2 text-primary">
               <span
                 aria-hidden="true"
                 className="relative inline-flex h-2.5 w-2.5"
@@ -37,9 +36,6 @@ const Hero = () => {
               Måndag – torsdag 15:00 – 16:30
             </p>
           </div>
-          <Button href="#lyssna" chevron>
-            Lyssna nu
-          </Button>
         </div>
       </Container>
     </div>
