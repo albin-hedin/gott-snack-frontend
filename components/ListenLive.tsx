@@ -8,12 +8,7 @@ import Heading from "./ui/Heading";
 
 const ListenLive = (): JSX.Element => {
   return (
-    <Section
-      id="lyssna"
-      eyebrow="Mixlr & Spotify"
-      title="Lyssna live"
-      className="pt-10 md:pt-14"
-    >
+    <Section id="lyssna" eyebrow="Mixlr & Spotify" className="pt-10 md:pt-14">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <Card className="flex flex-col gap-4">
           <Heading level={3}>Mixlr</Heading>

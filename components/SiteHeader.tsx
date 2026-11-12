@@ -35,7 +35,10 @@ const SiteHeader = () => {
           <Wordmark className="text-2xl leading-none" />
         </Link>
 
-        <nav aria-label="Huvudmeny" className="order-last w-full md:order-none md:w-auto">
+        <nav
+          aria-label="Huvudmeny"
+          className="order-last w-full md:order-none md:w-auto"
+        >
           <ul className="-mx-3 flex items-center gap-1 md:mx-0">
             {navItems.map((item) => {
               const active = pathname === item.href;
