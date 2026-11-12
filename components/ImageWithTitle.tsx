@@ -9,11 +9,13 @@ const ImageWithTitle = ({
   picUrl,
   alt,
   onClick,
+  sizes = "(min-width: 768px) 195px, 165px",
 }: {
   title?: string;
   picUrl: string;
   alt?: string;
   onClick?: () => void;
+  sizes?: string;
 }): JSX.Element => {
   const altText = alt ?? title ?? "";
 
@@ -22,13 +24,18 @@ const ImageWithTitle = ({
       src={picUrl}
       alt={altText}
       fill
-      sizes="(min-width: 768px) 195px, 165px"
+      sizes={sizes}
       className="object-cover transition-transform duration-300 group-hover:scale-[1.04]"
     />
   );
 
   return (
     <div className="flex flex-col items-center gap-3 text-center">
+      {title && (
+        <p className="font-display text-lg font-semibold tracking-tight md:text-xl">
+          {title}
+        </p>
+      )}
       {onClick ? (
         <button
           type="button"
@@ -40,11 +47,6 @@ const ImageWithTitle = ({
         </button>
       ) : (
         <div className={frame}>{image}</div>
-      )}
-      {title && (
-        <p className="font-display text-lg font-semibold tracking-tight md:text-xl">
-          {title}
-        </p>
       )}
     </div>
   );

@@ -6,25 +6,25 @@ import Section from "./ui/Section";
 const team = [
   {
     title: "Fredrik",
-    picUrl: "/portraits/FREDRIK-kopia-1097x1536.jpg",
+    picUrl: "/portraits/fredrik-2026.jpg",
     id: "fredrik",
     insta: "https://www.instagram.com/genietsoderholm/",
   },
   {
     title: "August",
-    picUrl: "/portraits/AUGUST-kopia-1097x1536.jpg",
+    picUrl: "/portraits/agge-2026.jpg",
     id: "agge",
     insta: "https://www.instagram.com/aggeinthehus/",
   },
   {
     title: "Sanna Dollan",
-    picUrl: "/portraits/sanna.png",
+    picUrl: "/portraits/sanna-2026.jpg",
     id: "sanna",
     insta: "https://www.instagram.com/sannadollan/",
   },
   {
     title: "Max",
-    picUrl: "/portraits/MAX-1-kopia-732x1024.jpg",
+    picUrl: "/portraits/max-2026.jpg",
     id: "max",
     insta: "https://www.instagram.com/seniorsoderholm/",
   },
@@ -87,25 +87,27 @@ const Gottsnackteam = ({
         </div>
       }
     >
-      <Image
-        src="/HEADER-kontrast.png"
-        alt="Gott snack familjen"
-        width={6000}
-        height={1605}
-        sizes="(max-width: 1024px) 100vw, 1024px"
-        className="mx-auto mb-10 h-auto w-full max-w-5xl rounded-2xl"
-      />
       <ul className="flex flex-wrap justify-center gap-x-6 gap-y-10">
         {team.map((member) => (
           <li key={member.id}>
             <ImageWithTitle
               title={member.title}
               picUrl={member.picUrl}
+              // Wide enough that landscape photos still cover the 3:4 frame's height sharply
+              sizes="(min-width: 768px) 390px, 330px"
               onClick={() => handleModalClick(true, member.id, member.insta)}
             />
           </li>
         ))}
       </ul>
+      <Image
+        src="/HEADER-kontrast.png"
+        alt="Gott snack familjen"
+        width={6000}
+        height={1605}
+        sizes="(max-width: 1024px) 100vw, 1024px"
+        className="mx-auto mt-10 h-auto w-full max-w-5xl rounded-2xl"
+      />
     </Section>
   );
 };

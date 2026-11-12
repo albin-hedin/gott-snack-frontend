@@ -22,7 +22,7 @@ const facts: {
   { label: "Unpopular opinion", key: "opinion" },
   { label: "Favoritämnen", key: "favoriteSubject" },
   { label: "Triggers", key: "triggers" },
-  { label: "Favorit macka", key: "sandwich" },
+  { label: "Favoritmacka", key: "sandwich" },
 ];
 
 const AboutModal = ({
@@ -173,12 +173,13 @@ const coWorkerData = [
   {
     id: "sanna",
     name: "Sanna Dollan",
-    slogan: "TBD",
-    interests: "TBD",
-    opinion: "TBD",
-    favoriteSubject: "TBD",
-    triggers: "TBD",
-    sandwich: "TBD",
+    slogan:
+      "Jag är redo att dö för er men ni får göra det mesta av jobbet själva",
+    interests: "Real housewives of New York, läsa, böcker och GTA",
+    opinion: "Det JK Rowling sa var väl inte så jävla farligt",
+    favoriteSubject: "Kändisbarn, Black panthers och Jonbenet Ramesey",
+    triggers: "När någon förminskar mig eller ser ner på mig",
+    sandwich: "Grillad kyckling och majonnäs",
   },
   {
     id: "agge",
