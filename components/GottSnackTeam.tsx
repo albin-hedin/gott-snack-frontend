@@ -8,7 +8,7 @@ const team = [
     title: "Fredrik",
     picUrl: "/portraits/fredrik-2026.jpg",
     id: "fredrik",
-    insta: "https://www.instagram.com/genietsoderholm/",
+    insta: "https://www.instagram.com/genietsoderholm2/",
   },
   {
     title: "August",
