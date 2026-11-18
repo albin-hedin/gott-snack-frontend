@@ -31,7 +31,7 @@ const Festival = () => {
         <meta property="og:title" key="og:title" content="Festival | Gott snack" />
       </Head>
       <div id="top"></div>
-      <Section eyebrow="Musik, konst & gemenskap" title="Gott snack festival" titleAs="h1">
+      <Section title="Gott snack festival" titleAs="h1">
         <div
           role="status"
           className="mx-auto mb-10 max-w-3xl rounded-2xl border-l-4 border-primary bg-paper-2 p-5 text-base leading-relaxed shadow-card md:p-6 md:text-lg"
