@@ -33,6 +33,17 @@ const Festival = () => {
       <div id="top"></div>
       <Section eyebrow="Musik, konst & gemenskap" title="Gott snack festival" titleAs="h1">
         <div
+          role="status"
+          className="mx-auto mb-10 max-w-3xl rounded-2xl border-l-4 border-primary bg-paper-2 p-5 text-base leading-relaxed shadow-card md:p-6 md:text-lg"
+        >
+          <p className="font-semibold">Festivalen är tillfälligt pausad</p>
+          <p className="mt-1">
+            Gott snack festival tar en paus för tillfället, men vi hoppas kunna
+            återuppta den i framtiden. Tack till alla artister, funktionärer och
+            besökare som har gjort festivalen till vad den är!
+          </p>
+        </div>
+        <div
           role="tablist"
           aria-label="Festivalinnehåll"
           className="mb-10 flex flex-wrap justify-center gap-2"

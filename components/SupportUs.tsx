@@ -8,7 +8,7 @@ const SupportUs = () => {
       tone="dark"
       eyebrow="Patreon"
       title="Stötta oss"
-      lead="Som Patron får du varje vardag hela sändningen på två timmar – cirka 30 minuter efter avslutad sändning"
+      lead="Som Patron får du varje vardag hela sändningen på 90 minuter – cirka 30 minuter efter avslutad sändning"
     >
       <div className="flex justify-center">
         <Button
